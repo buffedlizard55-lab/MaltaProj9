@@ -1,0 +1,531 @@
+{
+  "key": "flagged",
+  "title": "Flagged for Review",
+  "subtitle": "Irregularities, unverified values, discrepancies and assumptions — published, not hidden",
+  "rule": "A value that could not be confirmed from an official primary source is left BLANK on this site. It is never inferred, estimated or filled in from a secondary source. Every item below is reported with what was checked and what could not be confirmed. Items marked “needs review” do not block publication.",
+  "sections": [
+    {
+      "id": "flags",
+      "title": "Flag register",
+      "columns": [
+        "ID",
+        "Item",
+        "Type",
+        "Status",
+        "Detail",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "F-01",
+            "Individual-level vs household-level income for the $580 test",
+            "Discrepancy",
+            "needs review",
+            "42 CFR §435.552(f)(2) and WIC §14005.69(e)(6) as amended by AB 2161 both measure the income test on the <strong>MAGI-based household</strong> budget. But ACWDL 25-30 instructs counties that “All individuals must <strong>independently</strong> meet the participation criteria; <strong>one individual’s compliance cannot be used to satisfy another’s requirement</strong>”, and defines the income criterion as “an individual’s <strong>total gross income</strong> for a month”. CMS’s own IFC deck adds that an agency “must use a reasonable method to <strong>allocate work hours between members of the household</strong>”. The interaction between a household MAGI test and an individual compliance determination is not spelled out. <strong>Left unresolved — neither reading is assumed.</strong>",
+            [
+              "ECFR-435-552",
+              "DHCS-ACWDL-25-30",
+              "LEGINFO-AB2161-TEXT",
+              "CMS-IFC-DECK"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-02",
+            "Does managing your own rental property count as “work”?",
+            "Unverified interpretation",
+            "needs review",
+            "CMS defines work as work in exchange for money, <strong>in-kind</strong> work, and <strong>unpaid work</strong> other than community service, and states in the IFC preamble that self-employment — “starting a business, <strong>owning a business</strong>, or as an independent contractor” — meets that definition and that the hours count. <strong>No official CMS, DHCS or county document uses the terms “landlord”, “rental property” or “property manager”.</strong> Applying the rule to self-managed rental real estate is an inference, not a documented rule. <strong>Value left blank — confirm with the county before relying on this pathway.</strong>",
+            [
+              "ECFR-435-552",
+              "FR-91-33348",
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-03",
+            "Does full-time Kalshi event-contract trading count as “work” or self-employment?",
+            "Unverified",
+            "needs review",
+            "<strong>No official guidance was located</strong> — not from CMS, not from DHCS, not from any county, not from the IRS. Two obstacles: (a) it is unresolved whether CFTC event contracts are “securities” within IRC §475(c)(2), so the IRS <strong>trader</strong> framework may not apply at all; (b) even where it applies, IRS Topic No. 429 says trader gains “aren’t subject to self-employment tax”. <strong>Left blank.</strong>",
+            [
+              "IRS-TC429",
+              "KALSHI-TAX",
+              "ECFR-435-552",
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-04",
+            "The request describes “Kalshi <strong>futures</strong>” contracts",
+            "Terminology irregularity",
+            "needs review",
+            "Kalshi is a CFTC-regulated <strong>event-contract</strong> exchange; its own documentation describes a <strong>Profit and Loss statement</strong> plus 1099-INT / 1099-MISC / 1099-B / 1099-DA. Nothing in Kalshi’s official documentation calls its products <strong>futures</strong>. This matters because IRC <strong>§1256</strong> treatment (Form 6781, the 60/40 split, year-end mark-to-market) depends on the contract being a regulated futures contract or another listed §1256(b) instrument. <strong>The tax characterisation of Kalshi event contracts is unresolved by the IRS — no Revenue Ruling, Notice or regulation was located.</strong> Four competing treatments appear only in unofficial practitioner literature (Section 1256; capital asset; ordinary income on Schedule 1 line 8z; gambling income). <strong>None is published here as verified.</strong>",
+            [
+              "KALSHI-TAX",
+              "IRS-TC429",
+              "IRS-I1099MISC"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-05",
+            "Seasonal-worker 6-month averaging is likely unavailable — and state guidance is broader than the federal cross-reference",
+            "Scope limitation / discrepancy",
+            "needs review",
+            "42 CFR §435.552(a)(7) and WIC §14005.69(e)(7) allow a 6-month average only for a “<strong>seasonal worker</strong>, as described in section 45R(d)(5)(B)” of the IRC. The official U.S. Code text defines that as a worker who “performs labor or services <strong>on a seasonal basis as defined by the Secretary of Labor</strong>, including workers covered by section 500.20(s)(1) of title 29, Code of Federal Regulations and retail workers employed exclusively during holiday seasons.” A full-time trader or full-time property manager does not fit. <strong>However</strong>, ACWDL 25-30 describes the same criterion more loosely as being for “individuals with <strong>fluctuating income</strong> over a six-month period”, and the DHCS member letter says “people whose hours change frequently <strong>or</strong> who have seasonal jobs”. <strong>The state guidance is broader than the federal statutory cross-reference. Left unresolved.</strong>",
+            [
+              "USCODE-26-45R",
+              "ECFR-435-552",
+              "DHCS-ACWDL-25-30",
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-06",
+            "“California permanent resident” — citizenship / immigration status assumed",
+            "Assumption",
+            "needs review",
+            "This analysis assumes a <strong>U.S. citizen residing in California</strong>. If the person is a lawful permanent resident or holds another status, H.R.1 §71109 (federally funded full-scope Medicaid narrowed from <strong>October 1, 2026</strong>), Covered California’s <strong>January 1, 2027</strong> restriction of Marketplace financial help to certain immigrant groups, DHCS’s <strong>January 1, 2027</strong> fee-for-service transition and <strong>July 1, 2027</strong> premium requirement may all apply. <strong>No conclusion is drawn for any status other than U.S. citizen.</strong>",
+            [
+              "DHCS-CHANGES",
+              "CC-CHANGES",
+              "CMCS-CIB-2025-11-18"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-07",
+            "Other California safety-net programs (CMSP, Medi-Cal Access Program, CDPH condition-specific programs)",
+            "Unverified",
+            "needs review",
+            "These programs exist, but their <strong>current eligibility rules, income limits and application channels were not verified against an official primary source in this session</strong>. All such values are <strong>left blank</strong> rather than filled in from secondary sources.",
+            []
+          ]
+        },
+        {
+          "c": [
+            "F-08",
+            "2027 Marketplace “expected contribution” percentages",
+            "Value left blank",
+            "needs review",
+            "The official <strong>IRS Revenue Procedure</strong> setting 2027 applicable percentages was <strong>not retrieved</strong> in this session. Third-party summaries circulate figures. <strong>Those figures are not published anywhere on this site</strong>; the value cell is left blank pending retrieval of the IRS document.",
+            [
+              "IRS-PTC-QA"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-09",
+            "2026 California individual-mandate penalty amounts",
+            "Value left blank",
+            "needs review",
+            "FTB’s personal health-care-mandate page (last updated <strong>09/15/2026</strong>) still publishes “Sample penalty amounts for <strong>2025</strong>” — $950 per adult, $475 per child, or 2.5% of gross income above the filing threshold. <strong>2026 amounts are not published there.</strong> A Covered California document titled “2026 Individual Shared Responsibility Penalty Calculation” (dated 2025-08-25) references “<strong>$420 per month for an individual</strong>” for calendar year 2026; that figure could not be reconciled with FTB’s flat-amount method within this session, so <strong>it is not published as a 2026 penalty amount</strong>. Value left blank.",
+            [
+              "FTB-MANDATE",
+              "FTB-FLASH"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-10",
+            "DHCS copayment threshold “$15,560 a year” does not match any published HHS poverty guideline",
+            "Numerical irregularity",
+            "needs review",
+            "DHCS’s official consumer page says the <strong>October 1, 2028</strong> copayment applies to adults 19–64 who “Make more than <strong>$15,560 a year</strong>”. Federal law (H.R.1 §71120) attaches cost-sharing to expansion adults with income <strong>above 100% FPL</strong>. Published 100% FPL for one person: <strong>2025 = $15,650</strong>; <strong>2026 = $15,960</strong>. <strong>$15,560 matches neither.</strong> It may be a transposition typo, a figure based on an unpublished future-year guideline, or a household-size-specific number. <strong>Reported exactly as quoted, with the discrepancy noted; no corrected value is substituted.</strong>",
+            [
+              "DHCS-CHANGES",
+              "ASPE-FPL",
+              "FR-91-1797"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-11",
+            "January 1, 2027 vs March 2027 — when the rules actually bite in California",
+            "Date discrepancy",
+            "needs review",
+            "Four official statements coexist: (1) the <strong>federal statute and CMS</strong> require implementation <strong>no later than January 1, 2027</strong>; (2) <strong>ACWDL 25-30</strong> says counties will not assess members with an application date of <strong>December 31, 2026 or prior</strong> until their next scheduled renewal in 2027, and that the provision applies to <strong>all applications submitted on or after January 1, 2027</strong>; (3) the <strong>DHCS consumer page</strong> says six-month eligibility checks start <strong>March 1, 2027</strong>; (4) the <strong>DHCS member outreach letter</strong> in MEDIL I 26-25 tells members the rules “will <strong>not go into effect until March 2027</strong>” while separately saying the 6-month renewal rule begins <strong>January 2027</strong>. <strong>All four are reported as quoted.</strong> The safe planning assumption is that the obligation can attach to any application filed on or after January 1, 2027.",
+            [
+              "CMCS-CIB-2025-12-08",
+              "DHCS-ACWDL-25-30",
+              "DHCS-CHANGES",
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-12",
+            "Federal Register HTML page intermittently returns HTTP 404 to automated retrieval",
+            "Access irregularity",
+            "resolved with workaround",
+            "The document URL returned “<strong>404 Not Found</strong>” on some automated retrievals and the full document on others during this session. The document is confirmed to exist — it is cited by CMS, HHS and state agencies, and the Federal Register itself publishes a correction notice for it. <strong>Workaround adopted:</strong> the <strong>official govinfo PDF</strong> and the <strong>eCFR codified text</strong> are cited as primary sources for regulatory language; the Federal Register URL is provided as a convenience link only.",
+            [
+              "GOVINFO-2026-11094",
+              "ECFR-435-SUBPART-F",
+              "FR-91-33348"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-13",
+            "CMS-2454-IFC was corrected on 06/29/2026",
+            "Currency of authority",
+            "needs review",
+            "The Federal Register document record states: “This document <strong>was corrected by a document published on 06/29/2026</strong>” (C1-2026-11094). The <strong>content of that correction was not retrieved</strong>, so it is unknown whether it touches any provision relied on here. <strong>The eCFR codified text (current through 10/15/2026) is treated as authoritative for regulatory language</strong>, which would already reflect any published correction.",
+            [
+              "FR-CORRECTION",
+              "ECFR-435-SUBPART-F"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-14",
+            "ACWDL 25-30 is expressly preliminary and predates the federal rule",
+            "Currency of authority",
+            "needs review",
+            "The letter carries the notice: “<strong>This ACWDL represents preliminary guidance and is subject to change based on developing federal policy guidance and state legislative changes.</strong>” It was issued <strong>December 30, 2025</strong> — <strong>before</strong> CMS published the interim final rule on <strong>June 3, 2026</strong>, and <strong>before</strong> AB 2161 was chaptered on <strong>September 14, 2026</strong>. Where ACWDL 25-30 differs from the IFC, the regulation or WIC §14005.69 as amended controls. <strong>No superseding ACWDL had been located as of 2026-10-18.</strong>",
+            [
+              "DHCS-ACWDL-25-30",
+              "DHCS-MEDIL-I26-25",
+              "GOVINFO-2026-11094"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-15",
+            "DHCS impact estimates vary widely between official documents",
+            "Internal inconsistency",
+            "needs review",
+            "The DHCS H.R.1 Implementation Plan (Jan/Feb 2026) estimates “up to <strong>233K</strong> Medi-Cal members will lose coverage by June 2027, <strong>1 million</strong> by Jan 2028, and <strong>1.4 million</strong> by June 2028”. A CalHHS Connect webinar deck (October 2025) estimates “up to <strong>3 million</strong> Medi-Cal members may lose coverage”. The DHCS FY 2026-27 Budget Act Highlights projects “<strong>43,000 in 2026-27 and 1.1 million</strong>” thereafter. <strong>All three are reported as quoted with their dates; none is presented as the estimate.</strong>",
+            [
+              "DHCS-IMPL-WEBINAR",
+              "CALHHS-CONNECT",
+              "DHCS-BUDGET"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-16",
+            "OBBBA §70433 — 1099-MISC threshold increase to $2,000",
+            "Unverified",
+            "needs review",
+            "Multiple third-party tax sources state that P.L. 119-21 §70433 raised the general 1099-MISC / 1099-NEC information-reporting threshold from $600 to <strong>$2,000</strong> for payments made in 2026, indexed from 2027. The <strong>IRS instructions for Forms 1099-MISC and 1099-NEC (Rev. December 2026) do reference $2,000</strong> in an example, but the statutory section number and effective date were <strong>not verified against the statute or an IRS primary document</strong> in this session. <strong>Not published as a verified figure; left blank.</strong>",
+            [
+              "IRS-I1099MISC",
+              "CONGRESS-HR1"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-17",
+            "Medi-Cal asset limits do NOT apply to the MAGI adult group — but sources conflate them",
+            "Clarification",
+            "resolved",
+            "DHCS’s consumer page describes asset limits of <strong>$130,000</strong> through 6/30/2027 then <strong>$21,000 / $31,000</strong> from 7/1/2027, and lists “<strong>More than one house or vehicle</strong>” among counted assets. Those limits apply to the groups DHCS describes on that page — age 65+, people with disabilities, nursing-home residents, and families over income under federal tax rules (<strong>Non-MAGI</strong>). For MAGI-determined eligibility, 42 CFR §435.603(g)(1) is explicit: the agency “<strong>must not</strong> apply any assets or resources test”. <strong>This site states both, with the scope of each clearly labelled</strong>, so a property owner in the MAGI adult group is not misled into thinking rental real estate disqualifies them.",
+            [
+              "DHCS-CHANGES",
+              "ECFR-435-603"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-18",
+            "AB 2208 is NOT law",
+            "Status clarification",
+            "resolved",
+            "AB 2208 (Stefani) would set a <strong>$0.01</strong> Medi-Cal copayment for the expansion population and restore <strong>3 months</strong> of retroactive coverage. Official legislative history: <strong>08/13/26 — “In committee: Held under submission.”</strong> Type of measure: “<strong>Active Bill – In Committee Process</strong>.” It is reported here as <strong>pending</strong>, never as enacted. Advocacy summaries describing it as California’s response must not be read as current law.",
+            [
+              "LEGINFO-AB2208"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-19",
+            "Two different versions of WIC §14005.69(e)(6) are in circulation",
+            "Version control",
+            "resolved",
+            "The version added by <strong>SB 164</strong> (Stats. 2026, Ch. 27, §75) lists illustrative income types (“earned income, unemployment benefits, state disability insurance, retirement income, or dividends”). The version as amended by <strong>AB 2161</strong> (Ch. 209, Stats. 2026) replaces that list with “<strong>using modified adjusted gross income (MAGI)-based financial methods … for their individual MAGI-based household budget</strong>”. <strong>Both are quoted with their source. Neither limits the test to earned income.</strong> The leginfo code page retrieved 2026-10-18 still displays the SB 164 wording; the AB 2161 chaptered text is linked separately.",
+            [
+              "LEGINFO-WIC-14005-69",
+              "LEGINFO-AB2161-TEXT"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-20",
+            "dhcs.ca.gov/workrules is a redirect",
+            "Link hygiene",
+            "resolved",
+            "The DHCS member letter and MEDIL I 26-25 both direct members to <strong>dhcs.ca.gov/workrules</strong>. Retrieval on 2026-10-18 shows that URL <strong>redirects to the “Medi-Cal Changes” page</strong> rather than serving a dedicated work-rules page. This site links the resolved destination and records the redirect so a manual reviewer is not surprised.",
+            [
+              "DHCS-WORKRULES",
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-21",
+            "No official guidance on in-kind, rent-free property management",
+            "Unverified",
+            "needs review",
+            "42 CFR §435.552(b) counts “work in exchange for goods or services (<strong>‘in-kind’ work</strong>)”. A person who manages a property in exchange for <strong>free or reduced rent</strong> would appear to fall inside that definition, but <strong>no official CMS or DHCS example addresses it</strong>. Left blank.",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-22",
+            "The Kalshi PnL statement is explicitly not a tax document",
+            "Documentation risk",
+            "resolved",
+            "Kalshi states the PnL statement and its contents “are <strong>not tax advice</strong> … each member should consult with a tax professional … and <strong>is responsible for ensuring the accuracy of all returns</strong>”, and that “if no 1099 forms appear in your account, it is likely because you did not meet the IRS thresholds required for issuance”. <strong>None of the four 1099s Kalshi lists reports event-contract trading profit.</strong> A person relying on the $580 income pathway should therefore be able to <strong>document</strong> MAGI from their own records plus any 1099s actually received, because the county may request documentation when its reliable data sources are unavailable or “not reasonably compatible” (42 CFR §435.557(b)(2)).",
+            [
+              "KALSHI-TAX",
+              "ECFR-435-557"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "F-23",
+            "This site contains no legal, tax or medical advice",
+            "Standing disclaimer",
+            "resolved",
+            "Every page carries a plain-language disclaimer and links only to primary sources. Nothing here substitutes for advice from a licensed California attorney, a CPA or enrolled agent, DHCS, a county eligibility worker, or a Covered California certified enroller.",
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blanks",
+      "title": "Values deliberately left BLANK",
+      "intro": "Per the verification instruction, unconfirmable values are left empty rather than populated from secondary sources.",
+      "columns": [
+        "#",
+        "Blank value",
+        "Reason it is blank",
+        "Flag",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "1",
+            "2027 Marketplace expected-contribution percentages",
+            "Official IRS Revenue Procedure not retrieved in this session.",
+            "F-08",
+            []
+          ]
+        },
+        {
+          "c": [
+            "2",
+            "2026 California individual-mandate penalty amounts",
+            "FTB has not published 2026 amounts; the page still shows 2025 samples.",
+            "F-09",
+            [
+              "FTB-MANDATE"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "3",
+            "CMSP / Medi-Cal Access Program eligibility rules and income limits",
+            "Not verified against a primary source.",
+            "F-07",
+            []
+          ]
+        },
+        {
+          "c": [
+            "4",
+            "OBBBA §70433 — 1099 threshold statutory citation and effective date",
+            "Not verified against the statute or an IRS primary document.",
+            "F-16",
+            [
+              "IRS-I1099MISC"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "5",
+            "Tax characterisation of Kalshi event-contract gains",
+            "No official IRS guidance exists.",
+            "F-03, F-04",
+            [
+              "IRS-TC429",
+              "KALSHI-TAX"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "6",
+            "Whether self-managed rental activity or trading hours count as “work” hours",
+            "Not addressed in any official guidance located.",
+            "F-02, F-03",
+            [
+              "FR-91-33348"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "7",
+            "Whether household MAGI income can satisfy an individual’s compliance test",
+            "State and federal texts do not reconcile on the point.",
+            "F-01",
+            [
+              "ECFR-435-552",
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo",
+      "title": "Repository review findings",
+      "intro": "The repository was reviewed line by line. The entire pre-existing content was one 12-byte line.",
+      "columns": [
+        "ID",
+        "Finding",
+        "Severity",
+        "Evidence"
+      ],
+      "rows": [
+        {
+          "c": [
+            "R-01",
+            "The repository contained <strong>no code, no data, no documentation and no configuration</strong> other than a 12-byte <code>README.md</code>. There was <strong>nothing to audit for factual accuracy</strong> in the pre-existing content.",
+            "Informational",
+            "<code>git ls-files</code> returned exactly <code>COORDINATION.md</code> and <code>README.md</code> at review time; commit history was a single commit, <code>4f79596</code> “Initial commit” (buffedlizard55-lab, 2026-10-11)."
+          ]
+        },
+        {
+          "c": [
+            "R-02",
+            "<code>README.md</code> is <strong>12 bytes</strong> and has <strong>no trailing newline</strong>. Cosmetic only.",
+            "Trivial",
+            "<code>wc -c README.md</code> → 12; <code>“# MaltaProj9”</code> is exactly 12 characters."
+          ]
+        },
+        {
+          "c": [
+            "R-03",
+            "The repository name <code>MaltaProj9</code> has <strong>no discoverable relationship to its subject matter</strong>; nothing in the repository explains it.",
+            "Informational",
+            "<code>cat README.md</code> — the heading is the only occurrence of the name."
+          ]
+        },
+        {
+          "c": [
+            "R-04",
+            "There was <strong>no <code>.gitignore</code></strong>, so generated artefacts risk being committed.",
+            "Minor — remediated",
+            "<code>ls -a</code> at review time showed only <code>.git</code>, <code>README.md</code>. A <code>.gitignore</code> was added in this session."
+          ]
+        },
+        {
+          "c": [
+            "R-05",
+            "<strong>GitHub Pages was not enabled</strong> and no publishing workflow existed.",
+            "Minor — remediated",
+            "No <code>.github/</code> directory at review time."
+          ]
+        },
+        {
+          "c": [
+            "R-06",
+            "There was <strong>no <code>COORDINATION.md</code></strong>, although the working instructions require one as the shared task board.",
+            "Minor — remediated",
+            "Created and pushed as the first commit of this session, <code>a643881</code>."
+          ]
+        },
+        {
+          "c": [
+            "R-07",
+            "<strong>Conclusion.</strong> No irregularities of substance were found in the pre-existing repository content, because there was essentially none. Every factual claim on this site was therefore <strong>newly authored and newly verified against an official primary source</strong> rather than inherited and audited.",
+            "Informational",
+            "See the verification cross-check below."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "method",
+      "title": "Verification cross-check applied to every published row",
+      "columns": [
+        "#",
+        "Check",
+        "Result"
+      ],
+      "rows": [
+        {
+          "c": [
+            "1",
+            "Is the source a <strong>primary official source</strong>? (<code>.gov</code>, eCFR, govinfo, congress.gov, leginfo.legislature.ca.gov, dhcs.ca.gov, ftb.ca.gov, edd.ca.gov, coveredca.com / hbex.coveredca.com, cms.gov, medicaid.gov, irs.gov, dol.gov, aspe.hhs.gov, healthcare.gov) — or, for Kalshi’s own tax documentation, the platform’s own official help centre.",
+            "Yes for every published row. <strong>No secondary source is cited as authority for any row.</strong>"
+          ]
+        },
+        {
+          "c": [
+            "2",
+            "Was the source <strong>actually retrieved</strong> in this session, rather than quoted from a secondary summary?",
+            "Yes — each linked document was retrieved on 2026-10-18 (UTC) except where a flag records otherwise (F-07, F-08, F-13, F-16)."
+          ]
+        },
+        {
+          "c": [
+            "3",
+            "Where a claim is <strong>analysis rather than a quotation</strong>, is it labelled as analysis?",
+            "Yes — analysis is prefixed “Analysis, not a quotation” or “Analysis” throughout."
+          ]
+        },
+        {
+          "c": [
+            "4",
+            "Where no official source exists, is the cell <strong>blank</strong> and the item <strong>flagged</strong>?",
+            "Yes — 7 categories of value are blank; see the table above."
+          ]
+        },
+        {
+          "c": [
+            "5",
+            "Were secondary sources used at all?",
+            "Only to <strong>locate</strong> primary sources. Where a secondary source asserted something that could not be traced to a primary source, it was <strong>not published</strong> — see F-03, F-04, F-07, F-08, F-16."
+          ]
+        }
+      ]
+    }
+  ]
+}

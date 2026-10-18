@@ -1,0 +1,80 @@
+name: Link check (non-blocking)
+
+# Verifies that every external URL cited by the site still resolves.
+# Deliberately NON-BLOCKING: government endpoints (eCFR, Federal Register,
+# leginfo.legislature.ca.gov, dhcs.ca.gov) frequently rate-limit or reject
+# non-browser clients, which is not evidence that a citation is wrong.
+# A failure here produces a report and an annotation, and never blocks a merge.
+# The authoritative, blocking gate is `build-check.yml`.
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # Mondays 06:17 UTC
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: "Treat server-rejected (WARN) URLs as failures"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: Check cited external URLs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Probe every cited URL
+        id: probe
+        continue-on-error: true
+        run: |
+          python3 scripts/check_links.py \
+            --retries 3 --timeout 30 \
+            ${{ inputs.strict == true && '--strict' || '' }} \
+            --json link-report.json | tee link-check.log
+
+      - name: Summarise
+        if: always()
+        run: |
+          if [ -f link-report.json ]; then
+            python3 - <<'PY'
+          import json, pathlib
+          d = json.loads(pathlib.Path("link-report.json").read_text())
+          c = d["counts"]
+          lines = ["## Link check", "",
+                   f"- OK: **{c['OK']}**",
+                   f"- WARN (server rejected an automated client): **{c['WARN']}**",
+                   f"- FAIL: **{c['FAIL']}**", ""]
+          for v in ("FAIL", "WARN"):
+              rows = [r for r in d["results"] if r["verdict"] == v]
+              if rows:
+                  lines.append(f"### {v}")
+                  lines.append("| URL | Detail | Referenced by |")
+                  lines.append("|---|---|---|")
+                  for r in rows:
+                      lines.append(f"| {r['url']} | {r['detail'] or '—'} | {', '.join(r['referenced_by'])} |")
+                  lines.append("")
+          pathlib.Path("link-summary.md").write_text("\n".join(lines))
+          print("\n".join(lines))
+          PY
+          else
+            echo "no report produced" > link-summary.md
+          fi
+
+      - name: Publish summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-report
+          path: |
+            link-report.json
+            link-check.log
+            link-summary.md
+          if-no-files-found: ignore
