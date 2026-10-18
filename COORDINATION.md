@@ -52,6 +52,9 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | V1 — Verification (every row sourced; unverified left blank + flagged; link check) | done | `arena/0ef38cd8` | `scripts/validate.py`, `data/**` |
 | I1 — Final integration, PR, merge, Pages deployment | done | `arena/0ef38cd8` | COORDINATION.md, README.md, GitHub PR/Pages config |
 | Research brief site at repo root (7 pages) + CI + first Pages deployment | done | `arena/63a8fb6e` | `index.html`, `eligibility.html`, `work-rules.html`, `income.html`, `options.html`, `flagged.html`, `sources.html`, `assets/site.css`, `scripts/check_site.py`, `.github/workflows/pages.yml` |
+| R6 — Deep verification pass + new findings from primary DHCS county letters (ACWDL 25-30, 25-31, MEDIL I26-25), AB 2161 / WIC 14005.69 statute text, and the 2026-27 federal sources | done | `arena/cbb12598` | `data/*.csv` (append rows), `site_src/*.tmpl`, `dashboard/**`, `california-help.html`, `index.html`, `scripts/check_site.py` |
+| V2 — Line-by-line re-verification of every published row against the primary source; re-source weak citations; add newly found irregularities to the flagged registry | done | `arena/cbb12598` | `data/flagged-items.csv`, `scripts/check_site.py` |
+| I2 — Integration of R6/V2 into both publications, PR from `arena/cbb12598-maltaproj9`, merge, GitHub Pages deploy verification | done | `arena/cbb12598` | COORDINATION.md, README.md |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
 was built as `data/california-implementation.csv`; `data/other-options.csv` was split into
@@ -212,3 +215,49 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 - Verification: `scripts/build.py` rebuilt dashboard (120 data rows: 108 rule rows, 106 verified, 2 blanks; 12-item flagged registry; 54 sources); `scripts/validate.py` PASS; `scripts/check_site.py` PASS (7 root pages); `git diff --check` PASS; local HTTP smoke test 200 on root + dashboard pages and both stylesheets. Tooling note: parallel same-file edits raced and clobbered each other mid-session; all affected replacements were detected by grep audit and re-applied sequentially, then re-verified.
 
 - **Publication (da6d01ac):** PR #8 https://github.com/buffedlizard55-lab/MaltaProj9/pull/8 opened from `arena/da6d01ac-maltaproj9`, CI validate passed, merged 2026-10-18T20:19:47Z as `97ce029`; Pages build success (`built`); live checks 2026-10-18 confirmed corrected content on https://buffedlizard55-lab.github.io/MaltaProj9/work-rules.html (MAGI-based $580, any-one-month) and https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/executive-summary.html (qualifying-month + subsidy-bar). Rebase onto PR #7 (`1c44e64`) conflicted only in this log; resolved keeping both session entries. A1/A2/A3 done. (Note: PR #9 from `arena/cbb12598` was open at merge time; left untouched for that session.)
+
+## Session log — `arena/cbb12598` (R6/V2/I2 integration, 2026-10-18)
+
+- **Merge conflict with PR #8 and PR #10 resolved.** Session `arena/da6d01ac` merged PR #8 (and
+  then PR #10) into `main` while this session's work was in flight, and the two sessions had
+  allocated overlapping row IDs (WR-17/18, CA-13/14, IN-16/17/18, CC-13, FL-11/12). Resolution per
+  the board rules: **no row, sentence, or page from either session was discarded**. Upstream's rows
+  keep their IDs and all of their published references; this session's rows were renumbered into
+  each table's free ID range by `scripts/reapply_rows.py` (WR-17..36 → WR-19..38, CA-13..28 →
+  CA-15..30, IN-16..20 → IN-19..23, CC-13..20 → CC-14..21, FL-11..25 → FL-13..27; EX/OT/OP/MC
+  needed no shift), and the FL references inside this session's rows were shifted +2 to match.
+  Upstream's narrative edits to `site_src/*.tmpl` and the root brief were kept as the base, and
+  this session's unique additions were layered on top. Both sessions' findings are published.
+
+- **Data after integration:** 204 rows across 9 tables (177 rule rows + 27 flagged registry),
+  175 verified, 2 rows with intentionally blank unverified values (IN-08 Kalshi §1256 character,
+  IN-13 trading hours as work), 62 distinct cited sources. No duplicate IDs; no row lost.
+
+- **Corrections carried over from this session's pass** (each logged against the official source):
+  FL-04 extended with the CMS fact sheet's own internal 13-vs-14 contradiction; CC-02 re-sourced to
+  Covered California's Federal Changes Quick Guide; CC-12's unverifiable "healthcare.gov publishes
+  updated 2027 income levels on November 1" claim removed (now FL-22, value blank).
+
+- **Site integration:** dashboard regenerated from the merged CSVs; this session's unique template
+  content re-applied (AB 2161 protections list, "you only need one qualifying month", 90-day cure,
+  the Covered California subsidy-loss consequence, gross-vs-net for the two income tests, the
+  enhanced-credit extension status table with the official Senate and House records, the FFM vs
+  California open-enrollment windows, the CSR variants and 250% FPL ceiling, the California mandate
+  penalty exemptions, and the 133%+5-point-disregard explanation of the 138% figure). New root page
+  `california-help.html` linked from the root nav and index card grid. `scripts/check_site.py`
+  allowlist extended (senate.gov, medicaid.gov, ftb.ca.gov, ldh.la.gov, kalshi.com,
+  hbex.coveredca.com, ca.gov, chhs.ca.gov, govinfo.gov, uscode.house.gov) on top of session
+  `da6d01ac`'s additions.
+
+- **Helper scripts added** (documented so future sessions do not re-invent them):
+  `scripts/resolve_csv_conflict.py` (union rebase/merge CSV conflicts by row id) and
+  `scripts/reapply_rows.py` (re-append one session's rows onto another session's table with an ID
+  shift to avoid collisions). Both are additive tooling and do not affect the built site.
+
+- **Validation:** `python3 scripts/build.py` (9 pages rebuilt), `python3 scripts/validate.py` PASS
+  (204 rows; 29 non-verified rows all surfaced on the Flagged page), `python3 scripts/check_site.py`
+  PASS (8 root pages; local links/fragments resolve; all data rows carry official HTTPS sources).
+
+- **Still blank + flagged (non-blocking, not inferred):** IN-08, IN-13, FL-15 (rent/interest/Kalshi
+  gains toward the $580 test), FL-19 (Nebraska early start), FL-22 (healthcare.gov 2027 income-level
+  note), FL-26 (origin of WIC 14005.69).
