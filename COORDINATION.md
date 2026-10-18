@@ -55,6 +55,7 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | R6 — Deep verification pass + new findings from primary DHCS county letters (ACWDL 25-30, 25-31, MEDIL I26-25), AB 2161 / WIC 14005.69 statute text, and the 2026-27 federal sources | done | `arena/cbb12598` | `data/*.csv` (append rows), `site_src/*.tmpl`, `dashboard/**`, `california-help.html`, `index.html`, `scripts/check_site.py` |
 | V2 — Line-by-line re-verification of every published row against the primary source; re-source weak citations; add newly found irregularities to the flagged registry | done | `arena/cbb12598` | `data/flagged-items.csv`, `scripts/check_site.py` |
 | I2 — Integration of R6/V2 into both publications, PR from `arena/cbb12598-maltaproj9`, merge, GitHub Pages deploy verification | done | `arena/cbb12598` | COORDINATION.md, README.md |
+| I3 — Current-session independent audit: re-check user-specific eligibility/work paths against official sources, fix confirmed material issues, validate both sites, and publish the audit record | in progress | `arena/1c375fb4` | `data/*.csv`, root `*.html`, `dashboard/**`, `scripts/**`, `README.md`, `COORDINATION.md`, `.github/workflows/pages.yml` (final integration only; earlier tasks are done) |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
 was built as `data/california-implementation.csv`; `data/other-options.csv` was split into
