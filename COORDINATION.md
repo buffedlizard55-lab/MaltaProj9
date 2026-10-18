@@ -455,3 +455,37 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   independently re-fetch key official sources and spot-check published rows; write findings to
   `reports/verification-c79aa57d.md`; log any confirmed errors in shared files as cross-session
   requests (no edits to active sessions' files); PR from this fixed branch, merge, confirm Pages.
+
+### V4 results — session `arena/c79aa57d` (2026-10-18 22:16–22:50 UTC)
+
+- Full audit record: `reports/verification-c79aa57d.md` (new file, this session's only output).
+- **Intake:** `main` = `e8d7e5c`; Pages build for `e8d7e5c` = **built**; `validate.py` PASS
+  (204 rows, 29 non-verified all on Flagged page); `check_site.py` PASS (9 root pages).
+- **Official sources re-fetched live and matched against published rows (10):** CMS
+  CMS-2454-IFC fact sheet; 42 CFR 435.552 (eCFR, current through 10/15/2026) incl. (f)(2)
+  MAGI-based monthly income and (g) seasonal averaging; DHCS Medi-Cal Changes page (work rules
+  Jan 1 2027, six-month checks Mar 1 2027, $15,560 copay figure, asset-limit change); DHCS 138%
+  FPL chart ($22,025/1); AB 2161 / WIC §14005.69 chaptered text (Ch. 209, approved 9/14/2026;
+  any-one-month rule (d)(2), MAGI test (e)(6), seasonal (e)(7), 30-day cure (k)); IRS Topic 429;
+  HealthCare.gov income/MAGI page; Covered California open-enrollment page (Nov 1–Jan 31);
+  Kalshi tax-documentation help page; Covered California July 21 2026 release (content
+  corroborated via the official newsroom listing + indexed text).
+- **Live site verified:** root index, `your-situation.html`, `dashboard/index.html`,
+  `dashboard/flagged-for-review.html` all serve current `main` content.
+- **Errors found: none.** The 2 intentionally blank values (IN-08 Kalshi §1256 character, IN-13
+  trading hours as work) remain unconfirmable from official sources and remain correctly blank
+  and flagged. No row corrections were needed, so no edits were made to files owned by the active
+  sessions. FL-04 (CMS self-contradiction on caretaker-child age), FL-05 ($580 wording hierarchy),
+  FL-07 ($15,560 copay figure) re-confirmed as still present on the live official pages.
+- **Cross-session request (non-blocking, for the owner of `data/covered-california.csv`):**
+  Covered California's deep press-release URL cited by CC-07/11/12/21 returned the site's 404 page
+  to this session's non-browser fetcher (twice), while the release is listed at that exact URL on
+  the official newsroom page (https://www.coveredca.com/press-releases) and the indexed full text
+  matches every published figure. Citation is canonical; request is only to add the newsroom URL
+  as a secondary link when that file is next edited. No edit made here (active claims
+  `arena/1c375fb4`, `arena/5711b968`).
+- **PR #11 assessment (logged, not touched):** `arena/690e8271`, open since 20:23 UTC, last commit
+  20:28 UTC (>60 min stale; takeover-eligible), additive third publication (`docs/`, `research/`,
+  `data/*.json`), CI SUCCESS, touches root `index.html`/`sources.html`/`README.md`/`COORDINATION.md`;
+  mergeable state UNKNOWN pending GitHub recompute. Resolution belongs to the final-integration
+  claim holder (`arena/1c375fb4` I3).
