@@ -40,7 +40,23 @@ Generated from `data/*.csv` (9 tables, **204 rows** — 177 rule/data rows, 175 
 
 As of that snapshot the dashboard holds **204 data rows** across 9 tables — **175 verified**, **2 rows with intentionally blank unverified values** (IN-08 Kalshi section 1256 character, IN-13 trading hours as work) — plus a **27-entry flagged registry** of official-source inconsistencies and unverifiable claims, and **62 distinct cited sources**. Sessions `arena/da6d01ac` and `arena/cbb12598` both ran independent verification passes; where their new rows collided on ID the conflict was resolved by renumbering one session's rows into the free range so **no row from either session was discarded** (see `COORDINATION.md`).
 
-Both sites cross-link to each other, and both follow the same verification standard: every
+## 3. Verification dashboard (`docs/`) — session `arena/690e8271` (integrated by `arena/5c4d1423`)
+
+- [Verification dashboard home](docs/index.html) — 73 registered official sources, pinpoint citations on every row
+- [Federal law](docs/federal.html) — verbatim 42 CFR §§ 435.551–435.557 text, P.L. 119-21 §71119, CMS-2454-IFC
+- [California](docs/california.html) — WIC § 14005.69 in both SB 164 and AB 2161 wordings, DHCS letters
+- [Income](docs/income.html) · [Options](docs/options.html) — Kalshi/rental/interest analysis, coverage pathways
+- [Flagged for Review](docs/flagged.html) — 23 items (F-01…F-23), incl. the 06/29/2026 Federal Register correction to CMS-2454-IFC
+- [Sources](docs/sources.html) — the 73-source register with retrieval notes
+
+Generated deterministically from `data/*.json` by `build_site.py`; CI verifies the committed
+output with `python3 build_site.py --check` (`.github/workflows/build-check.yml`). Research
+notes behind it live in `research/*.md`. This publication was built on a parallel session
+branch (PR #11); because that branch's tree had diverged from later-merged corrections, its
+additive content was integrated by session `arena/5c4d1423` without regressing `main`
+(see `COORDINATION.md`).
+
+All three sites cross-link to each other, and all follow the same verification standard: every
 factual table row links an official source (or is explicitly flagged); unknown or
 unresolvable values are left blank and published on a Flagged for Review page; no personal
 eligibility is inferred. Research snapshot: **2026-10-18**.
