@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources &amp; Methodology | California Healthcare Options</title>
+<meta name="description" content="Full source list for the healthcare options research: federal law, CMS rules, DHCS guidance, Covered California, IRS, FTB, and labeled secondary sources.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">MP9</div>
+      <div>
+        <h1>Healthcare Options for a California Resident with $0 Earned Income</h1>
+        <p>Source-verified research dashboard &middot; snapshot {{SNAPSHOT}}</p>
+      </div>
+    </div>
+    <p class="tagline">Every source cited in the data tables and page narratives, with type labels, and the methodology used to verify them.</p>
+  </div>
+</header>
+{{NAV}}
+<main id="main" class="wrap">
+  <div class="page-head">
+    <h2>Sources &amp; Methodology</h2>
+    <p class="lede">Research snapshot {{SNAPSHOT}}. Primary sources are official: federal law and rules (congress.gov, federalregister.gov, cms.gov, medicaid.gov, ecfr.gov), California state sources (dhcs.ca.gov, leginfo.legislature.ca.gov, gov.ca.gov, ftb.ca.gov, insurance.ca.gov), the state marketplace (coveredca.com, hbex.coveredca.com), federal benefit sites (healthcare.gov, medicare.gov, dol.gov, aspe.hhs.gov, irs.gov), and Kalshi's official help center for Kalshi-specific reporting practice. Trusted secondary sources (KFF, CRS-linked analyses, CHCF, Justice in Aging, Bipartisan Policy Center) are labeled as such and never used as the sole source for a table row.</p>
+  </div>
+
+  <section aria-labelledby="all-h">
+    <h3 id="all-h">All sources</h3>
+    {{SOURCE_LIST}}
+  </section>
+
+  <section aria-labelledby="method-h">
+    <h3 id="method-h">Methodology</h3>
+    <div class="panel">
+      <ol>
+        <li><strong>Single source of truth.</strong> Every table on this site is generated from CSV files in <code>data/</code>; each row carries an id, a status (<em>verified</em>, <em>flagged</em>, or <em>unverified</em>), a source name, and a source URL.</li>
+        <li><strong>Official-source rule.</strong> A row may be marked <em>verified</em> only if its source is official (.gov, Covered California, or Kalshi's official help center for Kalshi-specific practice). <code>scripts/validate.py</code> enforces this mechanically and fails the build otherwise.</li>
+        <li><strong>No inferred values.</strong> If a value could not be confirmed from an official source, the value is left blank, the row is marked <em>unverified</em>, and it appears on the <a href="flagged-for-review.html">Flagged for Review</a> page with an explanation. Personal eligibility is never determined or assumed.</li>
+        <li><strong>Irregularities are surfaced, not silently resolved.</strong> Where official sources phrase the same rule differently (effective dates, the caregiver exemption age, the $580 income standard), both phrasings are cited side by side and flagged.</li>
+        <li><strong>Dates are kept distinct.</strong> The snapshot date, each source's publication date, and future effective dates (January 1, 2027; March 1, 2027; October 1, 2028) are labeled separately everywhere they appear.</li>
+        <li><strong>Reproducibility.</strong> Rebuild with <code>python3 scripts/build.py</code>; the validator (<code>python3 scripts/validate.py</code>) re-checks sourcing, placeholders, and internal links every time.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="verify-h">
+    <h3 id="verify-h">Verification performed</h3>
+    <div class="panel blue">
+      <ul>
+        <li>Every data row was written against a document fetched or search-verified during this research session ({{SNAPSHOT}}); source links point to the exact pages used.</li>
+        <li>Key legal facts were cross-checked across at least two independent official sources where possible (e.g., the 80-hour standard and exemptions: CMS fact sheet + DHCS member materials + CRS; the $580 any-source standard: DHCS MEDIL + CMS + New York's official marketplace).</li>
+        <li>The build validator confirms: all verified rows carry official https source links; unverified rows have blank values; all pages build without placeholders; all internal links resolve; every non-verified row appears on the Flagged for Review page.</li>
+        <li>Known limitation: external URLs were verified at research time; the validator checks their format and domain, not live availability.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>MaltaProj9 &mdash; Healthcare Requirements Research</strong><br>
+        Research snapshot {{SNAPSHOT}}. Tables live in <code>data/*.csv</code>; rebuild with <code>python3 scripts/build.py</code>, check with <code>python3 scripts/validate.py</code>.
+      </div>
+      <div>
+        <a href="../index.html">Companion brief (site root)</a><br>
+        <a href="https://github.com/buffedlizard55-lab/MaltaProj9" target="_blank" rel="noopener">GitHub repository</a><br>
+        <a href="sources.html">All sources &amp; methodology</a> &middot; <a href="flagged-for-review.html">Flagged for review</a>
+      </div>
+    </div>
+    <p class="fine">Informational research only &mdash; not legal, tax, or medical advice, and not an eligibility determination. Rules change; verify current details with DHCS, your county Medi-Cal office, Covered California, CMS, and the IRS, and consult qualified professionals before acting.</p>
+  </div>
+</footer>
+</body>
+</html>

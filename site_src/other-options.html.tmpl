@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Other Options &amp; Safety Net | California Healthcare Options</title>
+<meta name="description" content="Other coverage options and safety nets: EMTALA emergency care, California hospital charity care, the short-term plan ban, COBRA, Medicare, and help resources.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">MP9</div>
+      <div>
+        <h1>Healthcare Options for a California Resident with $0 Earned Income</h1>
+        <p>Source-verified research dashboard &middot; snapshot {{SNAPSHOT}}</p>
+      </div>
+    </div>
+    <p class="tagline">Other pathways and safety nets: emergency care rights, hospital charity care, what California prohibits, and programs that apply by age or circumstance.</p>
+  </div>
+</header>
+{{NAV}}
+<main id="main" class="wrap">
+  <div class="page-head">
+    <h2>Other Options &amp; Safety Net</h2>
+    <p class="lede">These are secondary paths &mdash; backstops, or programs that apply only at 65+, with a disability, or after leaving a W-2 job. They are not substitutes for real coverage, but they matter in a gap year or a coverage transition.</p>
+  </div>
+
+  <section aria-labelledby="other-h">
+    <h3 id="other-h">Programs and protections</h3>
+    {{TABLE:other-programs.csv::Other coverage options and safety-net protections}}
+  </section>
+
+  <section aria-labelledby="notes-h">
+    <h3 id="notes-h">Good to know</h3>
+    <div class="panel">
+      <ul>
+        <li><strong>Emergency rooms cannot turn you away.</strong> EMTALA requires a medical screening exam and stabilizing treatment regardless of ability to pay &mdash; but it does not cover ongoing care, and bills can still follow you (see charity care below).</li>
+        <li><strong>Hospital charity care is a right at qualifying incomes.</strong> California law makes uninsured and high-medical-cost patients at or below 400% FPL eligible for a hospital's charity care or discount payment policy, and hospitals cannot consider your monetary assets when determining that eligibility.</li>
+        <li><strong>Short-term plans are not an option in California.</strong> State law has prohibited them since January 1, 2019, and federal rollbacks of short-term rules do not revive them here.</li>
+        <li><strong>Health care sharing ministries are not insurance.</strong> They can exempt you from California's penalty, but they do not guarantee payment and are not regulated as coverage.</li>
+        <li><strong>Medicare removes the work question entirely</strong> &mdash; people entitled to or enrolled in Medicare are not subject to the Medicaid community engagement requirement.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>MaltaProj9 &mdash; Healthcare Requirements Research</strong><br>
+        Research snapshot {{SNAPSHOT}}. Tables live in <code>data/*.csv</code>; rebuild with <code>python3 scripts/build.py</code>, check with <code>python3 scripts/validate.py</code>.
+      </div>
+      <div>
+        <a href="../index.html">Companion brief (site root)</a><br>
+        <a href="https://github.com/buffedlizard55-lab/MaltaProj9" target="_blank" rel="noopener">GitHub repository</a><br>
+        <a href="sources.html">All sources &amp; methodology</a> &middot; <a href="flagged-for-review.html">Flagged for review</a>
+      </div>
+    </div>
+    <p class="fine">Informational research only &mdash; not legal, tax, or medical advice, and not an eligibility determination. Rules change; verify current details with DHCS, your county Medi-Cal office, Covered California, CMS, and the IRS, and consult qualified professionals before acting.</p>
+  </div>
+</footer>
+</body>
+</html>

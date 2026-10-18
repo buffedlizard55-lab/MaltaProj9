@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medi-Cal | California Healthcare Options</title>
+<meta name="description" content="Medi-Cal eligibility for adults 19-64: 138% FPL income limits, MAGI rules, no asset test, no work requirement until 2027, and how to apply.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">MP9</div>
+      <div>
+        <h1>Healthcare Options for a California Resident with $0 Earned Income</h1>
+        <p>Source-verified research dashboard &middot; snapshot {{SNAPSHOT}}</p>
+      </div>
+    </div>
+    <p class="tagline">Medi-Cal (California Medicaid): eligibility rules, income limits, MAGI treatment of rental/interest/trading income, and what changes on January 1, 2027.</p>
+  </div>
+</header>
+{{NAV}}
+<main id="main" class="wrap">
+  <div class="page-head">
+    <h2>Medi-Cal</h2>
+    <p class="lede">Medi-Cal is California's Medicaid program. For adults 19&ndash;64, the relevant pathway is the ACA expansion (&ldquo;MAGI New Adult Group&rdquo;): household MAGI at or below 138% FPL, with no asset test and no premium &mdash; and, through December 31, 2026, no work requirement.</p>
+  </div>
+
+  <section aria-labelledby="elig-h">
+    <h3 id="elig-h">Eligibility rules</h3>
+    {{TABLE:medi-cal-eligibility.csv::Medi-Cal eligibility rules (MAGI New Adult Group)}}
+  </section>
+
+  <section aria-labelledby="income-h">
+    <h3 id="income-h">How your income is measured</h3>
+    <div class="panel blue">
+      <p>Medi-Cal uses <strong>MAGI</strong>: adjusted gross income from your Form 1040 plus untaxed foreign income, non-taxable Social Security benefits, and tax-exempt interest (SSI is excluded). For a trader/landlord with no wages, that means the counting unit is essentially:</p>
+      <p><strong>net rental income (Schedule E) + savings interest + net capital gains from trading (after loss offsets) + any other taxable income</strong>, for the whole tax household.</p>
+      <p>Rental losses and trading losses can push MAGI below the limit in bad years; gains can push it above. If Medi-Cal ends because income rose, the <a href="covered-california.html">Covered California</a> path takes over &mdash; the county or Covered California will evaluate both when you apply. Full details and sources: <a href="income-treatment.html">Income &amp; MAGI</a>.</p>
+    </div>
+    <div class="panel warn">
+      <p><strong>Illustration only &mdash; not an eligibility determination.</strong> A one-person household with $12,000 net rental income, $800 interest, and $6,000 net trading gains has MAGI of $18,800 &mdash; below the $22,025 limit (2026), so Medi-Cal would be the path; the same household with $15,000 of trading gains would be at $27,800 &mdash; above the limit, pointing to Covered California. Verify your own numbers with the county or <a href="https://www.coveredca.com/" target="_blank" rel="noopener">Covered California</a>.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="apply-h">
+    <h3 id="apply-h">How to apply</h3>
+    <div class="panel">
+      <p>Medi-Cal enrollment is open <strong>year-round</strong>. DHCS lists four ways to sign up:</p>
+      <ol>
+        <li><strong>Online:</strong> <a href="https://benefitscal.com/ApplyForBenefits/begin/ABOVR" target="_blank" rel="noopener">BenefitsCal</a> (apply with your county) or <a href="https://apply.coveredca.com/static/lw-web/account-creation/create" target="_blank" rel="noopener">Covered California</a> (also screens for Medi-Cal).</li>
+        <li><strong>By mail:</strong> single-stream application (downloadable in many languages from the DHCS apply page).</li>
+        <li><strong>By phone:</strong> call your county Medi-Cal office.</li>
+        <li><strong>In person:</strong> visit a county office &mdash; <a href="https://www.dhcs.ca.gov/medi-cal/contact/find-a-county-office/" target="_blank" rel="noopener">find your county office</a>.</li>
+      </ol>
+      <p class="kbd-note">Source: <a href="https://www.dhcs.ca.gov/medi-cal/apply/" target="_blank" rel="noopener">DHCS &mdash; Apply for Medi-Cal</a>.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="changes-h">
+    <h3 id="changes-h">What changes in 2027</h3>
+    <div class="panel warn">
+      <ul>
+        <li><strong>January 1, 2027:</strong> the federal work and community engagement rule takes effect for the expansion adult group &mdash; see <a href="work-requirements.html">Work Requirements</a> for the six ways to satisfy it with $0 earned income.</li>
+        <li><strong>January 1, 2027:</strong> retroactive coverage shrinks to one month for childless adults (two months for everyone else).</li>
+        <li><strong>March 1, 2027:</strong> renewals come every six months for the expansion group. Answer county mail, texts, and emails immediately &mdash; DHCS projects most coverage losses will come from missed paperwork.</li>
+        <li><strong>October 1, 2028:</strong> copayments for some adults (capped at 5% of household income; none for emergency care, checkups, pregnancy, pediatric, mental health, or community-clinic services).</li>
+      </ul>
+      <p class="kbd-note">Source: <a href="https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/" target="_blank" rel="noopener">DHCS &mdash; Medi-Cal Changes</a>.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="asset-h">
+    <h3 id="asset-h">What about your savings and property?</h3>
+    <div class="panel">
+      <p>MAGI-based Medi-Cal does <strong>not</strong> count what you own. DHCS applies asset limits only to non-MAGI groups (people 65+, people with disabilities, nursing home residents, and families over the MAGI income rules). Your savings account and rental property do not count against MAGI Medi-Cal eligibility &mdash; only the <em>income</em> they generate counts. (For reference: those non-MAGI asset limits are $130,000 for one person through June 30, 2027, then $21,000 from July 1, 2027, per DHCS.)</p>
+      <p class="kbd-note">Source: <a href="https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/" target="_blank" rel="noopener">DHCS &mdash; Medi-Cal Changes (asset limits section)</a>.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>MaltaProj9 &mdash; Healthcare Requirements Research</strong><br>
+        Research snapshot {{SNAPSHOT}}. Tables live in <code>data/*.csv</code>; rebuild with <code>python3 scripts/build.py</code>, check with <code>python3 scripts/validate.py</code>.
+      </div>
+      <div>
+        <a href="../index.html">Companion brief (site root)</a><br>
+        <a href="https://github.com/buffedlizard55-lab/MaltaProj9" target="_blank" rel="noopener">GitHub repository</a><br>
+        <a href="sources.html">All sources &amp; methodology</a> &middot; <a href="flagged-for-review.html">Flagged for review</a>
+      </div>
+    </div>
+    <p class="fine">Informational research only &mdash; not legal, tax, or medical advice, and not an eligibility determination. Rules change; verify current details with DHCS, your county Medi-Cal office, Covered California, CMS, and the IRS, and consult qualified professionals before acting.</p>
+  </div>
+</footer>
+</body>
+</html>

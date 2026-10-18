@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Income &amp; MAGI | California Healthcare Options</title>
+<meta name="description" content="How Kalshi trading gains, rental income, and savings interest are treated: earned vs unearned, MAGI counting, and the $580 work-rule income standard.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">MP9</div>
+      <div>
+        <h1>Healthcare Options for a California Resident with $0 Earned Income</h1>
+        <p>Source-verified research dashboard &middot; snapshot {{SNAPSHOT}}</p>
+      </div>
+    </div>
+    <p class="tagline">How Kalshi trading, rental income, and savings interest are taxed, counted toward MAGI, and treated under the new work requirement.</p>
+  </div>
+</header>
+{{NAV}}
+<main id="main" class="wrap">
+  <div class="page-head">
+    <h2>Income &amp; MAGI</h2>
+    <p class="lede">Three income streams, one measuring stick. For Medi-Cal and Covered California, everything is measured by household MAGI &mdash; and for the 2027 work rule, DHCS's materials allow income <em>from any source</em> to satisfy the $580 monthly standard. The federal tax character of your trading gains (section 1256 or otherwise) does not change either answer.</p>
+  </div>
+
+  <section aria-labelledby="streams-h">
+    <h3 id="streams-h">Your three income streams</h3>
+    {{TABLE:income-treatment.csv::Income treatment for MAGI, taxes, and the work requirement}}
+  </section>
+
+  <section aria-labelledby="magi-h">
+    <h3 id="magi-h">The MAGI math</h3>
+    <div class="panel blue">
+      <p><strong>MAGI = adjusted gross income + untaxed foreign income + non-taxable Social Security benefits + tax-exempt interest</strong> (SSI excluded). AGI already includes your taxable interest, net capital gains, and net rental income.</p>
+      <p>For your situation, the practical formula is:</p>
+      <p><code>MAGI &asymp; net rental income (Schedule E) + savings interest + net trading gains (after capital-loss offsets, up to $3,000 against other income) + any other taxable income</code></p>
+      <p>Consequences worth planning around:</p>
+      <ul>
+        <li>A big trading year can push MAGI over the Medi-Cal limit (138% FPL) or over the 400% FPL subsidy cliff &mdash; the marketplace would then be the path, possibly with no subsidy.</li>
+        <li>A loss year (rental losses limited by passive-activity rules; trading losses netted against gains) can drop MAGI back under the Medi-Cal limit.</li>
+        <li>Household means the tax household: you, a spouse if filing jointly, and tax dependents (with income of dependents who aren't required to file excluded).</li>
+        <li>From January 1, 2027, if you are in Medi-Cal's expansion group: monthly income &ge; $580 from any source satisfies the work rule for that month, per the DHCS outreach letter to members.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="kalshi-h">
+    <h3 id="kalshi-h">Kalshi specifics</h3>
+    <div class="panel warn">
+      <p><strong>What Kalshi itself reports (official company documentation):</strong> Kalshi is a CFTC-regulated Designated Contract Market. It issues <strong>1099-INT</strong> (interest payments), <strong>1099-MISC</strong> (credits/rewards), <strong>1099-B</strong> (proceeds from broker transactions involving crypto transfers), and <strong>1099-DA</strong> (digital-asset transactions through ZeroHash, computed FIFO), plus a monthly-updated Profit &amp; Loss statement. It does not issue a comprehensive 1099 covering event-contract trading profit and loss, and states its information is not tax advice.</p>
+      <p><strong>The open tax question (flagged):</strong> whether Kalshi event contracts qualify as <em>section 1256 contracts</em> (60% long-term / 40% short-term capital gain, year-end mark-to-market, Form 6781) has no IRS ruling either way; practitioners disagree and Kalshi takes no position. The Bipartisan Policy Center documented the uncertainty in August 2026. <strong>For healthcare eligibility this question does not matter</strong>: under any characterization, trading gains are unearned investment income that lands in AGI and therefore MAGI.</p>
+      <p><strong>Trading hours as &ldquo;work&rdquo; (flagged):</strong> official state Medicaid materials say self-employment counts as qualifying work, but none addresses whether hours spent trading your own account qualify. Verified no-earned-income alternatives: the $580 income standard, 80 hours/month of community service, or at least half-time school. Confirm with your county before relying on trading hours.</p>
+      <p class="kbd-note">Sources: <a href="https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide" target="_blank" rel="noopener">Kalshi Help Center &mdash; Tax Documentation</a>; <a href="https://www.irs.gov/pub/irs-access/f6781_accessible.pdf" target="_blank" rel="noopener">IRS Form 6781</a>; <a href="https://bipartisanpolicy.org/issue-brief/unpacking-tax-uncertainties-for-prediction-markets/" target="_blank" rel="noopener">Bipartisan Policy Center issue brief (secondary)</a>. See <a href="flagged-for-review.html">Flagged for Review</a>.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="rental-h">
+    <h3 id="rental-h">Rental income and the &ldquo;property manager&rdquo; question</h3>
+    <div class="panel">
+      <ul>
+        <li>Net rental income (rents minus expenses like mortgage interest, taxes, insurance, repairs, depreciation) is what lands in AGI and MAGI &mdash; not gross rents.</li>
+        <li>Rental real estate is generally a <strong>passive activity</strong>: losses are limited, though up to $25,000 of rental loss can offset other income if you actively participate (the allowance phases out at higher income), and qualifying <strong>real estate professionals</strong> are exempt from the passive limits.</li>
+        <li><strong>If you are paid fees to manage property for other people, that is self-employment income (earned income).</strong> Managing your own rentals is reported as rental income. With $0 earned income, this research assumes the self-managed case &mdash; if you collect management fees, your filings (and possibly your work-rule posture) change.</li>
+      </ul>
+      <p class="kbd-note">Source: <a href="https://www.irs.gov/publications/p527" target="_blank" rel="noopener">IRS Publication 527 &mdash; Residential Rental Property</a>.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>MaltaProj9 &mdash; Healthcare Requirements Research</strong><br>
+        Research snapshot {{SNAPSHOT}}. Tables live in <code>data/*.csv</code>; rebuild with <code>python3 scripts/build.py</code>, check with <code>python3 scripts/validate.py</code>.
+      </div>
+      <div>
+        <a href="../index.html">Companion brief (site root)</a><br>
+        <a href="https://github.com/buffedlizard55-lab/MaltaProj9" target="_blank" rel="noopener">GitHub repository</a><br>
+        <a href="sources.html">All sources &amp; methodology</a> &middot; <a href="flagged-for-review.html">Flagged for review</a>
+      </div>
+    </div>
+    <p class="fine">Informational research only &mdash; not legal, tax, or medical advice, and not an eligibility determination. Rules change; verify current details with DHCS, your county Medi-Cal office, Covered California, CMS, and the IRS, and consult qualified professionals before acting.</p>
+  </div>
+</footer>
+</body>
+</html>
