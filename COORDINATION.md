@@ -30,6 +30,8 @@
 
 - 2026-10-18 — `8a956ff3`: Read the initial repository and remote branch list. Only `main` existed remotely; working branch is clean. Existing Pages configuration serves `main` from `/` at <https://buffedlizard55-lab.github.io/MaltaProj9/>. Claimed the above scopes before starting substantive work. No concurrent claim or merge conflict found.
 
+- 2026-10-18 — `8a956ff3`: Recorded primary-source findings and research limitations in `research/RESEARCH.md`. Checked current eCFR income/activity provisions, DHCS September outreach and August renewal guidance, IRS income guidance, and final 2027 California subsidy design. Identified wording/timing conflicts and contract-specific unknowns for publication on Flagged for Review. One obsolete Covered California link returned a soft-404 and was excluded. No other session claim found in this checkout.
+
 ## Publication record
 
 - Pull request: pending.
