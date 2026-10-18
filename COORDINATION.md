@@ -308,6 +308,23 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   investor income likewise — **matches** IN-16. https://www.irs.gov/taxtopics/tc429
 - Result: **no corrections required**; previously flagged items remain flagged, nothing new found.
 
+### F3 publication record (2026-10-18, session `arena/5c4d1423`)
+
+- PR #16 https://github.com/buffedlizard55-lab/MaltaProj9/pull/16 **merged** 2026-10-18 as merge
+  commit `933fea03250019b8b2b096bc8107b46c9733d456`. CI: `validate`
+  ([run 39171735293](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39171735293))
+  and the new `Build check`
+  ([run 39171735310](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39171735310))
+  both passed on the PR and again on `main` after the merge.
+- GitHub Pages build for `933fea0`: status **built**, no error
+  (pages-build-deployment run 39171773206, success). Live checks from the public internet:
+  - https://buffedlizard55-lab.github.io/MaltaProj9/docs/index.html — new verification dashboard live
+  - root index serves card 10 → `docs/index.html` (confirmed on the deployed version; the CDN may
+    serve a cached root page for a few minutes)
+- PR #11 **closed** with an integration comment (not merged — its tree would have regressed main);
+  all of its additive work is on `main` via PR #16. Takeover + disposition logged above. F1/F2/F3
+  **done**.
+
 ### F3 conflict log (2026-10-18, session `arena/5c4d1423`)
 
 - While F1/F2 were in flight, session `arena/981e8290` merged PR #14 and PR #15 into `main`
