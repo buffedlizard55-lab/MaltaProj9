@@ -190,3 +190,15 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 - 2026-10-18 (af61680c) Re-verification: CMS fact sheet (Jun 1 2026), DHCS Medi-Cal Changes + FPL chart ($22,025/1, 138%), HealthCare.gov income page, Covered CA OE Nov 1 2026-Jan 31 2027 all re-fetched live and match site. Validators PASS both sites.
 - NEW FINDING: DHCS ACWDL 25-30 (preliminary, Dec 30 2025) qualifying-activities table defines $580 test as individual's total gross income, incl. unearned examples (dividends, retirement, SDI, unemployment), assessed individually. Updated data/income-treatment.csv IN-12 unverified->verified and data/flagged-items.csv FL-06 to flagged/partially-resolved; rebuilt dashboard (98/100 rule rows verified, 2 blanks remain: Kalshi s1256 character IN-08, trading-hours IN-13). Remaining unverified: gross-vs-net rent/Kalshi for $580 test, Kalshi tax character, trading hours as work, property-management of own property hours.
 - Cross-session request: root brief flagged.html still describes $580 whose-income as unresolved; dashboard now supersedes it via ACWDL 25-30. Root owner to update on next pass (non-blocking, dashboard flagged page is current).
+
+## Session log — `arena/193089a8` (final integration + independent line-by-line verification, 2026-10-18)
+
+- **Claim:** V2 — final integration, independent line-by-line re-verification of **both** publications
+  (root brief + `dashboard/`), correction of any claim not supported by its cited official source,
+  consolidation of the reader-facing site, PR + merge to `main`, and Pages deployment verification.
+- **File scope:** `COORDINATION.md`, `README.md`, `data/*.csv`, `dashboard/**`, root `*.html`,
+  `assets/**`, `scripts/**`, and any verification report pages. Prior sessions' research and logs
+  are preserved; no earlier work is discarded.
+- **Base:** `main` @ `d492d40` (includes session `arena/af61680c`'s 2026-10-18 re-verification).
+  `git pull --rebase` run before starting; no merge conflicts.
+- **Status:** in progress.
