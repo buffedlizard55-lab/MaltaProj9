@@ -391,3 +391,18 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   - https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/index.html (dashboard still live, 204 rows, 62 sources)
   - https://buffedlizard55-lab.github.io/MaltaProj9/flagged.html and /dashboard/flagged-for-review.html (27 flagged items published)
 - V3 marked **done** on task board. Both validators PASS; site cross-links preserved; no work discarded during merge (fast-forward from `f4ac51d` through `9e0dfc1`).
+
+## Session `arena/5711b968` — claim (2026-10-18)
+
+| Task | Status | Owning session | File scope |
+|---|---|---|---|
+| V3 — Independent line-by-line re-verification of every published row and page in both publications against official sources; add a direct "$0 earned income" compliance playbook for this fact pattern if the existing pages do not answer it explicitly; fix any error found; rebuild, validate, PR, merge, confirm Pages deploy | in progress | `arena/5711b968` | `COORDINATION.md`, `data/*.csv` (corrections/appends only), `site_src/*.tmpl`, `dashboard/**` (via `scripts/build.py`), root `*.html` (corrections only), `README.md` (counts only) |
+
+- Intake 2026-10-18: `main` = `f4ac51d` (shallow clone); both validators PASS locally at intake
+  (`scripts/validate.py`: 204 rows, 29 non-verified rows all on the Flagged page; `scripts/check_site.py`:
+  8 root pages). No other session's task is open on the board above — every listed task is `done`, so this
+  claim does not collide with an active claim. Working on the fixed Arena branch
+  `arena/5711b968-maltaproj9` as required by the environment; no other branch will be created or pushed.
+- Standard: every published row must link an official source (.gov or the primary regulated entity);
+  anything not confirmable stays blank and is flagged on the Flagged for Review page. No personal
+  eligibility determination, no inferred amounts, no inferred tax character.
