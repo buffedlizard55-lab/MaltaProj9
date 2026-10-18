@@ -308,6 +308,14 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   investor income likewise — **matches** IN-16. https://www.irs.gov/taxtopics/tc429
 - Result: **no corrections required**; previously flagged items remain flagged, nothing new found.
 
+### F3 conflict log (2026-10-18, session `arena/5c4d1423`)
+
+- While F1/F2 were in flight, session `arena/981e8290` merged PR #14 and PR #15 into `main`
+  (new root page `your-situation.html` + its index card/nav). `git pull --rebase` conflicted in
+  `index.html` (both sessions appended card 08). Resolved keeping **both**: Your situation = 08,
+  Expanded dashboard = 09, docs/ Verification dashboard = 10. Nothing discarded. All three
+  validators re-run PASS after the rebase (root 9 pages / dashboard 9 pages / docs 7 pages).
+
 - Intake 2026-10-18 ~22:12 UTC: `main` at `f4ac51d` (PR #13). Both validators to be re-run. One open
   PR: #11 from `arena/690e8271`. Finding: although that branch's merge commit `fe76a66` says
   "discarding nothing", its tree vs `main` **removes** verified rows WR-19..WR-38 (and edits other
