@@ -263,6 +263,22 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   gains toward the $580 test), FL-19 (Nebraska early start), FL-22 (healthcare.gov 2027 income-level
   note), FL-26 (origin of WIC 14005.69).
 
+## Session `arena/5c4d1423` — final sweep: PR #11 takeover + integration audit (claimed 2026-10-18 ~22:15 UTC)
+
+| Task | Status | Owning session | File scope |
+|---|---|---|---|
+| F1 — Takeover of stale PR #11 (session `arena/690e8271`, last commit 2026-10-18 20:28 UTC, >60 min inactive): integrate its additive work (`docs/**` site, `research/**`, `data/*.json`, `scripts/check_links.py`, workflows) WITHOUT regressing main's merged rows/templates/scripts | in progress | `arena/5c4d1423` | `docs/**`, `research/**`, `data/*.json`, `scripts/check_links.py`, `.github/workflows/build-check.yml`, `.github/workflows/link-check.yml`, root `*.html` (additive cross-links only), this file |
+| F2 — Independent re-verification sample of load-bearing claims vs live official sources (P.L. 119-21 §71119, 42 CFR 435.552, DHCS ACWDL 25-30 / Medi-Cal Changes, WIC 14005.69, Covered CA, IRS) | in progress | `arena/5c4d1423` | corrections only, logged here |
+| F3 — Final build/link verification, PR + merge, close PR #11 with integration note, Pages deploy check, publication record | in progress | `arena/5c4d1423` | COORDINATION.md, README.md |
+
+- Intake 2026-10-18 ~22:12 UTC: `main` at `f4ac51d` (PR #13). Both validators to be re-run. One open
+  PR: #11 from `arena/690e8271`. Finding: although that branch's merge commit `fe76a66` says
+  "discarding nothing", its tree vs `main` **removes** verified rows WR-19..WR-38 (and edits other
+  CSVs, deletes `scripts/reapply_rows.py` / `resolve_csv_conflict.py`, rolls back `site_src`
+  template content from sessions `da6d01ac`/`cbb12598`). Merging PR #11 as-is would regress main,
+  so it will not be merged directly; its additive work is integrated here instead and the takeover
+  is logged per the 60-minute rule. No other open claims exist — all board tasks above are done.
+
 ## Publication record — session `arena/cbb12598` (R6/V2/I2)
 
 - PR #9, https://github.com/buffedlizard55-lab/MaltaProj9/pull/9, **merged 2026-10-18T20:36:42Z**,
