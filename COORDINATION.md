@@ -51,6 +51,7 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | S1 — Site build (landing dashboard + category subpages) | done | `arena/0ef38cd8` | `dashboard/index.html`, `dashboard/executive-summary.html`, `dashboard/flagged-for-review.html`, `dashboard/sources.html`, `dashboard/assets/**`, `site_src/**`, `assets/style.css` |
 | V1 — Verification (every row sourced; unverified left blank + flagged; link check) | done | `arena/0ef38cd8` | `scripts/validate.py`, `data/**` |
 | I1 — Final integration, PR, merge, Pages deployment | done | `arena/0ef38cd8` | COORDINATION.md, README.md, GitHub PR/Pages config |
+| V2 — Independent post-publication audit and corrections | in progress | `arena/4696cfa4` | `COORDINATION.md`, `README.md`, all root and dashboard HTML, `data/**`, `scripts/**`, `site_src/**`, `assets/**`, `.github/workflows/pages.yml` (final integration scope; prior tasks are done) |
 | Research brief site at repo root (7 pages) + CI + first Pages deployment | done | `arena/63a8fb6e` | `index.html`, `eligibility.html`, `work-rules.html`, `income.html`, `options.html`, `flagged.html`, `sources.html`, `assets/site.css`, `scripts/check_site.py`, `.github/workflows/pages.yml` |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
@@ -88,6 +89,10 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   local HTTP smoke test 200 on root pages, dashboard pages, and both stylesheets.
 - Both sites cross-link: root index "Navigate the brief" grid links the dashboard; root sources
   page links the dashboard's source register; every dashboard footer links back to the root brief.
+
+## Session log — `arena/4696cfa4`
+
+- 2026-10-18 — Read this board before starting. All prior research/build/integration tasks are marked done; claimed the new independent post-publication audit and correction task above. Scope includes the combined brief and dashboard because the prior integration task is complete. Claim is committed and pushed before substantive audit work begins. Verification standard: check each published factual/table claim against its cited official source, preserve blank/unverified values, record every discrepancy, run both site validators, and confirm Pages publication/deployment status.
 
 ## Session log — `arena/0ef38cd8` (this file's original board)
 
