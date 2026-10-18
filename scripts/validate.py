@@ -24,6 +24,10 @@ PAGES = ["index.html", "executive-summary.html", "work-requirements.html", "medi
          "covered-california.html", "income-treatment.html", "other-options.html",
          "flagged-for-review.html", "sources.html"]
 
+# A repository-audit flag cites this project's own repository, not a government source.
+# It is the only row permitted to link a non-official host, and it asserts no health fact.
+REPO_AUDIT_ROWS = {("flagged-items.csv", "FL-09")}
+
 OFFICIAL_HOSTS = ("coveredca.com", "hbex.coveredca.com", "help.kalshi.com", "kalshi.com")
 
 
@@ -66,6 +70,12 @@ def main():
                     errors.append("%s %s: VERIFIED row has blank value" % (name, rid))
             else:
                 nonverified_total += 1
+                # Every row, including blank-value and flagged rows, must carry an
+                # official source link so a reader can check the negative result too.
+                if not url:
+                    errors.append("%s %s: non-verified row missing source_url" % (name, rid))
+                elif not is_official(url) and (name, rid) not in REPO_AUDIT_ROWS:
+                    errors.append("%s %s: non-verified row source not official: %s" % (name, rid, url))
                 if status == "unverified" and value:
                     errors.append("%s %s: unverified row must leave value blank (found %r)"
                                   % (name, rid, value[:60]))

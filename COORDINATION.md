@@ -391,3 +391,37 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   - https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/index.html (dashboard still live, 204 rows, 62 sources)
   - https://buffedlizard55-lab.github.io/MaltaProj9/flagged.html and /dashboard/flagged-for-review.html (27 flagged items published)
 - V3 marked **done** on task board. Both validators PASS; site cross-links preserved; no work discarded during merge (fast-forward from `f4ac51d` through `9e0dfc1`).
+
+## Session `arena/5711b968` — claim (2026-10-18)
+
+| Task | Status | Owning session | File scope |
+|---|---|---|---|
+| V3 — Independent line-by-line re-verification of every published row and page in both publications against official sources; add a direct "$0 earned income" compliance playbook for this fact pattern if the existing pages do not answer it explicitly; fix any error found; rebuild, validate, PR, merge, confirm Pages deploy | in progress | `arena/5711b968` | `COORDINATION.md`, `data/*.csv` (corrections/appends only), `site_src/*.tmpl`, `dashboard/**` (via `scripts/build.py`), root `*.html` (corrections only), `README.md` (counts only) |
+
+- Intake 2026-10-18: `main` = `f4ac51d` (shallow clone); both validators PASS locally at intake
+  (`scripts/validate.py`: 204 rows, 29 non-verified rows all on the Flagged page; `scripts/check_site.py`:
+  8 root pages). No other session's task is open on the board above — every listed task is `done`, so this
+  claim does not collide with an active claim. Working on the fixed Arena branch
+  `arena/5711b968-maltaproj9` as required by the environment; no other branch will be created or pushed.
+- Standard: every published row must link an official source (.gov or the primary regulated entity);
+  anything not confirmable stays blank and is flagged on the Flagged for Review page. No personal
+  eligibility determination, no inferred amounts, no inferred tax character.
+
+### V3 progress log — 2026-10-18 (verification findings applied)
+
+- **Resolved from primary sources (no inference):**
+  - **FL-26 / CA-31** — Welf. & Inst. Code §14005.69 was **added by SB 164 (Ch. 27, Stats. 2026, Sec. 75)**, effective June 29, 2026, and **amended by AB 2161 (Ch. 209, Stats. 2026)**. Authority: the Leginfo history note `"Added by Stats. 2026, Ch. 27, Sec. 75. (SB 164) Effective June 29, 2026. Conditionally operative."` Earlier pages attributed the section's addition to AB 2161; corrected on every page and in the two tables that carried the attribution.
+  - **FL-17** — the $580 route is measured by **MAGI-based income** (42 CFR 435.552(e)(6), (f); 42 CFR 435.603), which includes net rental income, interest, and net capital gains. So **$0 earned income is not a bar**. Only the county's month-by-month documentation method for trading P&L remains open. Value changed from blank-unverified to the verified finding, retained in the flagged registry with the resolution recorded.
+  - **CA-26** — the $35 per-service maximum is now sourced to the **CMS CMCS Informational Bulletin of 2025-11-18** (`cib11182025.pdf`), which quotes §71120 and states "cannot exceed $35 for any care, item, or service" and the 5% family cap. The previously cited DHCS document does not state the $35 figure.
+  - **MC-19** — added the citizen vs. lawful-permanent-resident rule from the DHCS immigration-status table, because the request says "citizen / permanent resident": citizens keep full Medi-Cal with no premium; LPRs inside the five-year wait move to fee-for-service in January 2027, with a later July 2027 premium step for ages 21–59 who are not pregnant.
+- **New irregularities published (not resolved, not inferred):** **FL-28** (subdivision letters in the brief did not match the code display — all root pins collapsed to section level except (d) and (e)(4), which match) and **FL-29** (the consolidated display's history note shows only the SB 164 addition; it may lag the AB 2161 amendments). The root `california-help.html` "conflicting data" and "notice formats" rows were downgraded to "not verified" / agency-commitment only, and the unverified "fiscal-impact deferral" clause was dropped from the regulations row.
+- **Sourcing standard tightened:** every row in `data/*.csv`, including blank-value and flagged rows, must now carry an official HTTPS `source_url`; the only exception is FL-09, which cites this repository for a repository-audit finding. The three rows that had no URL (FL-19, FL-22, IN-13) now link the official document that was checked and state the negative result explicitly.
+- **Counts after this pass:** 9 tables, **208 data rows** — **179 rule/data rows (177 verified, 2 intentionally blank: IN-08, IN-13)** plus a **29-row flagged registry**; **64 cited sources**. `scripts/validate.py` PASS (208 rows, 31 non-verified rows all surfaced on the Flagged page), `scripts/check_site.py` PASS (8 root pages). README, root `sources.html` and the dashboard intro were updated to these counts.
+
+### V3 correction — 2026-10-18 (after reading the AB 2161 chaptered text in full)
+
+- The entry above described the §14005.69 subdivision mismatch as unresolved (FL-28/FL-29). That was **wrong, and is corrected here**: Leginfo's consolidated display is showing the **SB 164** wording (subdivisions through (n)), while **AB 2161 (Ch. 209, Stats. 2026) is the operative amending act** (subdivisions through (r)). Reading the chaptered bill (chunks 1–3) confirmed every letter:
+  - (a) least-administratively-burdensome intent; (b)(1) applicable individual; (b)(2)(A)–(N) specified excluded individuals, including (E) caregiver of a dependent child 13 or younger or a disabled individual and (F) caregiver of an individual with a chronic condition; (c)(1)–(2) data-first verification; (d)(1)–(2) demonstration months; (e)(1)–(7) activities, including (e)(6) MAGI-based income and (e)(7) seasonal averaging; (f)(1)–(5) deemed compliance; (g)–(h)(1)–(4) short-term hardship; **(i) data-conflict confirmation duty**; (j) verification processes; **(k)(1)(A)–(E) notice of noncompliance, 30 calendar days from receipt, continued coverage, other-basis check and fair hearing**; (k)(2) five-day deemed receipt and good cause; (l)(1)–(2) notice delivery formats; (m)(1)–(9) notice content; (n) consider all other bases; (o)(1)–(2) letters then regulations by July 1, 2029; (p) sunset tied to 42 U.S.C. 1396a(xx); (q)(1)–(2) systems certification and federal approvals/FFP; (r) fiscal-impact deferral.
+  - Consequence: **FL-29 was deleted as a duplicate**, **FL-28 was rewritten** as "the code display shows the SB 164 text, not the AB 2161 amendments", and statutory citations on the root pages were restored to precise AB 2161 subdivisions instead of section level. The root brief's original table had been right about (k) and (k)(1)(E)/(n) and wrong about intercounty transfer (not in the statute; DHCS ACWDL 25-30 only) and conflicting data (it is (i), not (m)).
+- **Counts after the correction:** 9 tables, **207 data rows** — 179 rule/data rows (177 verified, 2 intentionally blank: IN-08, IN-13) plus a **28-row flagged registry**; **65 cited sources**. `scripts/validate.py` PASS (207 rows, 30 non-verified rows all on the Flagged page), `scripts/check_site.py` PASS (9 root pages). README and the root sources page updated.
+- Lesson for later sessions: on leginfo, **read the chaptered bill text before trusting the consolidated code display**, and request every chunk before concluding a subdivision does not exist.
