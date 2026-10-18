@@ -509,7 +509,7 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 
 ## Publication record — session `arena/c79aa57d` (V4)
 
-- PR #21, https://github.com/buffedlizard55-lab/MaltaProj9/pull/21, **merged 2026-10-18T22:32:46Z**,
+- PR #21, https://github.com/buffedlizard55-lab/MaltaProj9/pull/21, **merged 2026-10-18T22:33:18Z**,
   merge commit `8a61b7d`. Opened after rebasing onto `main` = `794415e`; the only conflict was in
   this file (additive: V3 claim/log vs. this session's log) and was resolved keeping **both** — no
   session's work discarded. Branch was force-with-lease updated twice (own branch only) after
