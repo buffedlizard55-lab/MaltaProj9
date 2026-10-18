@@ -261,3 +261,24 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 - **Still blank + flagged (non-blocking, not inferred):** IN-08, IN-13, FL-15 (rent/interest/Kalshi
   gains toward the $580 test), FL-19 (Nebraska early start), FL-22 (healthcare.gov 2027 income-level
   note), FL-26 (origin of WIC 14005.69).
+
+## Publication record — session `arena/cbb12598` (R6/V2/I2)
+
+- PR #9, https://github.com/buffedlizard55-lab/MaltaProj9/pull/9, **merged 2026-10-18T20:36:42Z**,
+  merge commit `e29c7b1`. CI `validate` passed
+  ([run 39164022164](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39164022164)).
+  GitHub Pages build for `e29c7b1` status **built**. Live checks after deployment confirmed the new
+  root page and the merged dashboard content:
+  - https://buffedlizard55-lab.github.io/MaltaProj9/california-help.html (new page, live)
+  - https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/index.html (27 flagged items; 177 rows)
+  - https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/flagged-for-review.html
+- Rebase onto PR #8/#10 conflicted only in `COORDINATION.md` and in the CSV row-ID space; resolved
+  by keeping every session's rows and renumbering this session's colliding rows into the free range
+  (no content discarded), as logged above.
+- Follow-up PR #12, https://github.com/buffedlizard55-lab/MaltaProj9/pull/12, **merged
+  2026-10-18T20:39:11Z**, merge commit `916d63f1`: corrected two hardcoded stale row counts (120 →
+  177) in the dashboard intro and the root sources page. CI passed
+  ([run 39164238298](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39164238298));
+  Pages build for `916d63f1` status **built**.
+- R6, V2 and I2 are marked **done** on the task board above. Both publications remain live and both
+  validators PASS.
