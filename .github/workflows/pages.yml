@@ -1,4 +1,4 @@
-name: Publish static research site
+name: Validate healthcare research site
 
 on:
   push:
@@ -9,12 +9,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: github-pages
-  cancel-in-progress: true
 
 jobs:
   validate:
@@ -24,31 +18,3 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate site links and sourced tables
         run: python3 scripts/check_site.py
-
-  deploy:
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-    needs: validate
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Upload static site artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: |
-            index.html
-            eligibility.html
-            work-rules.html
-            income.html
-            options.html
-            flagged.html
-            sources.html
-            assets/site.css
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

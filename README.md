@@ -12,7 +12,7 @@ A source-linked, static dashboard explaining California Medi-Cal and Covered Cal
 - [Flagged for Review](flagged.html)
 - [Sources and repository audit](sources.html)
 
-The site is plain HTML and CSS with no build dependencies. GitHub Pages deployment is configured through `.github/workflows/pages.yml`.
+The site is plain HTML and CSS with no build dependencies. The repository already has GitHub Pages configured to publish from `main` at the repository root; the site will publish there when merged. `.github/workflows/pages.yml` runs the dependency-free link/source-table validation.
 
 ## Research and limitations
 
