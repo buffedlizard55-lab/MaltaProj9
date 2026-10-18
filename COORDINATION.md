@@ -267,9 +267,46 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 
 | Task | Status | Owning session | File scope |
 |---|---|---|---|
-| F1 — Takeover of stale PR #11 (session `arena/690e8271`, last commit 2026-10-18 20:28 UTC, >60 min inactive): integrate its additive work (`docs/**` site, `research/**`, `data/*.json`, `scripts/check_links.py`, workflows) WITHOUT regressing main's merged rows/templates/scripts | in progress | `arena/5c4d1423` | `docs/**`, `research/**`, `data/*.json`, `scripts/check_links.py`, `.github/workflows/build-check.yml`, `.github/workflows/link-check.yml`, root `*.html` (additive cross-links only), this file |
-| F2 — Independent re-verification sample of load-bearing claims vs live official sources (P.L. 119-21 §71119, 42 CFR 435.552, DHCS ACWDL 25-30 / Medi-Cal Changes, WIC 14005.69, Covered CA, IRS) | in progress | `arena/5c4d1423` | corrections only, logged here |
-| F3 — Final build/link verification, PR + merge, close PR #11 with integration note, Pages deploy check, publication record | in progress | `arena/5c4d1423` | COORDINATION.md, README.md |
+| F1 — Takeover of stale PR #11 (session `arena/690e8271`, last commit 2026-10-18 20:28 UTC, >60 min inactive): integrate its additive work (`docs/**` site, `research/**`, `data/*.json`, `scripts/check_links.py`, workflows) WITHOUT regressing main's merged rows/templates/scripts | done | `arena/5c4d1423` | `docs/**`, `research/**`, `data/*.json`, `build_site.py`, `scripts/check_links.py`, `.github/workflows/build-check.yml`, `.github/workflows/link-check.yml`, `.gitignore`, root `index.html`/`sources.html` (additive cross-links only), README.md, this file |
+| F2 — Independent re-verification sample of load-bearing claims vs live official sources (42 CFR 435.552, DHCS Medi-Cal Changes, Covered CA open enrollment, IRS Topic 429) | done | `arena/5c4d1423` | corrections only, logged here (none needed) |
+| F3 — Final build/link verification, PR + merge, close PR #11 with integration note, Pages deploy check, publication record | done | `arena/5c4d1423` | COORDINATION.md, README.md |
+
+### F1 integration log (2026-10-18, session `arena/5c4d1423`)
+
+- PR #11's branch tree vs `main` was audited file by file. **Taken (additive):** `docs/**`
+  (7-page verification dashboard, internal links verified locally), `research/*.md` (6 research
+  notes), `data/*.json` (6 machine-readable tables incl. the 73-entry source register and 23-item
+  F-01..F-23 flagged registry), `build_site.py`, `scripts/check_links.py`, `.gitignore`,
+  `.github/workflows/build-check.yml` (offline, blocking) and `link-check.yml` (scheduled,
+  non-blocking). **Rejected (would regress main):** deletion of verified rows WR-19..WR-38,
+  edits to `data/*.csv`/`site_src/*.tmpl` rolling back sessions `da6d01ac`/`cbb12598`, deletion of
+  `scripts/reapply_rows.py`/`resolve_csv_conflict.py`, the `-5`-line rollback of
+  `scripts/check_site.py`, removal of the `california-help.html` nav link, and the stale
+  120-row counts (fixed on main by PR #12). The branch's root cross-link card and sources article
+  were **hand-ported** onto main's current root pages instead, and verified against
+  `data/flagged.json` / `data/sources.json` (23 items, 73 sources — counts confirmed).
+- `build_site.py` changes by this session: cross-publication footer links (docs → root brief +
+  dashboard) and `--check` now resolves `../` links against the repo root (it builds into a temp
+  dir, so cross-publication links previously could not verify). `python3 build_site.py --check`
+  passes; committed `docs/` output matches a fresh rebuild.
+
+### F2 verification log (2026-10-18, live fetches by session `arena/5c4d1423`)
+
+- 42 CFR 435.552 (eCFR, live): (a)(1)-(7) activity list, (b) work/community-service/work-program/
+  educational-program definitions, (e)(2) income-to-hours option, **(f)(2) MAGI-based monthly
+  income** for the $580 test, (g) seasonal-worker-only 6-month averaging — all **match** the
+  published rows verbatim. https://www.ecfr.gov/current/title-42/part-435/section-435.552
+- DHCS Medi-Cal Changes (live): work rules start Jan 1 2027; $580/month; seasonal $580 average;
+  80 hrs training/volunteering; half-time school; combination; exemption list (incl. parents/
+  caregivers of children 0-13); six-month checks start March 1 2027; copays Oct 1 2028 above
+  $15,560/yr — **match**, including the still-unexplained $15,560 figure (FL-07 stays flagged)
+  and the "Work at a job and earn" phrasing (FL-05/06 stay flagged).
+  https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/
+- Covered California open enrollment (live): "Nov. 1 to Jan. 31" — **matches** CC rows.
+  https://www.coveredca.com/enrollment/open-enrollment
+- IRS Topic 429 (live): trader-in-securities gains "aren't subject to self-employment tax";
+  investor income likewise — **matches** IN-16. https://www.irs.gov/taxtopics/tc429
+- Result: **no corrections required**; previously flagged items remain flagged, nothing new found.
 
 - Intake 2026-10-18 ~22:12 UTC: `main` at `f4ac51d` (PR #13). Both validators to be re-run. One open
   PR: #11 from `arena/690e8271`. Finding: although that branch's merge commit `fe76a66` says
