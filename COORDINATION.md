@@ -489,3 +489,15 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   `data/*.json`), CI SUCCESS, touches root `index.html`/`sources.html`/`README.md`/`COORDINATION.md`;
   mergeable state UNKNOWN pending GitHub recompute. Resolution belongs to the final-integration
   claim holder (`arena/1c375fb4` I3).
+- **Rebase re-verification (main advanced while this session ran):** `main` moved `e8d7e5c` →
+  `1c7b7e4` (PR #17, `docs/` publication) → `794415e` (PRs #18–#20, session `arena/5711b968`
+  AB 2161 corrections). This branch was rebased twice; the only conflict was `COORDINATION.md`
+  (additive: the V3 claim/log vs. this session's log) and was resolved keeping **both**, nothing
+  discarded. After the final rebase both validators re-run — **PASS** with the merged data:
+  **9 tables / 207 rows** (179 rule rows: 177 verified + 2 intentionally blank; **28-row** flagged
+  registry; **65 cited sources**). PRs #17–#20 touched no data CSV, dashboard HTML, or `site_src`
+  template, so the §2 spot-checks remain valid against the final tree. Re-checked the live
+  `california-help.html` (cache-busted) after the V3 deploy: the WIC §14005.69(i) conflicting-data
+  duty, (b)(2)(A)–(N) exclusion list and (o)–(r) implementation clauses are live and match the
+  chaptered text; the earlier non-cache-busted fetch had served a stale pre-`794415e` CDN copy
+  (observation only, not a site error).
