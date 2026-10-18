@@ -83,6 +83,95 @@ def esc(text: str) -> str:
     return out
 
 
+SHORT_LABELS = [
+    (
+        "California Department of Health Care Services, Medi-Cal Eligibility Division",
+        "DHCS/MCED",
+    ),
+    ("California Department of Health Care Services", "DHCS"),
+    ("U.S. Government Publishing Office / eCFR", "eCFR"),
+    ("U.S. Government Publishing Office (govinfo.gov)", "govinfo"),
+    ("U.S. Government Publishing Office (official U.S. Code)", "U.S. Code"),
+    ("CMS Center for Medicaid and CHIP Services", "CMS/CMCS"),
+    ("Centers for Medicare & Medicaid Services", "CMS"),
+    ("Covered California (California Health Benefit Exchange)", "Covered CA"),
+    ("Covered California", "Covered CA"),
+    ("California Legislative Information", "CA LegInfo"),
+    ("California Employment Development Department", "EDD"),
+    ("California Franchise Tax Board", "FTB"),
+    ("California Health and Human Services Agency", "CalHHS"),
+    ("HHS Office of the Assistant Secretary for Planning and Evaluation", "HHS ASPE"),
+    ("Office of the Federal Register", "Fed. Reg."),
+    ("Internal Revenue Service", "IRS"),
+    ("HealthCare.gov (CMS)", "HealthCare.gov"),
+    ("Kalshi (platform official help centre)", "Kalshi"),
+    ("Kalshi", "Kalshi"),
+    ("U.S. Department of Labor, Wage and Hour Division", "DOL"),
+    ("U.S. Congress (congress.gov)", "congress.gov"),
+    ("Congressional Research Service (via congress.gov)", "CRS"),
+    ("State of California — BenefitsCal", "BenefitsCal"),
+    ("State of California — CalJOBS", "CalJOBS"),
+    ("CMS / medicaid.gov", "medicaid.gov"),
+]
+
+# Patterns that turn a generic publisher label into a pinpoint citation, so a
+# reviewer can see *which* provision a chip points at without hovering.
+CITE_PATTERNS = [
+    r"\b(\d+\s+CFR\s+§?\s*[\d.]+(?:\([a-z0-9)(]+\))?)",
+    r"\b(\d+\s+U\.S\.C\.\s+§?\s*[\w().\-]+)",
+    r"\b(\d+\s+FR\s+\d+)",
+    r"\b(ACWDL\s*[\d\-]+)",
+    r"\b(MEDIL\s*I?\s*[\d\-]+)",
+    r"\b(AB[- ]?\d{3,4})\b",
+    r"\b(SB\s*\d{2,4})\b",
+    r"\b(WIC\s*§?\s*[\d.]+)",
+    r"\b(Topic\s+No\.\s*\d+)",
+    r"\b(Publication\s+\d+)",
+    r"\b(Pub\.\s*\d+)",
+    r"\b(Form\s+FTB\s+\d+)",
+    r"\b(FTB\s+\d+)",
+    r"\b(Rev\.\s*Proc\.[\d\-\s]+)",
+    r"\b(R\d{5})\b",
+    r"\b(Welfare and Institutions Code\s*§?\s*[\d.]+)",
+    r"\b(Section\s+71\d{3})\b",
+    r"\b(§\s?1902\(xx\)[\w()]*)",
+    r"\b(§\s?\d+[\w.]*)",
+]
+
+# Publisher labels that are already specific enough to stand alone.
+SELF_SUFFICIENT = {"Kalshi", "BenefitsCal", "CalJOBS"}
+
+def title_fragment(title: str) -> str:
+    """First meaningful segment of a source title, for use as a chip label."""
+    head = re.split(r"\s+—\s+|\s+-\s+|\s+\(.*?\)$", title.strip())[0]
+    head = head.replace("Welfare and Institutions Code", "WIC")
+    head = head.replace("California ", "").replace("U.S. ", "")
+    head = re.sub(r"\s+", " ", head).strip(" .,;:")
+    return head if len(head) <= 40 else head[:39].rstrip() + "\u2026"
+
+
+def attr(text: str) -> str:
+    """Escape for use inside a double-quoted HTML attribute."""
+    return html.escape(str(text), quote=True)
+
+
+def short_publisher(publisher: str) -> str:
+    for needle, repl in SHORT_LABELS:
+        publisher = publisher.replace(needle, repl)
+    return publisher.strip()
+
+
+def pinpoint(title: str) -> str:
+    for pat in CITE_PATTERNS:
+        m = re.search(pat, title)
+        if m:
+            cite = re.sub(r"\s+", " ", m.group(1)).strip()
+            cite = cite.replace("CFR § ", "CFR ").replace("U.S.C. § ", "U.S.C. ")
+            cite = cite.replace("Welfare and Institutions Code", "WIC")
+            return cite
+    return ""
+
+
 def source_chips(ids) -> str:
     """Render the per-row source links. This is the core verification control."""
     if not ids:
@@ -100,47 +189,34 @@ def source_chips(ids) -> str:
             )
             continue
         USED_SOURCE_IDS.add(sid)
-        short = src["publisher"]
-        short = short.replace("California Department of Health Care Services", "DHCS")
-        short = short.replace("U.S. Government Publishing Office / eCFR", "eCFR")
-        short = short.replace("U.S. Government Publishing Office (govinfo.gov)", "govinfo")
-        short = short.replace(
-            "U.S. Government Publishing Office (official U.S. Code)", "U.S. Code"
-        )
-        short = short.replace("Centers for Medicare &amp; Medicaid Services", "CMS")
-        short = short.replace("Centers for Medicare & Medicaid Services", "CMS")
-        short = short.replace(
-            "CMS Center for Medicaid and CHIP Services", "CMS / CMCS"
-        )
-        short = short.replace("Covered California (California Health Benefit Exchange)", "Covered CA")
-        short = short.replace("Covered California", "Covered CA")
-        short = short.replace("California Legislative Information", "CA LegInfo")
-        short = short.replace("California Employment Development Department", "EDD")
-        short = short.replace("California Franchise Tax Board", "FTB")
-        short = short.replace("California Health and Human Services Agency", "CalHHS")
-        short = short.replace(
-            "HHS Office of the Assistant Secretary for Planning and Evaluation", "HHS ASPE"
-        )
-        short = short.replace("Office of the Federal Register", "Federal Register")
-        short = short.replace("Internal Revenue Service", "IRS")
-        short = short.replace("HealthCare.gov (CMS)", "HealthCare.gov")
-        short = short.replace(
-            "Kalshi (platform official help centre)", "Kalshi Help Center"
-        )
-        short = short.replace("U.S. Department of Labor, Wage and Hour Division", "DOL WHD")
-        short = short.replace("U.S. Congress (congress.gov)", "congress.gov")
-        short = short.replace(
-            "Congressional Research Service (via congress.gov)", "CRS"
-        )
-        short = short.replace("State of California — BenefitsCal", "BenefitsCal")
-        short = short.replace("State of California — CalJOBS", "CalJOBS")
-        short = short.replace("CMS / medicaid.gov", "medicaid.gov")
-        short = short.replace("eCFR", "eCFR")
+        pub = short_publisher(src["publisher"])
+        cite = pinpoint(src["title"])
+        if not cite and pub not in SELF_SUFFICIENT:
+            frag = title_fragment(src["title"])
+            # drop leading tokens that merely repeat the publisher label
+            while True:
+                parts = frag.split(" ", 1)
+                if len(parts) < 2:
+                    break
+                head = parts[0].strip(" .,;:").lower()
+                if head and any(
+                    head == tok.strip(" .,;:/").lower()
+                    for tok in re.split(r"[\s/·]+", pub.lower())
+                ):
+                    frag = parts[1]
+                else:
+                    break
+            if frag and frag.lower() != pub.lower():
+                cite = frag
+        label = f"{pub} · {cite}" if cite else pub
         chips.append(
-            f'<a class="chip" href="{esc(src["url"])}" target="_blank" '
-            f'rel="noopener noreferrer" title="{esc(src["title"])}">{esc(short)}</a>'
+            f'<a class="chip" href="{attr(src["url"])}" target="_blank" '
+            f'rel="noopener noreferrer" '
+            f'title="{attr(src["title"] + " — " + src["publisher"])}">'
+            f"{esc(label)}</a>"
         )
     return "".join(chips)
+
 
 
 def render_table(section: dict, page_key: str) -> str:
@@ -278,7 +354,7 @@ def render_index() -> str:
         src = SOURCES[sid]
         USED_SOURCE_IDS.add(sid)
         cards.append(
-            f"""<a class="kpi" href="{esc(src['url'])}" target="_blank" rel="noopener noreferrer">
+            f"""<a class="kpi" href="{attr(src['url'])}" target="_blank" rel="noopener noreferrer">
       <span class="kpiv">{esc(big)}</span>
       <span class="kpil">{esc(label)}</span>
       <span class="kpin">{esc(note)}</span>
@@ -413,7 +489,7 @@ def render_sources() -> str:
       <td>{esc(s['title'])}</td>
       <td>{esc(s['type'])}</td>
       <td>{esc(s.get('note') or '—')}</td>
-      <td class="src"><a class="chip" href="{esc(s['url'])}" target="_blank" rel="noopener noreferrer">open ↗</a></td>
+      <td class="src"><a class="chip" href="{attr(s['url'])}" target="_blank" rel="noopener noreferrer">open ↗</a></td>
       <td>{badge}</td>
     </tr>"""
         )
