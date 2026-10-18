@@ -1,115 +1,94 @@
-# MaltaProj9 — Medicaid / Medi-Cal Work Requirement Research Dashboard
+# MaltaProj9 — California healthcare eligibility research
 
-A verified research dashboard on the new federal Medicaid **"community engagement"**
-(work) requirement, with a specific focus on **California** and on the situation of a
-California resident whose income comes from **event-contract trading, rental property and
-savings interest** rather than from wages.
+A source-linked, static research project explaining California Medi-Cal and Covered California
+options for a U.S. citizen resident with no earned wages but possible rental, trading
+(Kalshi), and savings-interest income. It covers the federal Medicaid community-engagement law
+scheduled for 2027, California implementation materials, application routes, income treatment,
+and unresolved items.
 
-**Live site:** see the GitHub Pages deployment for this repository (Settings → Pages), or open
-[`docs/index.html`](docs/index.html) locally.
+The repository contains **three complementary publications** built by parallel research sessions,
+all verified against official sources on **October 18, 2026**:
 
----
+## 1. Research brief (site root) — session `arena/63a8fb6e`
 
-## What this is
+- [Executive summary](index.html)
+- [Medi-Cal eligibility](eligibility.html)
+- [2027 community-engagement requirements](work-rules.html)
+- [Income and assets](income.html)
+- [Coverage options and application](options.html)
+- [Flagged for Review](flagged.html)
+- [Sources and repository audit](sources.html)
 
-Section 71119 of **Public Law 119-21** (H.R. 1, enacted July 4, 2025) added
-**subsection (xx) to section 1902 of the Social Security Act**, requiring states to condition
-Medicaid eligibility for certain adults on demonstrating "community engagement". CMS
-implemented it in **CMS-2454-IFC**, 91 FR 33348 (June 3, 2026), codified at
-**42 CFR §§ 435.550–435.563**. California implemented it in
-**Welfare & Institutions Code § 14005.69** (SB 164, Stats. 2026 Ch. 27, as amended by
-**AB 2161**, Ch. 209, Stats. 2026).
+Plain HTML and CSS, no build dependencies. `.github/workflows/pages.yml` runs the
+dependency-free link/source-table validation (`scripts/check_site.py`) on pushes and pull
+requests targeting `main`.
 
-This repository records what those instruments actually say, verified line by line
-against official primary sources.
+## 2. Expanded data dashboard (`dashboard/`) — session `arena/0ef38cd8`
 
-## Pages
+- [Dashboard home](dashboard/index.html) — key findings, key numbers, timeline
+- [Executive summary](dashboard/executive-summary.html) — decision paths, plain-English law, action checklist
+- [Work requirements](dashboard/work-requirements.html) — OBBBA §71119 + CMS-2454-IFC details
+- [Medi-Cal](dashboard/medi-cal.html) — 138% FPL rules, MAGI, no asset test, 2027 changes
+- [Covered California](dashboard/covered-california.html) — PTC, expired enhanced credits, state subsidy, CSRs, penalty
+- [Income & MAGI](dashboard/income-treatment.html) — Kalshi/rental/interest treatment
+- [Other options](dashboard/other-options.html) — EMTALA, charity care, STLDI ban, COBRA, Medicare
+- [Flagged for Review](dashboard/flagged-for-review.html) — all unverified values (left blank) + irregularities
+- [Sources & methodology](dashboard/sources.html) — 54 cited sources with type labels
 
-| Page | Contents |
-|---|---|
-| `docs/index.html` | Dashboard — executive summary, the numbers that matter, "do this first" checklist |
-| `docs/options.html` | Coverage options and compliance pathways, ranked; the premium-tax-credit trap; Marketplace subsidies; the California individual mandate |
-| `docs/income.html` | How trading gains, rental income and savings interest are classified by the IRS, by Medicaid and by California |
-| `docs/federal.html` | Federal statute and regulation, in detail |
-| `docs/california.html` | California statute, DHCS guidance, timeline, income and asset limits |
-| `docs/flagged.html` | **Flagged for Review** — irregularities, discrepancies, unverified values and deliberate blanks |
-| `docs/sources.html` | Source register — every official primary source used, with retrieval notes |
+Generated from `data/*.csv` (9 tables, 120 rows — 108 rule/data rows, 106 verified and 2 blank-unverified, plus a 12-item flagged registry — each row with a status and source URL; counts after the 2026-10-18 re-verification sessions, incl. `arena/da6d01ac`) by
+`scripts/build.py` (templates in `site_src/*.tmpl`); `scripts/validate.py` enforces the
+verification standard (official https source link on every verified row; blank values on
+unverified rows; link and placeholder checks).
 
-## Verification standard
+All three publications cross-link and follow the same verification standard: every
+factual table row links an official source (or is explicitly flagged); unknown or
+unresolvable values are left blank and published on a Flagged for Review page; no personal
+eligibility is inferred. Research snapshot: **2026-10-18**.
 
-1. **Every table row carries at least one link to an official primary source.** Publishers used:
-   `congress.gov`, `govinfo.gov`, `federalregister.gov`, `ecfr.gov`, `medicaid.gov`, `cms.gov`,
-   `dol.gov`, `irs.gov`, `healthcare.gov`, `aspe.hhs.gov`, and California state government
-   (`leginfo.legislature.ca.gov`, `dhcs.ca.gov`, `ftb.ca.gov`, `edd.ca.gov`, `chhs.ca.gov`,
-   `coveredca.com` / `hbex.coveredca.com`). The single non-government source is Kalshi's own
-   help centre, used only to record what the platform itself says it reports.
-2. **If a value cannot be confirmed officially, it is left BLANK** and the item appears on the
-   Flagged for Review page. Values are never inferred, estimated, or filled in from secondary
-   sources.
-3. **Secondary sources are never cited as authority.** Law-firm alerts, policy institutes,
-   hospital and insurer associations, insurance and tax blogs and local news were used only to
-   *locate* primary sources.
-4. **Analysis is labelled as analysis**, and quotations are labelled as quotations.
-5. **Flagged items do not block publication.** They are published on `docs/flagged.html` with
-   what was checked and what could not be confirmed.
+## 3. Verification dashboard (`docs/`) — session `arena/690e8271`
 
-## Repository layout
+- [Dashboard home](docs/index.html) — executive summary, the numbers that matter, action checklist
+- [Coverage & pathways](docs/options.html) — decision tree, ranked compliance pathways, the premium-tax-credit trap
+- [Income sources](docs/income.html) — Kalshi, rental income and savings interest vs the $580 test
+- [Federal law](docs/federal.html) — P.L. 119-21 §71119, SSA §1902(xx), 42 CFR §§435.550–435.563 in detail
+- [California](docs/california.html) — WIC §14005.69, SB 164, AB 2161, AB 2208 status, DHCS letters, timeline
+- [Flagged for Review](docs/flagged.html) — 23 flags plus 7 categories of value deliberately left blank
+- [Source register](docs/sources.html) — 73 official primary sources with retrieval notes
 
-```
-COORDINATION.md        shared task board (parallel-session protocol)
-README.md              this file
-build_site.py          deterministic site generator (Python 3 standard library only)
-scripts/check_links.py external URL verifier (used by the non-blocking CI job)
-data/
-  sources.json         source register — id, publisher, title, url, type, retrieval note
-  federal-rules.json   federal statute and regulation rows
-  california.json      California statute, DHCS guidance and state programmes rows
-  income.json          income-source classification rows
-  options.json         coverage options and compliance pathway rows
-  flagged.json         flag register, deliberate blanks, repository review findings
-research/
-  repo-review.md       line-by-line audit of the repository as found
-  federal-law.md       full federal verification trail with verbatim quotations
-  california.md        full California verification trail with verbatim quotations
-  income-analysis.md   income-source analysis with verbatim quotations
-  coverage-options.md  coverage-option analysis with verbatim quotations
-  flagged-items.md     narrative version of the flag register
-docs/                  generated site — COMMITTED deliberately (GitHub Pages directory)
-.github/workflows/
-  build-check.yml      blocking, offline: rebuilds the site and diffs against docs/
-  link-check.yml       non-blocking: probes every cited external URL
-```
+Generated from `data/*.json` (5 row files plus a 73-entry source register) by `build_site.py`
+(Python 3 standard library only, no CDN or external runtime dependency). Every table row carries a
+pinpoint source chip — e.g. `eCFR · 42 CFR 435.552`, `CA LegInfo · WIC § 14005.69`,
+`DHCS/MCED · MEDIL I 26-25`, `Fed. Reg. · 91 FR 33348` — linking straight to the provision the row
+rests on. A row that has no official source renders a visible **BLANK — unverified** badge instead
+of a value.
 
-## Building the site
+`.github/workflows/build-check.yml` is a **blocking, network-free** gate: it validates the JSON,
+checks that every cited source id resolves, and rebuilds the site into a temp directory and diffs
+it against the committed `docs/` (`python3 build_site.py --check`), so CI proves the published site
+is current. `.github/workflows/link-check.yml` probes every cited external URL with retries and
+reports OK/WARN/FAIL; it is deliberately **non-blocking**, because eCFR, the Federal Register,
+leginfo and DHCS endpoints commonly reject non-browser clients — which is not evidence that a
+citation is wrong. `scripts/check_links.py` runs the same probe locally.
 
-No dependencies beyond Python 3. The site is **generated**, so `data/*.json` is the source of
-truth and `docs/` is committed output.
+This publication adds the verbatim regulatory and statutory text behind the conclusions in the two
+sites above (42 CFR §§435.551–435.557, WIC §14005.69 in both its SB 164 and AB 2161 wordings), the
+full California conditional-implementation safeguards, AB 2208's **not-enacted** status taken from
+the official legislative history, and 11 flags not previously recorded — including that CMS-2454-IFC
+was **corrected on 2026-06-29**, and that **two versions** of WIC §14005.69(e)(6) are in circulation.
 
-```bash
-python3 build_site.py           # regenerate docs/ from data/
-python3 build_site.py --check   # verify docs/ matches a clean rebuild (CI gate)
-python3 scripts/check_links.py  # probe every cited external URL (needs network)
-```
+## Research and limitations
 
-`build_site.py` enforces the verification standard mechanically: a row whose source id does not
-resolve in `data/sources.json` fails the build, an internal link that does not resolve fails the
-build, and any row with no source at all renders a visible **BLANK — unverified** badge.
+Research was checked against official federal and California sources. Unknown personal figures
+and unresolved classifications are intentionally blank or flagged, especially Kalshi contract
+tax treatment, how specific rental/interest amounts fit the separate 2027 gross-income test,
+and whether particular property-management/trading hours qualify. This is an informational
+research brief, not a personal eligibility decision or legal/tax advice. See the three Flagged for Review pages —
+[root](flagged.html) · [dashboard](dashboard/flagged-for-review.html) · [docs](docs/flagged.html) —
+and the three source registers: [root](sources.html) · [dashboard](dashboard/sources.html) ·
+[docs](docs/sources.html).
 
-## Local preview
+GitHub Pages publishes this repository from `main` at the repository root; `.nojekyll` keeps all
+three sites served as plain static files. The verification dashboard is reachable at
+https://buffedlizard55-lab.github.io/MaltaProj9/docs/.
 
-```bash
-cd docs && python3 -m http.server 8000 --bind 0.0.0.0
-# then open http://localhost:8000/
-```
-
-## Disclaimer
-
-**This is not legal, tax or medical advice.** It is a research and verification dashboard that
-summarises published official sources and links to them. Confirm anything consequential with the
-California Department of Health Care Services, your county Medi-Cal office, Covered California, a
-licensed California attorney, or a CPA / enrolled agent.
-
-## Coordination
-
-`COORDINATION.md` is the shared task board for parallel working sessions. Read it before
-claiming work; record sources, verification performed and irregularities when a task is done.
+See `COORDINATION.md` for the multi-session task board and publication record.
