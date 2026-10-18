@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for Review | California Healthcare Options</title>
+<meta name="description" content="Unverified values (left blank) and irregularities found across official sources, with links for manual review.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">MP9</div>
+      <div>
+        <h1>Healthcare Options for a California Resident with $0 Earned Income</h1>
+        <p>Source-verified research dashboard &middot; snapshot {{SNAPSHOT}}</p>
+      </div>
+    </div>
+    <p class="tagline">Everything that could not be confirmed from an official source (values left blank) plus every irregularity found between official pages &mdash; published for manual review, none blocking.</p>
+  </div>
+</header>
+{{NAV}}
+<main id="main" class="wrap">
+  <div class="page-head">
+    <h2>Flagged for Review</h2>
+    <p class="lede">Verification standard used on this site: every table row must link an official source (a .gov site, Covered California, or Kalshi's official help center for Kalshi-specific practice). If a value could not be confirmed from an official source, it is left blank, marked <span class="badge b-unverified">Unverified</span>, and listed here. Inconsistencies between official sources are marked <span class="badge b-flagged">Flagged</span> and listed here too. Nothing on this page blocks anything else on the site.</p>
+  </div>
+
+  <section aria-labelledby="flagged-h">
+    <h3 id="flagged-h">Flagged and unverified items</h3>
+    {{TABLE:flagged-items.csv::Registry of flagged and unverified items}}
+  </section>
+
+  <section aria-labelledby="auto-h">
+    <h3 id="auto-h">Cross-check: non-verified rows in every data table</h3>
+    <p>Every row in every data table whose status is not &ldquo;verified&rdquo; appears below automatically (this includes the blank-value rows from the income table and the flagged rows above).</p>
+    {{TABLE:AUTO_FLAGGED}}
+  </section>
+
+  <section aria-labelledby="next-h">
+    <h3 id="next-h">What to do with these</h3>
+    <div class="panel">
+      <ol>
+        <li><strong>Tax character of Kalshi event contracts</strong> &mdash; take the contract facts (P&amp;L statements, trade exports) to a CPA or tax attorney before filing; the IRS has not ruled.</li>
+        <li><strong>Work-rule specifics ($580 standard, trading hours)</strong> &mdash; ask your county Medi-Cal office in writing, and keep the answer. AB 2161 requires counties to resolve conflicting information with you before taking adverse action.</li>
+        <li><strong>Official-page wording differences</strong> &mdash; linked side by side above for manual comparison; the operative county instruction (MEDIL I26-25) is the most specific California document.</li>
+        <li><strong>2027 poverty guidelines</strong> &mdash; republish around January 2027; thresholds on this site will need a refresh for the 2028 coverage year.</li>
+      </ol>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>MaltaProj9 &mdash; Healthcare Requirements Research</strong><br>
+        Research snapshot {{SNAPSHOT}}. Tables live in <code>data/*.csv</code>; rebuild with <code>python3 scripts/build.py</code>, check with <code>python3 scripts/validate.py</code>.
+      </div>
+      <div>
+        <a href="https://github.com/buffedlizard55-lab/MaltaProj9" target="_blank" rel="noopener">GitHub repository</a><br>
+        <a href="sources.html">All sources &amp; methodology</a> &middot; <a href="flagged-for-review.html">Flagged for review</a>
+      </div>
+    </div>
+    <p class="fine">Informational research only &mdash; not legal, tax, or medical advice, and not an eligibility determination. Rules change; verify current details with DHCS, your county Medi-Cal office, Covered California, CMS, and the IRS, and consult qualified professionals before acting.</p>
+  </div>
+</footer>
+</body>
+</html>
