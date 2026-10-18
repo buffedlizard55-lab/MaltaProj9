@@ -14,6 +14,11 @@ OFFICIAL_HOSTS = {
     # Added 2026-10-18 (session da6d01ac): primary legal sources for the
     # community-engagement regulation/statute cited in re-verified rows.
     "ecfr.gov", "federalregister.gov", "leginfo.legislature.ca.gov",
+    # Added 2026-10-18 (session cbb12598): remaining official domains cited by
+    # the deep verification pass.
+    "senate.gov", "medicaid.gov", "ftb.ca.gov", "ldh.la.gov",
+    "kalshi.com", "hbex.coveredca.com", "ca.gov", "chhs.ca.gov",
+    "govinfo.gov", "uscode.house.gov",
 }
 
 
