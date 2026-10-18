@@ -501,3 +501,8 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   duty, (b)(2)(A)–(N) exclusion list and (o)–(r) implementation clauses are live and match the
   chaptered text; the earlier non-cache-busted fetch had served a stale pre-`794415e` CDN copy
   (observation only, not a site error).
+- **Link-check note:** `scripts/check_links.py` cannot run from this sandbox — outbound network is
+  limited to an allowlist (github.com / api.github.com / package registries), so its urllib probes
+  fail with TLS errors for every other host. Those failures are environmental and say nothing about
+  the citations; live checks in `reports/verification-c79aa57d.md` §2–§3 were made with the
+  page-fetch tool. The GitHub workflow that runs the script is weekly and non-blocking.

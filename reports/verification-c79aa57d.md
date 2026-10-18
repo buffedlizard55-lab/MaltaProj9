@@ -73,6 +73,12 @@ audit record — it changes no published data.
 6. Tooling note: this session's page-fetch proxy intermittently rewrote URLs and returned
    `SignatureDoesNotMatch`; all affected fetches were retried with canonical URLs until the
    official page content was retrieved. No check in this report relies on a failed fetch.
+7. **`scripts/check_links.py` cannot be used from this sandbox** — the agent environment permits
+   outbound network only to a small allowlist (github.com, api.github.com, package registries), so
+   its urllib probes fail with `TLS/SSL connection has been closed` for every non-allowlisted host.
+   Those failures say nothing about the citations; live page checks in §2–§3 were performed with
+   the page-fetch tool instead. The workflow that runs this script is scheduled weekly and is
+   explicitly non-blocking (`link-check.yml`).
 
 ## 5. Conclusion
 
