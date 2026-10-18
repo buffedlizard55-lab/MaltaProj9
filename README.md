@@ -34,11 +34,11 @@ requests targeting `main`.
 - [Income & MAGI](dashboard/income-treatment.html) — Kalshi/rental/interest treatment
 - [Other options](dashboard/other-options.html) — EMTALA, charity care, STLDI ban, COBRA, Medicare
 - [Flagged for Review](dashboard/flagged-for-review.html) — all unverified values (left blank) + irregularities
-- [Sources & methodology](dashboard/sources.html) — 62 cited sources with type labels
+- [Sources & methodology](dashboard/sources.html) — 64 cited sources with type labels
 
-Generated from `data/*.csv` (9 tables, **204 rows** — 177 rule/data rows, 175 verified and 2 blank-unverified, plus a 27-item flagged registry — each row with a status and source URL; counts after the 2026-10-18 re-verification passes) by `scripts/build.py` (templates in `site_src/*.tmpl`); `scripts/validate.py` enforces the verification standard (official https source link on every verified row; blank values on unverified rows; link and placeholder checks).
+Generated from `data/*.csv` (9 tables, **208 rows** — 179 rule/data rows, 177 verified and 2 blank-unverified, plus a 29-item flagged registry — each row with a status and source URL; counts after the 2026-10-18 re-verification passes) by `scripts/build.py` (templates in `site_src/*.tmpl`); `scripts/validate.py` enforces the verification standard (official https source link on every verified row; blank values on unverified rows; link and placeholder checks).
 
-As of that snapshot the dashboard holds **204 data rows** across 9 tables — **175 verified**, **2 rows with intentionally blank unverified values** (IN-08 Kalshi section 1256 character, IN-13 trading hours as work) — plus a **27-entry flagged registry** of official-source inconsistencies and unverifiable claims, and **62 distinct cited sources**. Sessions `arena/da6d01ac` and `arena/cbb12598` both ran independent verification passes; where their new rows collided on ID the conflict was resolved by renumbering one session's rows into the free range so **no row from either session was discarded** (see `COORDINATION.md`).
+As of that snapshot the dashboard holds **208 data rows** across 9 tables — **177 verified**, **2 rows with intentionally blank unverified values** (IN-08 Kalshi section 1256 character, IN-13 trading hours as work) — plus a **29-entry flagged registry** of official-source inconsistencies and unverifiable claims, and **64 distinct cited sources**. Sessions `arena/da6d01ac` and `arena/cbb12598` both ran independent verification passes; where their new rows collided on ID the conflict was resolved by renumbering one session's rows into the free range so **no row from either session was discarded** (see `COORDINATION.md`).
 
 ## 3. Verification dashboard (`docs/`) — session `arena/690e8271` (integrated by `arena/5c4d1423`)
 
