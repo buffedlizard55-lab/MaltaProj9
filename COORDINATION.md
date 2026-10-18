@@ -55,7 +55,7 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | R6 — Deep verification pass + new findings from primary DHCS county letters (ACWDL 25-30, 25-31, MEDIL I26-25), AB 2161 / WIC 14005.69 statute text, and the 2026-27 federal sources | done | `arena/cbb12598` | `data/*.csv` (append rows), `site_src/*.tmpl`, `dashboard/**`, `california-help.html`, `index.html`, `scripts/check_site.py` |
 | V2 — Line-by-line re-verification of every published row against the primary source; re-source weak citations; add newly found irregularities to the flagged registry | done | `arena/cbb12598` | `data/flagged-items.csv`, `scripts/check_site.py` |
 | I2 — Integration of R6/V2 into both publications, PR from `arena/cbb12598-maltaproj9`, merge, GitHub Pages deploy verification | done | `arena/cbb12598` | COORDINATION.md, README.md |
-| V4 — Independent post-publication verification of the LIVE site + spot re-verification of key rows against official sources + written verification report; PR, merge, Pages deploy confirmation | in progress | `arena/c79aa57d` | `COORDINATION.md` (append-only log), `reports/verification-c79aa57d.md` (new file); edits to files owned by active sessions (`arena/1c375fb4` I3, `arena/5711b968` V3) are NOT made here — confirmed errors are logged as cross-session requests instead |
+| V4 — Independent post-publication verification of the LIVE site + spot re-verification of key rows against official sources + written verification report; PR, merge, Pages deploy confirmation | done | `arena/c79aa57d` | `COORDINATION.md` (append-only log), `reports/verification-c79aa57d.md` (new file); edits to files owned by active sessions (`arena/1c375fb4` I3, `arena/5711b968` V3) are NOT made here — confirmed errors are logged as cross-session requests instead |
 | V3 — Line-by-line verification (2026-10-18 snapshot) + $0-earned-income property-manager/Kalshi trader scenario audit + GH Pages build confirmation | done | `arena/981e8290-maltaproj9` | `COORDINATION.md`, `your-situation.html`, `dashboard/executive-summary.html`, `index.html`, `sources.html`, `scripts/*.py` |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
@@ -506,3 +506,19 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   fail with TLS errors for every other host. Those failures are environmental and say nothing about
   the citations; live checks in `reports/verification-c79aa57d.md` §2–§3 were made with the
   page-fetch tool. The GitHub workflow that runs the script is weekly and non-blocking.
+
+## Publication record — session `arena/c79aa57d` (V4)
+
+- PR #21, https://github.com/buffedlizard55-lab/MaltaProj9/pull/21, **merged 2026-10-18T22:32:46Z**,
+  merge commit `8a61b7d`. Opened after rebasing onto `main` = `794415e`; the only conflict was in
+  this file (additive: V3 claim/log vs. this session's log) and was resolved keeping **both** — no
+  session's work discarded. Branch was force-with-lease updated twice (own branch only) after
+  rebases.
+- CI: `build-check` and `validate` both **pass** on the final head `79ca31c`
+  ([build-check run](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39172697772));
+  GitHub Pages build for `8a61b7d` status **built** (2026-10-18T22:33:38Z), and the
+  `pages-build-deployment` workflow for `8a61b7d` completed **success**.
+- V4 core findings: **no data or page errors found** in 10 official-source spot checks + live-site
+  verification (see `reports/verification-c79aa57d.md`). Both validators PASS on the merged tree:
+  9 tables / 207 rows / 30 non-verified (all on the Flagged page) / 65 cited sources.
+- The V4 task is recorded **done** on the board below (row updated in this branch before merge).
