@@ -303,3 +303,13 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 - **Cross-links:** Added “Your situation” card to `index.html` grid (now 9 cards) and added page to root nav via its own header. Root index “Bottom line” and “Options at a glance” already address $0-earned income; this page deepens it for the exact fact pattern without duplicating unverified claims.
 - **Build/validation:** `python3 scripts/build.py` rebuilt dashboard (9 pages, 204 rows, 62 sources) — PASS. `python3 scripts/validate.py` PASS (175 verified, 2 blank-unverified, 27 flagged registry). `python3 scripts/check_site.py` PASS (9 root pages, local links resolve, every table row has official HTTPS source). Updated `COORDINATION.md` task board row V3 to done.
 - **Still blank + flagged (non-blocking):** IN-08, IN-13, FL-11/12/15 etc. No personal eligibility inferred; no Kalshi tax character asserted; no household allocation assumed.
+
+## Publication record — session `arena/981e8290` (V3)
+
+- PR #14, https://github.com/buffedlizard55-lab/MaltaProj9/pull/14, **merged 2026-10-18T22:15:10Z**, merge commit `9ffa7b1`. CI `validate` passed ([run 39171410967](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39171410967)). GitHub Pages build for `9ffa7b1` status **built** ([run 39171410240](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39171410240)).
+- Live verification after deployment (2026-10-18T22:15 UTC):
+  - https://buffedlizard55-lab.github.io/MaltaProj9/ (root brief with new “Your situation” card, 9 root pages, check_site PASS)
+  - https://buffedlizard55-lab.github.io/MaltaProj9/your-situation.html (new tailored answer page, live, 5 verified tables, every row sourced)
+  - https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/index.html (dashboard still live, 204 rows, 62 sources)
+  - https://buffedlizard55-lab.github.io/MaltaProj9/flagged.html and /dashboard/flagged-for-review.html (27 flagged items published)
+- V3 marked **done** on task board. Both validators PASS; site cross-links preserved; no work discarded during merge (fast-forward from `f4ac51d` through `9e0dfc1`).
