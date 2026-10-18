@@ -166,5 +166,20 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   (merge commit `e7e45aa`); PR #3 (record) merged 19:23:38 UTC. Site live at
   https://buffedlizard55-lab.github.io/MaltaProj9/ (deployment run 39158412372).
 - Session `arena/0ef38cd8` — expanded dashboard under `/dashboard/`: PR #4
-  https://github.com/buffedlizard55-lab/MaltaProj9/pull/4 (merge result and deployment
-  verification recorded below after merge).
+  https://github.com/buffedlizard55-lab/MaltaProj9/pull/4 **merged 2026-10-18 19:41:21 UTC**
+  (merge commit `817665dcda7c53d026d99360bd88854642e1ef10`). CI: validate workflow passed
+  ([run 39159891796](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39159891796)).
+  GitHub Pages build for merge commit `817665d` completed with status **built**. Live URLs verified
+  from the public internet after deployment:
+  - Root research brief (unchanged, plus cross-link card): https://buffedlizard55-lab.github.io/MaltaProj9/
+  - Expanded dashboard: https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/index.html
+  - Flagged for Review (dashboard): https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/flagged-for-review.html
+
+## Publication record (final)
+
+| Publication | URL | PR | Merged | Merge commit |
+|---|---|---|---|---|
+| Research brief (root) | https://buffedlizard55-lab.github.io/MaltaProj9/ | [#2](https://github.com/buffedlizard55-lab/MaltaProj9/pull/2) | 2026-10-18 19:21:42 UTC | `e7e45aa` |
+| Record note (brief) | — | [#3](https://github.com/buffedlizard55-lab/MaltaProj9/pull/3) | 2026-10-18 19:23:38 UTC | `e687908` |
+| Expanded dashboard (`/dashboard/`) | https://buffedlizard55-lab.github.io/MaltaProj9/dashboard/index.html | [#4](https://github.com/buffedlizard55-lab/MaltaProj9/pull/4) | 2026-10-18 19:41:21 UTC | `817665d` |
+| Publication record (this update) | — | [#5](https://github.com/buffedlizard55-lab/MaltaProj9/pull/5) | see PR | — |
