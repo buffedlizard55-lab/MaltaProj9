@@ -33,9 +33,9 @@ requests targeting `main`.
 - [Income & MAGI](dashboard/income-treatment.html) — Kalshi/rental/interest treatment
 - [Other options](dashboard/other-options.html) — EMTALA, charity care, STLDI ban, COBRA, Medicare
 - [Flagged for Review](dashboard/flagged-for-review.html) — all unverified values (left blank) + irregularities
-- [Sources & methodology](dashboard/sources.html) — 50 cited sources with type labels
+- [Sources & methodology](dashboard/sources.html) — 54 cited sources with type labels
 
-Generated from `data/*.csv` (9 tables, 110 rows, each row with a status and source URL) by
+Generated from `data/*.csv` (9 tables, 120 rows — 108 rule/data rows, 106 verified and 2 blank-unverified, plus a 12-item flagged registry — each row with a status and source URL; counts after the 2026-10-18 re-verification sessions, incl. `arena/da6d01ac`) by
 `scripts/build.py` (templates in `site_src/*.tmpl`); `scripts/validate.py` enforces the
 verification standard (official https source link on every verified row; blank values on
 unverified rows; link and placeholder checks).

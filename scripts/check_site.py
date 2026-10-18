@@ -11,6 +11,9 @@ ROOT = Path(__file__).resolve().parents[1]
 OFFICIAL_HOSTS = {
     "congress.gov", "cms.gov", "dhcs.ca.gov", "coveredca.com",
     "healthcare.gov", "irs.gov", "benefitscal.com",
+    # Added 2026-10-18 (session da6d01ac): primary legal sources for the
+    # community-engagement regulation/statute cited in re-verified rows.
+    "ecfr.gov", "federalregister.gov", "leginfo.legislature.ca.gov",
 }
 
 
