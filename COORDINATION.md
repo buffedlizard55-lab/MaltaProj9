@@ -55,6 +55,7 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | R6 — Deep verification pass + new findings from primary DHCS county letters (ACWDL 25-30, 25-31, MEDIL I26-25), AB 2161 / WIC 14005.69 statute text, and the 2026-27 federal sources | done | `arena/cbb12598` | `data/*.csv` (append rows), `site_src/*.tmpl`, `dashboard/**`, `california-help.html`, `index.html`, `scripts/check_site.py` |
 | V2 — Line-by-line re-verification of every published row against the primary source; re-source weak citations; add newly found irregularities to the flagged registry | done | `arena/cbb12598` | `data/flagged-items.csv`, `scripts/check_site.py` |
 | I2 — Integration of R6/V2 into both publications, PR from `arena/cbb12598-maltaproj9`, merge, GitHub Pages deploy verification | done | `arena/cbb12598` | COORDINATION.md, README.md |
+| V4 — Independent post-publication verification of the LIVE site + spot re-verification of key rows against official sources + written verification report; PR, merge, Pages deploy confirmation | in progress | `arena/c79aa57d` | `COORDINATION.md` (append-only log), `reports/verification-c79aa57d.md` (new file); edits to files owned by active sessions (`arena/1c375fb4` I3, `arena/5711b968` V3) are NOT made here — confirmed errors are logged as cross-session requests instead |
 | V3 — Line-by-line verification (2026-10-18 snapshot) + $0-earned-income property-manager/Kalshi trader scenario audit + GH Pages build confirmation | done | `arena/981e8290-maltaproj9` | `COORDINATION.md`, `your-situation.html`, `dashboard/executive-summary.html`, `index.html`, `sources.html`, `scripts/*.py` |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
@@ -437,3 +438,20 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 - **Follow-up PR #19**, https://github.com/buffedlizard55-lab/MaltaProj9/pull/19, **merged 2026-10-18T22:28:53Z**, merge commit `f6a859e`. Finishes the AB 2161 prose on `california-help.html` (conflicting-data duty at (i), exclusion list at (b)(2)(A)–(N), regulations/safety valve at (o)–(r)), fixes the "23 = state count" phrasing on the tile and on `your-situation.html`, and records this publication history. Pages build for `f6a859e` status **built**.
 - **Live verification after `f6a859e`** (cache-busted URLs): `california-help.html` shows the SB 164/AB 2161 provenance, the (i) conflict duty, the (b)(2) list and the (o)–(r) description; `dashboard/flagged-for-review.html` shows the "Answered in the 2026-10-18 verification pass" panel with CA-31, FL-17, OP-9, FL-28 and MC-19; `your-situation.html` no longer calls the 23-row catalogue a state count.
 - Session `arena/5711b968` V3 work is **complete**. Both validators PASS on `f6a859e`; the publication remains live at https://buffedlizard55-lab.github.io/MaltaProj9/.
+
+## Session log — `arena/c79aa57d` (V4 claim, 2026-10-18 22:16 UTC)
+
+- Intake: `main` = `e8d7e5c` (PR #15 merged; includes PR #14's `your-situation.html`). Both
+  validators PASS at intake (`scripts/validate.py`: 204 rows, 29 non-verified all on Flagged
+  page; `scripts/check_site.py`: 9 root pages).
+- Active claims observed at intake (not touched): `arena/1c375fb4` (I3 independent audit,
+  claimed 22:11 UTC, broad scope over `data/*.csv`, root `*.html`, `dashboard/**`,
+  `scripts/**`, workflows); `arena/5711b968` (V3 re-verification + playbook, claimed 22:11 UTC,
+  overlapping scope). PR #11 from `arena/690e8271` remains OPEN with no commits since 20:28 UTC
+  (>60 min stale — takeover-eligible per board rules; left untouched here because I3's claim
+  covers final integration). Stale claim-only branches (>60 min, single commit): `193089a8`,
+  `2e5ccefa`, `4696cfa4`, `bf97c1f6`.
+- V4 scope (non-overlapping by construction): verify the LIVE published pages against `main`;
+  independently re-fetch key official sources and spot-check published rows; write findings to
+  `reports/verification-c79aa57d.md`; log any confirmed errors in shared files as cross-session
+  requests (no edits to active sessions' files); PR from this fixed branch, merge, confirm Pages.
