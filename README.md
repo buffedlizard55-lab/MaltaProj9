@@ -1,55 +1,61 @@
-# MaltaProj9 — Healthcare Options Research (California, $0 Earned Income)
+# MaltaProj9 — California healthcare eligibility research
 
-Source-verified research dashboard, published with GitHub Pages at:
-**https://buffedlizard55-lab.github.io/MaltaProj9/**
+A source-linked, static research project explaining California Medi-Cal and Covered California
+options for a U.S. citizen resident with no earned wages but possible rental, trading
+(Kalshi), and savings-interest income. It covers the federal Medicaid community-engagement law
+scheduled for 2027, California implementation materials, application routes, income treatment,
+and unresolved items.
 
-Built for the question: a U.S. citizen living in California (ages 19–64, assumed), with **$0
-earned income** — money comes from **Kalshi trading**, **rental property**, and **savings
-interest** — what healthcare coverage is available, what does the new federal Medicaid
-work-requirement law actually require, and what does California do for people with no earned
-income?
+The repository contains **two complementary publications** built by parallel research sessions,
+both verified against official sources on **October 18, 2026**:
 
-## Site pages
+## 1. Research brief (site root) — session `arena/63a8fb6e`
 
-| Page | Contents |
-|---|---|
-| `index.html` | Dashboard: key findings, key numbers, timeline, links |
-| `executive-summary.html` | Bottom line, decision paths, the new law in plain English, action checklist |
-| `work-requirements.html` | OBBBA §71119 + CMS-2454-IFC: 80 hours, $580 income standard, exemptions, CA rollout |
-| `medi-cal.html` | Eligibility (138% FPL), MAGI rules, no asset test, application channels, 2027 changes |
-| `covered-california.html` | Premium tax credits, expired enhanced credits, state subsidy, CSRs, penalty |
-| `income-treatment.html` | Kalshi trading, rental income, interest: taxes, MAGI, and the work rule |
-| `other-options.html` | EMTALA, hospital charity care, STLDI ban, sharing ministries, COBRA, Medicare |
-| `flagged-for-review.html` | Every unverified value (left blank) and irregularity between official sources |
-| `sources.html` | Full source list with type labels + methodology |
+- [Executive summary](index.html)
+- [Medi-Cal eligibility](eligibility.html)
+- [2027 community-engagement requirements](work-rules.html)
+- [Income and assets](income.html)
+- [Coverage options and application](options.html)
+- [Flagged for Review](flagged.html)
+- [Sources and repository audit](sources.html)
 
-## Repository layout
+Plain HTML and CSS, no build dependencies. `.github/workflows/pages.yml` runs the
+dependency-free link/source-table validation (`scripts/check_site.py`) on pushes and pull
+requests targeting `main`.
 
-- `data/*.csv` — the single source of truth: 9 tables, 110 rows, every row with a status
-  (`verified` / `flagged` / `unverified`), source name, and source URL.
-- `site_src/*.html` — page templates (with `{{TABLE:…}}` placeholders).
-- `scripts/build.py` — generates the site pages at the repo root from the CSVs.
-- `scripts/validate.py` — enforces the verification standard (see below) and link checks.
-- `assets/style.css` — dashboard styling. `.nojekyll` present so Pages serves files as-is.
+## 2. Expanded data dashboard (`dashboard/`) — session `arena/0ef38cd8`
 
-## Verification standard
+- [Dashboard home](dashboard/index.html) — key findings, key numbers, timeline
+- [Executive summary](dashboard/executive-summary.html) — decision paths, plain-English law, action checklist
+- [Work requirements](dashboard/work-requirements.html) — OBBBA §71119 + CMS-2454-IFC details
+- [Medi-Cal](dashboard/medi-cal.html) — 138% FPL rules, MAGI, no asset test, 2027 changes
+- [Covered California](dashboard/covered-california.html) — PTC, expired enhanced credits, state subsidy, CSRs, penalty
+- [Income & MAGI](dashboard/income-treatment.html) — Kalshi/rental/interest treatment
+- [Other options](dashboard/other-options.html) — EMTALA, charity care, STLDI ban, COBRA, Medicare
+- [Flagged for Review](dashboard/flagged-for-review.html) — all unverified values (left blank) + irregularities
+- [Sources & methodology](dashboard/sources.html) — 50 cited sources with type labels
 
-- Every table row must link an official source (`.gov`, Covered California, or Kalshi's official
-  help center for Kalshi-specific reporting practice). `scripts/validate.py` fails the build
-  otherwise.
-- If a value cannot be confirmed from an official source, it is **left blank**, marked
-  *unverified*, and published on the **Flagged for Review** page — never inferred.
-- Personal eligibility is never determined; only rules and thresholds are stated.
-- Trusted secondary sources (KFF, CHCF, Justice in Aging, CRS-linked, Bipartisan Policy Center)
-  are labeled as such on the sources page and never used as a table row's sole source.
+Generated from `data/*.csv` (9 tables, 110 rows, each row with a status and source URL) by
+`scripts/build.py` (templates in `site_src/*.tmpl`); `scripts/validate.py` enforces the
+verification standard (official https source link on every verified row; blank values on
+unverified rows; link and placeholder checks).
 
-Research snapshot: **2026-10-18**. Rebuild with `python3 scripts/build.py`; verify with
-`python3 scripts/validate.py`.
+Both sites cross-link to each other, and both follow the same verification standard: every
+factual table row links an official source (or is explicitly flagged); unknown or
+unresolvable values are left blank and published on a Flagged for Review page; no personal
+eligibility is inferred. Research snapshot: **2026-10-18**.
 
-## Disclaimer
+## Research and limitations
 
-Informational research only — not legal, tax, or medical advice, and not an eligibility
-determination. Rules change; verify current details with DHCS, your county Medi-Cal office,
-Covered California, CMS, and the IRS, and consult qualified professionals before acting.
+Research was checked against official federal and California sources. Unknown personal figures
+and unresolved classifications are intentionally blank or flagged, especially Kalshi contract
+tax treatment, how specific rental/interest amounts fit the separate 2027 gross-income test,
+and whether particular property-management/trading hours qualify. This is an informational
+research brief, not a personal eligibility decision or legal/tax advice. See
+[Flagged for Review](flagged.html) / [dashboard Flagged for Review](dashboard/flagged-for-review.html)
+and the two sources pages: [root](sources.html) · [dashboard](dashboard/sources.html).
+
+GitHub Pages publishes this repository from `main` at the repository root; `.nojekyll` keeps
+both sites served as plain static files.
 
 See `COORDINATION.md` for the multi-session task board and publication record.

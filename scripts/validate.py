@@ -18,6 +18,7 @@ from urllib.parse import urlparse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
+SITE_DIR = os.path.join(ROOT, "dashboard")   # this session's site (root hosts the companion brief)
 
 PAGES = ["index.html", "executive-summary.html", "work-requirements.html", "medi-cal.html",
          "covered-california.html", "income-treatment.html", "other-options.html",
@@ -80,10 +81,11 @@ def main():
 
     # Page existence, placeholders, internal links.
     for page in PAGES:
-        p = os.path.join(ROOT, page)
+        p = os.path.join(SITE_DIR, page)
         if not os.path.exists(p):
             errors.append("missing built page: %s" % page)
             continue
+        page_dir = os.path.dirname(p)
         with open(p, encoding="utf-8") as f:
             doc = f.read()
         if re.search(r"\{\{[A-Z_]+", doc):
@@ -95,16 +97,19 @@ def main():
             target = u.split("#")[0].split("?")[0]
             if not target:
                 continue
-            if not os.path.exists(os.path.join(ROOT, target)):
+            resolved = os.path.normpath(os.path.join(page_dir, target))
+            if not (resolved == ROOT or resolved.startswith(ROOT + os.sep)):
+                errors.append("%s: link escapes repository: %s" % (page, u))
+            elif not os.path.isfile(resolved):
                 errors.append("%s: broken internal link: %s" % (page, u))
 
     if not os.path.exists(os.path.join(ROOT, ".nojekyll")):
         errors.append("missing .nojekyll")
-    if not os.path.exists(os.path.join(ROOT, "assets", "style.css")):
-        errors.append("missing assets/style.css")
+    if not os.path.exists(os.path.join(SITE_DIR, "assets", "style.css")):
+        errors.append("missing dashboard/assets/style.css")
 
     # Flagged page completeness: every non-verified data row id must appear there.
-    flagged_page = os.path.join(ROOT, "flagged-for-review.html")
+    flagged_page = os.path.join(SITE_DIR, "flagged-for-review.html")
     if os.path.exists(flagged_page):
         with open(flagged_page, encoding="utf-8") as f:
             fdoc = f.read()

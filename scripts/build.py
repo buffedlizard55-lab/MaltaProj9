@@ -18,6 +18,8 @@ from collections import OrderedDict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
 SRC_DIR = os.path.join(ROOT, "site_src")
+OUT_DIR = os.path.join(ROOT, "dashboard")   # published at /dashboard/ (root hosts the companion brief)
+ASSETS_SRC = os.path.join(ROOT, "assets", "style.css")
 SNAPSHOT = "2026-10-18"
 
 PAGES = OrderedDict([
@@ -225,6 +227,7 @@ def stats(tables):
 
 
 def build():
+    os.makedirs(OUT_DIR, exist_ok=True)
     tables = all_tables()
     total, verified, unverified, flagged, nsrc = stats(tables)
     auto_flagged_rows = []
@@ -236,7 +239,7 @@ def build():
                 auto_flagged_rows.append(r)
 
     for fname in PAGES:
-        src = os.path.join(SRC_DIR, fname)
+        src = os.path.join(SRC_DIR, fname + ".tmpl")
         if not os.path.exists(src):
             print("ERROR: missing template", src)
             sys.exit(1)
@@ -266,10 +269,16 @@ def build():
         doc = doc.replace("{{STAT_SOURCES}}", str(nsrc))
         doc = doc.replace("{{SNAPSHOT}}", SNAPSHOT)
         doc = doc.replace("{{SOURCE_LIST}}", render_sources(tables))
-        out = os.path.join(ROOT, fname)
+        out = os.path.join(OUT_DIR, fname)
         with open(out, "w", encoding="utf-8") as f:
             f.write(doc)
         print("built", out)
+
+    os.makedirs(os.path.join(OUT_DIR, "assets"), exist_ok=True)
+    with open(ASSETS_SRC, encoding="utf-8") as f_in, \
+         open(os.path.join(OUT_DIR, "assets", "style.css"), "w", encoding="utf-8") as f_out:
+        f_out.write(f_in.read())
+    print("wrote", os.path.join(OUT_DIR, "assets", "style.css"))
 
     nojekyll = os.path.join(ROOT, ".nojekyll")
     open(nojekyll, "w").close()
