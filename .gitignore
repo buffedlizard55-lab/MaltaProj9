@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node (if a toolchain is ever added)
+node_modules/
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local scratch — never commit research scratch or drafts
+scratch/
+tmp/
+*.local.md
+
+# NOTE: docs/ IS committed deliberately. It is the GitHub Pages publishing
+# directory for this repository and is generated deterministically from data/
+# by build_site.py. CI verifies it is up to date with `python3 build_site.py --check`.

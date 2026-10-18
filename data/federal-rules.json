@@ -1,0 +1,1239 @@
+{
+  "key": "federal",
+  "title": "Federal Law & Regulation",
+  "subtitle": "P.L. 119-21 §71119 · SSA §1902(xx) · 42 CFR Part 435 Subpart F",
+  "sections": [
+    {
+      "id": "authority",
+      "title": "1. Chain of authority",
+      "intro": "Every value below was read directly from the linked official source on 2026-10-18 (UTC).",
+      "columns": [
+        "Item",
+        "Verified value",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "Enacting law",
+            "H.R. 1, 119th Congress, enacted as <strong>Public Law 119-21</strong> on <strong>July 4, 2025</strong>. CMS calls it the <strong>“Working Families Tax Cut” (WFTC)</strong> legislation; it is widely known as the “One Big Beautiful Bill Act”.",
+            [
+              "CMCS-CIB-2025-12-08",
+              "CONGRESS-HR1"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Operative section",
+            "<strong>Section 71119</strong> — “Requirement for States to Establish Medicaid Community Engagement Requirements for Certain Individuals.”",
+            [
+              "CMCS-CIB-2025-12-08",
+              "CONGRESS-HR1-TEXT"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Codification",
+            "Adds new <strong>subsection (xx) to section 1902 of the Social Security Act</strong> (42 U.S.C. § 1396a).",
+            [
+              "CMCS-CIB-2025-12-08",
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Implementing rule",
+            "<strong>CMS-2454-IFC</strong>, RIN 0938-AV98 — interim final rule with comment period. <strong>91 FR 33348</strong>, pages 33348–33482 (135 pages), published <strong>June 3, 2026</strong>. Issued June 1, 2026.",
+            [
+              "FR-91-33348",
+              "GOVINFO-2026-11094",
+              "CMS-FACTSHEET"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Effective date of the rule",
+            "<strong>July 31, 2026</strong>. Comment period closed <strong>July 31, 2026</strong>. Docket <strong>CMS-2026-2047</strong>.",
+            [
+              "GOVINFO-2026-11094"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Correction to the rule",
+            "The Federal Register document record states: “This document <strong>was corrected by a document published on 06/29/2026</strong>” (C1-2026-11094). Content of the correction not retrieved — flagged F-13.",
+            [
+              "FR-CORRECTION"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "CFR location",
+            "New <strong>42 CFR Part 435, Subpart F — Community Engagement Requirement, §§ 435.550 – 435.563</strong>. Subpart source note: 91 FR 33469, June 3, 2026.",
+            [
+              "ECFR-435-SUBPART-F"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "CFR parts amended by the IFC",
+            "42 CFR Parts <strong>431, 435, 438, 457, and 600</strong>.",
+            [
+              "GOVINFO-2026-11094"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Sunset of implementing regulations",
+            "CMS states the framework and the restored eligibility/enrollment regulations <strong>sunset October 1, 2034</strong>.",
+            [
+              "FR-91-33348"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Geographic scope",
+            "Applies to the <strong>50 States and the District of Columbia</strong>. SSA §1902(xx)(9)(C) defines “State” for this purpose as one of the 50 states or DC — <strong>U.S. territories are excluded</strong> regardless of whether they cover the adult group.",
+            [
+              "ECFR-435-551",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Which jurisdictions must implement",
+            "CMS fact sheet: “To date, <strong>43 states and the District of Columbia</strong> provide coverage to these populations and will be required to implement the new requirement.”",
+            [
+              "CMS-FACTSHEET"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Cannot be waived",
+            "“The provisions of section 1902(xx) of the Act <strong>cannot be waived</strong> under section 1115 demonstration authority.” See also 42 CFR § 435.563 (Prohibition of waivers).",
+            [
+              "CMCS-CIB-2025-12-08",
+              "ECFR-435-SUBPART-F"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "State implementation deadline",
+            "<strong>January 1, 2027</strong>, unless a state opts to implement sooner via a §1115 demonstration or a <strong>state plan amendment</strong>. SPA template: <strong>CMS-10434 #15</strong>; beneficiary application updates: <strong>CMS-10410</strong>.",
+            [
+              "CMCS-CIB-2025-12-08",
+              "CMS-IFC-DECK"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Good-faith-effort exemption",
+            "The HHS Secretary may grant a <strong>temporary</strong> exemption to a state demonstrating a good-faith effort. Must expire <strong>no later than December 31, 2028</strong> (§1902(xx)(11)(C)(i)); may be terminated early for failure to meet <strong>quarterly reporting</strong> requirements or to keep making good-faith efforts.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Implementation funding",
+            "<strong>$200 million</strong> in FY2026 for the 50 states + DC (WFTC §71119(e)): $100M split equally; $100M by each state’s share of individuals subject to community engagement as of March 31, 2025.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Technical assistance contact",
+            "<strong>MedicaidWorks@cms.hhs.gov</strong>",
+            [
+              "CMS-HUB",
+              "GOVINFO-2026-11094"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applicable",
+      "title": "2. Who is an “applicable individual” — 42 CFR § 435.551",
+      "intro": "Verbatim structure from the codified regulation. An applicable individual is someone who is <em>not</em> a specified excluded individual (§ 435.554) and who meets (a) or (b).",
+      "columns": [
+        "Criterion",
+        "Verified regulatory text",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "(a) State-plan adult group",
+            "Eligible to enroll or is enrolled under the State plan under <strong>§ 435.119</strong> (the ACA adult / expansion group).",
+            [
+              "ECFR-435-551"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(b) §1115 demonstration route",
+            "Otherwise eligible to enroll or is enrolled in a demonstration project under <strong>section 1115(a)(2)</strong> that provides coverage meeting <strong>minimum essential coverage</strong> as defined at § 435.4, and who is:",
+            [
+              "ECFR-435-551"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(b)(1) Age",
+            "At least <strong>19</strong> and under <strong>65</strong> years of age.",
+            [
+              "ECFR-435-551"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(b)(2) Pregnancy",
+            "<strong>Not pregnant.</strong>",
+            [
+              "ECFR-435-551"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(b)(3) Medicare",
+            "<strong>Not</strong> entitled to or enrolled for benefits under Medicare <strong>Part A</strong>, or enrolled for benefits under <strong>Part B</strong>.",
+            [
+              "ECFR-435-551"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(b)(4) Other eligibility",
+            "<strong>Not otherwise eligible</strong> to enroll under the State plan.",
+            [
+              "ECFR-435-551"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "CMS reading of (b)",
+            "The §1115 route reaches people who “generally fit the description” of the adult group but are covered under a demonstration providing MEC. CMS states it “continues to evaluate which existing state section 1115 demonstration populations meet the definition.”",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Where the requirement does NOT apply",
+            "States that (a) have not adopted the adult group under the state plan and (b) have no §1115 demonstration offering MEC to that population. CMS example: a limited-benefit family-planning-only demonstration is <strong>not</strong> MEC.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pathways",
+      "title": "3. The seven compliance pathways — 42 CFR § 435.552(a)",
+      "intro": "An applicable individual demonstrates community engagement <strong>for a month</strong> if the individual meets one or more of the following.",
+      "columns": [
+        "#",
+        "Pathway",
+        "Statute",
+        "Regulation",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "1",
+            "Works <strong>not less than 80 hours</strong>.",
+            "§1902(xx)(2)(A)",
+            "§ 435.552(a)(1)",
+            [
+              "ECFR-435-552",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "2",
+            "Completes <strong>not less than 80 hours of community service</strong>.",
+            "§1902(xx)(2)(B)",
+            "§ 435.552(a)(2)",
+            [
+              "ECFR-435-552",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "3",
+            "Participates in a <strong>work program</strong> for <strong>not less than 80 hours</strong>.",
+            "§1902(xx)(2)(C)",
+            "§ 435.552(a)(3)",
+            [
+              "ECFR-435-552",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "4",
+            "Is enrolled in an <strong>educational program at least half-time</strong>.",
+            "§1902(xx)(2)(D)",
+            "§ 435.552(a)(4)",
+            [
+              "ECFR-435-552",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "5",
+            "Engages in <strong>any combination</strong> of (1)–(4) totalling <strong>not less than 80 hours</strong> — but a State may <strong>not</strong> combine education hours with another activity if the person is already enrolled at least half-time.",
+            "§1902(xx)(2)(E)",
+            "§ 435.552(a)(5)",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "6",
+            "Has a <strong>monthly income</strong> not less than the FLSA §6 minimum wage (29 U.S.C. §206(a)(1)(C)) <strong>× 80 hours</strong>.",
+            "§1902(xx)(2)(F)",
+            "§ 435.552(a)(6), (f)",
+            [
+              "ECFR-435-552",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "7",
+            "Is a <strong>seasonal worker</strong> (26 U.S.C. §45R(d)(5)(B)) with an <strong>average monthly income over the preceding 6 months</strong> not less than the minimum wage × 80 hours.",
+            "§1902(xx)(2)(G)",
+            "§ 435.552(a)(7), (g)",
+            [
+              "ECFR-435-552",
+              "USCODE-26-45R"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dollars",
+      "title": "4. The dollar figure, verified",
+      "columns": [
+        "Item",
+        "Verified value",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "Federal minimum wage",
+            "<strong>$7.25 per hour</strong>, effective July 24, 2009 (29 U.S.C. § 206(a)(1)(C)).",
+            [
+              "DOL-MINWAGE",
+              "DOL-FLSA"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Monthly income threshold",
+            "CMCS bulletin states verbatim: <em>“e.g., currently, <strong>$7.25 x 80 = $580 per month</strong>.”</em> CMS fact sheet states “at least 80 times the Federal hourly minimum wage (<strong>$580 per month in 2026</strong>)”.",
+            [
+              "CMCS-CIB-2025-12-08",
+              "CMS-FACTSHEET"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Whose minimum wage?",
+            "The <strong>Federal</strong> minimum wage under 29 U.S.C. § 206(a)(1)(C). The regulation cites the federal statute — not a state minimum wage. California’s higher state minimum wage is <strong>not</strong> the measure.",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Seasonal averaging threshold",
+            "Same $580 figure, averaged over the preceding 6 months, and only for a person who is a “seasonal worker” under 26 U.S.C. §45R(d)(5)(B).",
+            [
+              "ECFR-435-552",
+              "USCODE-26-45R"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "“Seasonal worker” definition (official U.S. Code)",
+            "“The term ‘seasonal worker’ means a worker who <strong>performs labor or services on a seasonal basis as defined by the Secretary of Labor</strong>, including workers covered by section 500.20(s)(1) of title 29, Code of Federal Regulations and retail workers employed exclusively during holiday seasons.”",
+            [
+              "USCODE-26-45R"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "income-test",
+      "title": "5. How “monthly income” is measured — the decisive provision",
+      "intro": "This is the provision that decides whether a person with $0 earned income can comply.",
+      "columns": [
+        "Provision",
+        "Verified text",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "42 CFR § 435.552(f)(1)",
+            "“An applicable individual demonstrates community engagement for a month if the individual has a monthly income that is not less than the applicable Federal minimum wage requirement under 29 U.S.C. 206(a)(1)(C) multiplied by 80 hours.”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "42 CFR § 435.552(f)(2)",
+            "“The agency must determine the monthly income based on the individual’s <strong>MAGI-based income, for their MAGI-based household</strong>, as defined at § 435.603, and applied to a month in the period under § 435.556(a)…”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "42 CFR § 435.552(g)(2)",
+            "Same MAGI-based household methodology for the seasonal-worker 6-month average.",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "42 CFR § 435.603(e)",
+            "“<strong>MAGI-based income</strong> means income calculated using the same financial methodologies used to determine <strong>modified adjusted gross income as defined in section 36B(d)(2)(B) of the Code</strong>”, with narrow exceptions: lump sums counted only in the month received; education scholarships/fellowships not used for living expenses excluded; specified AI/AN income excluded.",
+            [
+              "ECFR-435-603"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "42 CFR § 435.603(g)",
+            "For MAGI-determined individuals the agency <strong>must not</strong> (1) apply any <strong>assets or resources test</strong>, or (2) apply any income or expense disregards.",
+            [
+              "ECFR-435-603"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "42 CFR § 435.603(h)",
+            "Budget period — <strong>applicants</strong>: current <strong>monthly</strong> household income and family size. <strong>Current beneficiaries</strong>: a State may elect current monthly <strong>or</strong> projected annual income for the remainder of the calendar year.",
+            [
+              "ECFR-435-603"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "42 CFR § 435.603(f)",
+            "MAGI household — for a taxpayer who expects to file and not be claimed as a dependent: the taxpayer <strong>plus everyone they expect to claim as a tax dependent</strong>. Married couples living together are each included in the other’s household regardless of filing status.",
+            [
+              "ECFR-435-603"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "MAGI components (IRS)",
+            "MAGI = <strong>AGI</strong> (Form 1040 line 11) <strong>plus</strong> tax-exempt interest (line 2a), excluded foreign earned income (Form 2555 lines 45 and 50), and non-taxable Social Security benefits (line 6a minus 6b). MAGI <strong>does not include SSI</strong>.",
+            [
+              "IRS-MAGI",
+              "IRS-PTC-QA",
+              "HC-MAGI"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "CMS preamble — self-employment counts as work",
+            "“Many individuals work for themselves by being <strong>self-employed</strong> due to starting a business, <strong>owning a business</strong>, or as an independent contractor, and these activities <strong>meet the definition of work at § 435.552(b)</strong>. Under our definition of work at § 435.552(b), <strong>the hours the individual spends performing these duties would count toward meeting the 80-hour requirement</strong>.”",
+            [
+              "FR-91-33348",
+              "GOVINFO-2026-11094"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "CMS preamble — income-to-hours conversion",
+            "“if the monthly income is less than the applicable Federal minimum wage multiplied by 80 hours and the State does not have information regarding the number of hours worked, States have the option to apply an equivalency standard that allows the State to <strong>calculate the number of work hours for a month by dividing the individual’s monthly income by the Federal minimum wage</strong>.”",
+            [
+              "FR-91-33348",
+              "ECFR-435-552"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "definitions",
+      "title": "6. Definitions — 42 CFR § 435.552(b)",
+      "columns": [
+        "Term",
+        "Verified definition",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "Work",
+            "“(i) <strong>Work in exchange for money</strong>; (ii) Work in exchange for goods or services (<strong>“in-kind” work</strong>); and (iii) <strong>Unpaid work</strong> (other than community service as defined in this paragraph (b)).”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Community service",
+            "“Unpaid work, completed voluntarily or because of a mandate by court order, with a <strong>structured program</strong> that is completed for the <strong>direct benefit of the community</strong> under the auspices of <strong>public or nonprofit organizations</strong> (including embedded activities of the program that allow an individual to develop skills necessary to complete community service).” The organizations must include §501(c)(3) organizations and others; must <strong>provide oversight</strong>; the activity <strong>must not serve a partisan purpose</strong>; and they must have a process to <strong>track the type of activity, dates and hours, and a point of contact who can confirm the hours completed</strong>.",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Educational program",
+            "(i) An <strong>institution of higher education</strong> (HEA §101, 20 U.S.C. 1001); (ii) a program of <strong>career and technical education</strong> (Perkins Act §3(5), 20 U.S.C. 2302(5)); (iii) a <strong>high school</strong> (ESEA title VIII, 20 U.S.C. 7801 et seq.); (iv) a <strong>State-approved program of study leading to a certificate of high school equivalence</strong> for a person without a diploma.",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Work program",
+            "(i) A <strong>WIOA title I</strong> program (Pub. L. 113-128; 29 U.S.C. 3111 et seq.); (ii) a <strong>Trade Act of 1974 §236</strong> program (19 U.S.C. 2296); (iii) a State or political-subdivision <strong>employment and training</strong> program meeting Governor-approved standards, including a Food and Nutrition Act §6(d)(4) program (7 U.S.C. 2015(d)(4)) — <strong>other than a supervised job search program or job search training program</strong>, though those may be subsidiary activities if <strong>less than half</strong> the required hours; (iv) a <strong>DOL or VA</strong> employment and training program for veterans (any such program serving veterans must be an approved work program); (v) a <strong>workforce partnership</strong> under Food and Nutrition Act §6(d)(4)(N).",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education-mechanics",
+      "title": "7. Education-hour mechanics — 42 CFR § 435.552(c)–(d)",
+      "columns": [
+        "Rule",
+        "Verified text",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "Who decides enrollment status",
+            "“An applicable individual’s enrollment status in an educational program (<strong>full-time, half-time, less than half-time</strong>) is <strong>determined by the school or institution</strong>.”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Start",
+            "Status “begins on the <strong>first day of the school term</strong> for the educational program.”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Vacation and recess",
+            "Status “will continue through normal periods of attendance, <strong>vacation, and recess</strong>. During periods of vacation and recess, the enrollment status shall be based on the individual’s status just prior to the school break.”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "End",
+            "Status ends “at the end of the month that the student is <strong>expelled, withdraws, completes the school term and is not registered for the next school term</strong> (excluding optional terms such as winter or summer sessions), or <strong>graduates</strong> (unless the student is enrolled in another educational program).”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Less-than-half-time, credit-hour programs",
+            "“Multiply the number of each one credit hour of instruction by <strong>3</strong> to get the total of education hours in a week”, then “multiply the weekly total … by <strong>4.33 weeks</strong> to get total hours in a 1-month period.”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Less-than-half-time, non-credit programs",
+            "“the hours spent <strong>attending class and participating in educational activities</strong> will count towards meeting this requirement.”",
+            [
+              "ECFR-435-552"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exceptions",
+      "title": "8. Mandatory exceptions — 42 CFR § 435.553",
+      "intro": "A State <strong>must</strong> deem an applicable individual to have demonstrated community engagement for a month if, for part or all of that month, the individual was:",
+      "columns": [
+        "Cite",
+        "Exception",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "(a)(1)",
+            "Under the age of <strong>19</strong> years.",
+            [
+              "ECFR-435-553"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(a)(2)",
+            "Entitled to or enrolled for Medicare <strong>Part A</strong> benefits, or enrolled for <strong>Part B</strong> benefits.",
+            [
+              "ECFR-435-553"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(a)(3)",
+            "Described in any <strong>mandatory coverage group</strong> in subclauses (I) through (VII) of section 1902(a)(10)(A)(i) of the Act under the Medicaid State plan.",
+            [
+              "ECFR-435-553"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(a)(4)",
+            "A <strong>specified excluded individual</strong> as defined at § 435.554.",
+            [
+              "ECFR-435-553"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(b)",
+            "At any point during the <strong>3-month period ending on the first day of that month</strong>, an <strong>inmate of a public institution</strong>.",
+            [
+              "ECFR-435-553"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exclusions",
+      "title": "9. Specified excluded individuals — 42 CFR § 435.554(c)",
+      "intro": "“Community engagement is <strong>not a condition of eligibility</strong> for specified excluded individuals.” Meeting a category for part or all of a month excludes the person for that month.",
+      "columns": [
+        "#",
+        "Exclusion",
+        "Verified detail",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "1",
+            "Former foster care group",
+            "Meets the definition of the eligibility group serving former foster care children at §1902(a)(10)(A)(i)(IX), as amended by P.L. 115-271, “<strong>regardless of whether the individual turned age 18 on or after January 1, 2023</strong>.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "2",
+            "Indian",
+            "Meets the definition of <strong>Indian</strong> at 42 CFR § 447.51. CMS expands this to: Indian or Urban Indian (IHCIA §§4(13) and 4(28)); <strong>California Indian</strong> (IHCIA §809(a)); or otherwise determined eligible as an Indian for the Indian Health Service under HHS regulations.",
+            [
+              "ECFR-435-554",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "3",
+            "Parent / guardian / caretaker relative / family caregiver",
+            "Of a <strong>dependent child</strong> — defined as “a child <strong>13 years of age or under</strong> who relies on another individual for care” — <strong>or of a disabled individual</strong>. “Disabled individual” means one who meets the <strong>Americans with Disabilities Act</strong> definition at 28 CFR 35.108; “An individual <strong>need not be eligible for Medicaid or other Federal programs</strong> on the basis of a disability to be a disabled individual under this definition.” Non-resident family caregivers qualify if they provide <strong>not less than 80 hours</strong> of non-incidental assistance per month. “In residences with more than one parent, guardian, caretaker relative, or family caregiver, <strong>multiple individuals … may qualify</strong>.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "4",
+            "Veteran with a total disability rating",
+            "“a veteran with a temporary or permanent disability from the Department of Veterans Affairs, <strong>rated as 100 percent (total)</strong> under 38 U.S.C. 1155.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "5",
+            "Medically frail or otherwise has special medical needs",
+            "A person whose “physical, mental, or other behavioral health condition <strong>significantly impairs the individual’s ability to comply</strong>” and who is: (A) blind or disabled (SSA §1614); (B) with a <strong>substance use disorder</strong>, excluding someone in <strong>stable recovery</strong> (in recovery <strong>5 or more years</strong>); (C) with a <strong>disabling mental disorder</strong>; (D) with a physical, intellectual or developmental disability <strong>significantly impairing ≥1 activity of daily living</strong>; or (E) with a <strong>serious or complex medical condition</strong> (long enumerated definition: life-threatening, seriously disabling, causing significant pain or discomfort, requiring major caregiver time or effort, requiring frequent monitoring, affecting multiple organ systems, requiring tight physiological management, requiring multiple specialties, carrying risk of serious complications, or requiring adjustment in non-medical environments).",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "5(ii)",
+            "State must publish a conditions list",
+            "The State <strong>must develop a list</strong> of diseases, diagnoses, disorders or other health conditions identifying people who meet (A)–(E). The list “must be <strong>auditable, justifiable, and consistent</strong>” with those definitions, must be <strong>revised on a regular basis</strong>, and “if an individual does not have a disease, diagnosis, disorder, or health condition on this list, the State <strong>must have reasonable processes and criteria</strong> in place for such individual to request consideration.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "6",
+            "TANF work-requirement compliance",
+            "“The individual is <strong>compliant with any requirements imposed by the State, in accordance with section 407</strong> of the Act.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "7",
+            "SNAP household member subject to a work requirement",
+            "“The individual is a member of a household that receives <strong>Supplemental Nutrition Assistance Program (SNAP)</strong> benefits under 7 U.S.C. 2015 and is <strong>not exempt from a work requirement</strong> under such Act.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "8",
+            "Drug or alcohol treatment participant",
+            "Participating in a <strong>drug addiction or alcoholic treatment and rehabilitation program</strong> as defined in §3(h) of the Food and Nutrition Act of 2008 (7 U.S.C. 2012(h)). “States may establish a <strong>minimum time commitment</strong>, consistent with appropriate clinical guidelines.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "9",
+            "Inmate",
+            "“an <strong>inmate of a public institution</strong>, as defined at § 435.1010.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "10",
+            "Pregnant or postpartum",
+            "“The individual is <strong>pregnant</strong> or entitled to <strong>postpartum medical assistance</strong> under section 1902(e)(5) or (16) of the Act.”",
+            [
+              "ECFR-435-554"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardship",
+      "title": "10. Optional short-term hardship exceptions — 42 CFR § 435.555",
+      "intro": "<strong>At State option.</strong> If a State elects the option it must give notice, a request method, timeframes, timely determinations with an anticipated end date, and appeal rights. A State <strong>must not</strong> require a request for circumstances (2) or (3), and <strong>must not</strong> apply hardship exceptions to specified excluded individuals.",
+      "columns": [
+        "Circumstance",
+        "Verified detail",
+        "Individual request required?",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "(d)(1) Inpatient-level care",
+            "Receives <strong>inpatient hospital services</strong> (§440.10), <strong>nursing facility services</strong> (§440.155), services in an <strong>ICF/IID</strong> (§440.150), or <strong>inpatient psychiatric hospital services</strong> (§440.160, including under-21 without regard to IMD status); <strong>or other services of similar acuity</strong> including inpatient services in a critical access hospital (§440.170(g)), an emergency hospital (§440.170(e)), an institution for mental diseases, other State-recognized facilities not covered by Medicaid; <strong>and non-institutional services that, but for their receipt, would likely result in such institutionalization</strong>. “Inpatient” uses the §440.2 definition.",
+            "<strong>Yes</strong>",
+            [
+              "ECFR-435-555"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(d)(2) Declared emergency or disaster",
+            "Resides in a <strong>county or equivalent unit of local government</strong> with an emergency or disaster declared by the President under the <strong>National Emergencies Act</strong> (50 U.S.C. 1601 et seq.) or the <strong>Robert T. Stafford Act</strong> (42 U.S.C. 5121 et seq.). For Stafford declarations the duration is “the first month in which the incident period begins and through at least the end of the month in which the incident period ends”, extendable by CMS on a State request showing barriers persist. The State must timely notify CMS of its plan for a National Emergencies Act declaration.",
+            "<strong>No</strong> — §435.555(e)",
+            [
+              "ECFR-435-555"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(d)(3) High county unemployment",
+            "Through a State request to CMS, the State demonstrates and <strong>CMS determines</strong>, based on data from the <strong>U.S. Bureau of Labor Statistics</strong> or another reliable source such as a State labor department, that the person resides in a county whose unemployment rate is <strong>at or above the lesser of 8% or 1.5× the national unemployment rate</strong>.",
+            "<strong>No</strong> — §435.555(e)",
+            [
+              "ECFR-435-555"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(d)(4) Travel for treatment",
+            "The individual, <strong>or their dependent</strong>, must <strong>travel outside their community of residence for an extended period</strong> to receive medical services necessary to treat a <strong>serious or complex medical condition</strong> (as defined at §435.554(c)(5)(i)(E)) that are <strong>not available within their community</strong>. If the individual does not travel with the dependent they must show leave from employment or absence from other community engagement for reasons related to the dependent’s condition or travel — e.g. taking the dependent to local appointments, logistical activities relating to travel, or maintaining primary responsibility for communicating with the dependent’s providers.",
+            "<strong>Yes</strong>",
+            [
+              "ECFR-435-555"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "“Dependent” for hardship purposes",
+            "§435.555(b)(1): the applicable individual’s <strong>minor child</strong> (as defined under State law) living with them; their <strong>tax dependent</strong> (whether or not a minor child or residing with them); or an individual for whom they have been <strong>appointed guardian by a court</strong>.",
+            "—",
+            [
+              "ECFR-435-555"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timing",
+      "title": "11. Which months are tested — 42 CFR § 435.556",
+      "columns": [
+        "Situation",
+        "Verified rule",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "New applicants",
+            "Must demonstrate community engagement “for <strong>at least one, but not more than 3 consecutive months, as specified in the State plan, immediately preceding the month of application</strong>.”",
+            [
+              "ECFR-435-556"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Existing enrollees",
+            "Must demonstrate community engagement “for <strong>1 or more months</strong>, as specified in the State plan … <strong>whether or not consecutive</strong>” during the period between the most recent determination/redetermination and the renewal due date — or, if the State opted into more frequent verification under §435.557(d), between the most recent demonstration and the next one due.",
+            [
+              "ECFR-435-556"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Outer limit",
+            "“A State <strong>must not require</strong> an applicable individual to demonstrate community engagement for a period that <strong>exceeds</strong>” those windows.",
+            [
+              "ECFR-435-556"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Excluded individuals",
+            "“A State <strong>may not apply</strong> the requirements in paragraph (a) of this section to a specified excluded individual defined at § 435.554.”",
+            [
+              "ECFR-435-556"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "CMS interpretation — which months",
+            "A beneficiary meets the requirement if during <strong>any part</strong> of the eligibility period they demonstrated community engagement for the number of months the State specified. “Under CMS’s interpretation, the <strong>state may not dictate the specific months</strong> during which an applicable individual must demonstrate community engagement.” If more than one month is required, the State “must <strong>permit, but may not require</strong>, them to demonstrate community engagement in consecutive months.”",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Worked example (1-month lookback)",
+            "“a state must require applicable individuals applying for coverage in <strong>January 2027</strong> to demonstrate community engagement in <strong>December 2026</strong>.” Two months → November and December 2026. Three months → October, November and December 2026.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Determination notice",
+            "The State must inform applicants and beneficiaries consistent with §§435.917, 435.918 and 42 CFR part 431 subpart E, specifying whether the person is a specified excluded individual, or is an applicable individual and whether they demonstrate / are deemed to demonstrate community engagement for the month(s) specified.",
+            [
+              "ECFR-435-556"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "title": "12. Verification — 42 CFR § 435.557",
+      "columns": [
+        "Item",
+        "Verified rule",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "Data-first duty",
+            "The agency “must establish processes to use <strong>reliable information available to the State</strong> to verify” compliance, deemed compliance, or exclusion <strong>before requesting additional information from the individual</strong>.",
+            [
+              "ECFR-435-557"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "“Reliable information available to the State” includes",
+            "(i) information from <strong>electronic data sources</strong> the agency determined effective and documented in its verification plan; (ii) information from <strong>other State or local agencies</strong>; (iii) community-engagement information from <strong>Federal agencies and other data sources provided through the electronic service established by the Secretary</strong> (§435.949); (iv) information in the State’s <strong>eligibility system</strong>; (v) information in the individual’s <strong>case record</strong>; (vi) <strong>payroll data</strong>; (vii) <strong>claims</strong> adjudicated in the preceding 12 months, including paid, pended or denied; (viii) <strong>encounter data</strong> for the preceding 12 months.",
+            [
+              "ECFR-435-557"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Documenting the plan",
+            "The agency “must document in its <strong>verification plan under § 435.945(j)</strong> its policies and procedures for verifying compliance … including an identification of the electronic data sources that the agency uses.”",
+            [
+              "ECFR-435-557"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Cost/benefit test for skipping a data source",
+            "An agency “may determine that establishing a connection to or process to obtain information from a data source would not be effective, but … must consider such factors as the <strong>administrative costs</strong> … compared with the administrative costs associated with relying on documentation and the <strong>impact on program integrity</strong> in terms of the potential for ineligible individuals to be enrolled and for eligible individuals to be denied coverage.”",
+            [
+              "ECFR-435-557"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "When documentation may be required",
+            "Except for verifying a medical-frailty exclusion (subject to §435.557(g)(1)), when there is <strong>no reliable information available</strong> or the reliable information is <strong>not reasonably compatible</strong> with the individual’s statement: <strong>before January 1, 2028</strong> the agency may require documentation or accept other information under §435.952(c); <strong>beginning January 1, 2028</strong> a changed standard applies.",
+            [
+              "ECFR-435-557"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "More frequent verification",
+            "States <strong>may elect</strong> to verify compliance more often than at renewal (§435.557(d)); the election changes which look-back window applies under §435.556(a)(2)(ii).",
+            [
+              "ECFR-435-557",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Managed care prohibition",
+            "WFTC §71119(c): States are <strong>prohibited</strong> from using Medicaid <strong>MCOs, PIHPs, PAHPs</strong>, or contractors with direct or indirect financial relationships to them, <strong>to determine beneficiary compliance</strong>. Other support activities may be delegated; CMS expected to issue further guidance.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noncompliance",
+      "title": "13. Noncompliance — SSA §1902(xx)(6)",
+      "columns": [
+        "Step",
+        "Verified requirement",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "1",
+            "If a State <strong>cannot establish</strong> that someone met the requirement or was not required to, it must provide a <strong>notice of noncompliance</strong>.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "2",
+            "The individual gets <strong>30 calendar days from the date the notice is received</strong> to demonstrate compliance or show the requirement does not apply.",
+            [
+              "CMCS-CIB-2025-12-08",
+              "CMS-FACTSHEET"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "3",
+            "The State must <strong>continue to provide medical assistance during the 30-day period</strong>.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "4",
+            "The notice must include information on how to demonstrate compliance or show the requirement does not apply, and <strong>how to reapply</strong> if the application is denied or the beneficiary is disenrolled.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "5",
+            "If no satisfactory showing is made, the State must determine whether the individual has <strong>any other basis for eligibility</strong> for Medicaid or <strong>another insurance affordability program</strong>.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "6",
+            "The State must provide <strong>written notice and fair hearing rights</strong> under 42 CFR part 431 subpart E (including advance notice for an eligibility termination or other adverse action) and, if there is no other basis for eligibility, <strong>deny the application or terminate eligibility by the end of the month following the 30-day period</strong>.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ptc",
+      "title": "14. The premium-tax-credit trap — SSA §1902(xx)(7)",
+      "intro": "This is the single highest-impact consequence for a person who lets a work requirement lapse.",
+      "columns": [
+        "Provision",
+        "Verified text",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "§1902(xx)(7)(B) — PTC preclusion",
+            "“An individual who is eligible for Medicaid coverage that provides MEC is generally not eligible for advance payments of the premium tax credit (APTC) and premium tax credits (PTC) used to pay for coverage on a Health Insurance Exchange. Under section 1902(xx)(7)(B) of the Act, <strong>an individual is deemed to be eligible for MEC if the individual would have been eligible for Medicaid but for their failure to meet community engagement requirements</strong>. As such, an applicable individual who does not demonstrate community engagement and would otherwise be eligible for Medicaid is <strong>precluded from eligibility for APTC and PTC</strong>.”",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "§1902(xx)(7)(A) — FMAP protection",
+            "“a state shall not be treated as not providing medical assistance to all individuals described in section 1902(a)(10)(A)(i)(VIII), or as not expending amounts for all such individuals under the Medicaid state plan or waiver of the plan, solely because it has determined that such an individual is ineligible for Medicaid due to a failure to demonstrate community engagement.”",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outreach",
+      "title": "15. Outreach duty — SSA §1902(xx)(8)",
+      "columns": [
+        "Item",
+        "Verified requirement",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "When",
+            "Prior to initial implementation in a state, and <strong>periodically thereafter</strong>.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Content",
+            "How to comply; an explanation of the definition of “applicable individual” and the <strong>exceptions</strong>; the <strong>consequences of non-compliance</strong>; and how to <strong>report a change in status</strong> that could result in qualifying as a specified excluded individual, meeting an exception, or becoming subject to the requirement after an exclusion or exception ends.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Delivery formats",
+            "“by <strong>mail</strong> (or in an <strong>electronic format, if elected</strong> by the individual), and <strong>one or more additional formats</strong>. Additional formats may include <strong>telephone, text message, an internet website, other commonly available electronic means</strong>, and other formats the Secretary determines appropriate.”",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Deadline formula",
+            "Months required at application <strong>plus three months</strong>, counted back from the implementation date. For January 1, 2027 implementation: <strong>no later than September 2026</strong> (1-month), <strong>August 2026</strong> (2-month), or <strong>July 2026</strong> (3-month).",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "title": "16. Related WFTC / P.L. 119-21 provisions affecting the same population",
+      "columns": [
+        "Section",
+        "Provision",
+        "Verified detail",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "§71107",
+            "Six-month redeterminations",
+            "States must redetermine eligibility for the adult group <strong>once every 6 months</strong> instead of 12, beginning with renewals initiated on or after <strong>January 1, 2027</strong>. CMS footnote: those subject include almost all individuals enrolled under the state plan in the adult group and almost all §1902(a)(10)(A)(i)(VIII)-described individuals enrolled in a waiver providing coverage equivalent to MEC.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "§71103",
+            "Duplicate enrollment / address verification",
+            "State plans must provide for a process to regularly obtain <strong>address information</strong> by <strong>January 1, 2027</strong> (this part does not apply to territories); CMS must establish a system to prevent simultaneous multi-state enrollment, with State data submission from <strong>October 1, 2029</strong>.",
+            [
+              "CMCS-CIB-2025-11-18"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "§71109",
+            "Amended definition of “qualified non-citizen”",
+            "Changes who is entitled to <strong>federally funded full-scope Medicaid</strong>.",
+            [
+              "CMCS-CIB-2025-11-18"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "§71120",
+            "Cost-sharing for expansion adults",
+            "Requirement to implement cost-sharing for expansion adults with incomes <strong>above 100% FPL</strong>, effective <strong>October 1, 2028</strong>.",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Retroactive coverage",
+            "Reduced retroactive coverage",
+            "DHCS (official consumer page and ACWDL 26-07): for applications dated <strong>January 1, 2027 or later</strong>, retroactive coverage is <strong>1 month</strong> for MAGI New Adult Groups and <strong>2 months</strong> for all other Medi-Cal eligibility groups.",
+            [
+              "DHCS-CHANGES",
+              "DHCS-ACWDL-26-07"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "§70433",
+            "1099-MISC / 1099-NEC reporting threshold",
+            "<strong>UNVERIFIED — left blank.</strong> Third-party tax sources state OBBBA §70433 raised the general information-reporting threshold from $600 to $2,000 for payments made in 2026, indexed from 2027. IRS instructions for Forms 1099-MISC/1099-NEC (Rev. Dec 2026) do reference $2,000 in an example, but the statutory section number and effective date were not verified against a primary source. See flagged item F-16.",
+            [
+              "IRS-I1099MISC"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

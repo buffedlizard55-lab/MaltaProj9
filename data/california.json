@@ -1,0 +1,1423 @@
+{
+  "key": "california",
+  "title": "California Implementation & Protections",
+  "subtitle": "WIC § 14005.69 · SB 164 (Stats. 2026, Ch. 27) · AB 2161 (Ch. 209) · DHCS guidance",
+  "sections": [
+    {
+      "id": "statute",
+      "title": "1. California's own statute",
+      "intro": "California did not wait for CMS to tell counties what to do — it wrote the federal requirement into state law and added protections of its own.",
+      "columns": [
+        "Item",
+        "Verified value",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "State statute",
+            "<strong>California Welfare & Institutions Code (WIC) § 14005.69</strong> — “Medi-Cal eligibility: work or community engagement.”",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "How enacted",
+            "“Added by <strong>Stats. 2026, Ch. 27, Sec. 75. (SB 164)</strong> Effective <strong>June 29, 2026</strong>. <strong>Conditionally operative</strong> as prescribed by its own provisions.” SB 164 is the 2026 health budget trailer bill.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Amended by",
+            "<strong>AB 2161 (Bonta) — CHAPTER 209, Statutes of 2026.</strong> “An act to amend Section 14005.69 of the Welfare and Institutions Code, relating to Medi-Cal.” <strong>Approved by Governor September 14, 2026</strong>; filed with Secretary of State September 14, 2026.",
+            [
+              "LEGINFO-AB2161",
+              "LEGINFO-AB2161-TEXT"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "AB 2161 version history",
+            "02/18/26 Introduced → 03/23/26 Amended Assembly → 05/18/26 Amended Assembly → 08/13/26 Amended Senate → 08/19/26 Amended Senate → 08/30/26 Enrolled → <strong>09/14/26 Chaptered</strong>.",
+            [
+              "LEGINFO-AB2161"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Legislative intent",
+            "“It is the intent of the Legislature that the department implement work or community engagement requirements … to ensure that all eligible Medi-Cal applicants and beneficiaries <strong>obtain and maintain coverage in ways that are least administratively burdensome</strong> to applicants and beneficiaries.” — §14005.69(a)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Sunset tie",
+            "“This section shall <strong>remain operative only as long as</strong> Section 1396a(xx) of Title 42 of the United States Code (Section 71119 of federal H.R. 1 (Public Law 119-21)) is operative.” — §14005.69(m)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Regulation deadline",
+            "DHCS “<strong>shall adopt regulations by July 1, 2029</strong>”; until then it may implement, interpret or make the section specific “by means of <strong>plan or county letters, information notices, plan or provider bulletins, or other similar instructions</strong>” notwithstanding the Administrative Procedure Act. — §14005.69(l)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protections",
+      "title": "2. California-specific protections that go beyond federal law",
+      "intro": "These are the provisions that most reduce the risk of losing coverage.",
+      "columns": [
+        "Protection",
+        "Verified statutory text",
+        "Cite",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "<strong>Systems-readiness precondition</strong>",
+            "“<strong>No sooner than January 1, 2027</strong>, pursuant to the requirements set forth in Section 1396a(xx) of Title 42 of the United States Code, as a condition of Medi-Cal eligibility, <strong>and following the department’s confirmation that systems are programmed to maintain coverage with minimal data requests to an applicable individual</strong>, an applicable individual shall demonstrate work or community engagement.”",
+            "§14005.69(d)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Director must certify in writing</strong>",
+            "“This section shall be implemented <strong>only after the director determines, and communicates in writing to the Department of Finance, that systems have been programmed</strong> for implementation of this section.”",
+            "§14005.69(n)(1)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Federal approval / funding precondition</strong>",
+            "“This section shall be implemented <strong>only to the extent that any necessary federal approvals are obtained and that federal financial participation is available and not otherwise jeopardized</strong>.”",
+            "§14005.69(n)(2)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Data-first verification</strong>",
+            "DHCS “shall confirm that systems are programmed to maintain coverage with <strong>minimal information requests</strong>” by (1) “verifying compliance through interfaces with data sources that include, but are not limited to, <strong>wage data, Medi-Cal eligibility aid codes, Medi-Cal claims and encounter data, and data from the State Department of Social Services</strong>”, and (2) “allowing individuals the option to add, through <strong>consent-based verification platforms</strong> and any other means, information to their application or renewal.”",
+            "§14005.69(c)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Conflicting-data protection (added by AB 2161)</strong>",
+            "“<strong>When there is a conflict in reliable data sources that adversely impacts the eligibility of an applicant or beneficiary, the county shall request the applicant or beneficiary to confirm information before taking any adverse action</strong> on the application or renewal.”",
+            "§14005.69(i) as amended",
+            [
+              "LEGINFO-AB2161-TEXT"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Shortest permitted lookback</strong>",
+            "Applicants: “<strong>one month</strong> immediately preceding the month during which the individual applies.” Enrollees: “<strong>any one month</strong> during the period between the individual’s most recent determination or redetermination … and their next regularly scheduled redetermination.” Federal law allows states to choose 1, 2 or 3 consecutive months — <strong>California chose 1</strong>.",
+            "§14005.69(d)(1), (d)(2)",
+            [
+              "LEGINFO-WIC-14005-69",
+              "ECFR-435-556"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Broader caregiver exclusion</strong>",
+            "A specified excluded individual includes “the parent, guardian, caretaker relative, or family caregiver of an individual with a <strong>chronic or other health condition, disability, or functional limitation</strong>” — broader than the federal “disabled individual” (ADA definition at 28 CFR 35.108).",
+            "§14005.69(b)(2)(F)",
+            [
+              "LEGINFO-WIC-14005-69",
+              "ECFR-435-554"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>California Indian exclusion stated expressly</strong>",
+            "Specified excluded individuals include “A <strong>California Indian</strong>, as described in Section 1679(a) of Title 25 of the United States Code.”",
+            "§14005.69(b)(2)(C)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Former-inmate exclusion stated expressly</strong>",
+            "“An <strong>inmate or former inmate</strong> of a public institution released at any point during the three-month period ending on the first day of that month.”",
+            "§14005.69(b)(2)(L)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Foster-youth exclusion stated expressly</strong>",
+            "“<strong>Foster youth or former foster youth under 26 years of age</strong>.”",
+            "§14005.69(b)(2)(N)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Other federally approved exemptions</strong>",
+            "Deemed compliant includes “An individual excluded based on <strong>any other federally required or approved exemptions</strong> outlined in the state plan or waivers.”",
+            "§14005.69(f)(5)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Continued aid during a state hearing</strong>",
+            "The notice of noncompliance must state “the circumstances under which <strong>aid will be continued</strong> if a state hearing is requested.”",
+            "§14005.69(k)(9)",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "income-versions",
+      "title": "3. The income test in California — both versions of the statute",
+      "intro": "Two wordings of WIC §14005.69(e)(6) are in circulation because AB 2161 amended the section. Both are quoted; <strong>neither limits the test to earned income</strong>. See flagged item F-19.",
+      "columns": [
+        "Version",
+        "Verified text",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "<strong>As added by SB 164</strong> (Stats. 2026, Ch. 27, §75)",
+            "§14005.69(e)(6): “The individual has a <strong>total monthly income, including, but not limited to, earned income, unemployment benefits, state disability insurance, retirement income, or dividends</strong>, that is no less than the applicable minimum wage requirement under Section 206 of Title 29 of the United States Code, multiplied by 80 hours.”",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>As amended by AB 2161</strong> (Ch. 209, Stats. 2026)",
+            "§14005.69(e)(6): “The individual has a <strong>total monthly income, using modified adjusted gross income (MAGI)-based financial methods, as specified in Section 1396a(e)(14) of Title 42 of the United States Code, for their individual MAGI-based household budget</strong>, that is no less than the applicable minimum wage requirement under Section 206 of Title 29 of the United States Code, multiplied by 80 hours.”",
+            [
+              "LEGINFO-AB2161-TEXT"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Seasonal / fluctuating income",
+            "§14005.69(e)(7) as amended: “The individual had an <strong>average monthly income over the preceding six months, based on the individual’s MAGI-based household budget</strong>, as described in paragraph (6), that is no less than the applicable minimum wage requirement … multiplied by 80 hours, and is a <strong>seasonal worker</strong>, as described in Section 45R(d)(5)(B) of the federal Internal Revenue Code of 1986.”",
+            [
+              "LEGINFO-AB2161-TEXT",
+              "USCODE-26-45R"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Effect of the AB 2161 change",
+            "<strong>Analysis, not a quotation:</strong> the amendment aligns the state test with 42 CFR §435.552(f)(2) (MAGI-based household income). Because MAGI is built from <strong>adjusted gross income</strong>, unearned income — rent, interest, dividends, capital gains, and “other income” — remains countable under both versions.",
+            [
+              "ECFR-435-603",
+              "IRS-MAGI"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dhcs-says",
+      "title": "4. What DHCS tells members, in DHCS's own words",
+      "intro": "This is the most direct official answer to the question “how do I comply with $0 earned income?”",
+      "columns": [
+        "Document",
+        "Verbatim language",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "<strong>MEDIL I 26-25</strong> member outreach letter (Sept 11, 2026)",
+            "“This rule says that adults, ages 19-64, will need to work, volunteer, go to school, attend a job-training program, <strong>or have an income</strong> to keep Medi-Cal.”",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>MEDIL I 26-25</strong> — the income pathway",
+            "“you can meet this rule by <strong>any one or a combination</strong> of the items below: ● <strong>Have an income from any source of at least $580 (before taxes) in any month since your last renewal.</strong>  ○ People whose hours change frequently or who have seasonal jobs can average at least <strong>$580 per month from any source over 6 months</strong>.”",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>MEDIL I 26-25</strong> — the hours pathways",
+            "“● Work at any kind of job, volunteer, do community service, or attend a job-training program for a combined total of at least <strong>80 hours in any month since your last renewal</strong>. ● <strong>Go to school at least part time in any month since your last renewal</strong>.  ○ People who go to school less than part time can combine their class and school-activity hours with work, community service, or job training to meet the 80-hour requirement.”",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>ACWDL 25-30</strong> qualifying-activity table — income",
+            "Criteria: “<strong>Income equivalent to at least 80 hours at federal minimum wage (currently $7.25 per hour x 80 hours). Currently, this amount is $580 a month.</strong>” Definition: “<strong>An individual’s total gross income for a month must meet or exceed this amount (including earned income, unemployment benefits, State Disability Insurance, retirement income, dividends, etc.)</strong>”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>ACWDL 25-30</strong> qualifying-activity table — work",
+            "Criteria: “<strong>At least 80 hours of work</strong>” — Definition: “<strong>Have a job (working at least 80 hours a month) including self-employment.</strong>”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>DHCS Medi-Cal Changes</strong> consumer page",
+            "“Members must do one or more of the following: • Work at a job and earn at least <strong>$580 a month</strong> • Be a seasonal worker and earn an average of <strong>$580 a month</strong> over the last six months • Be in a job training program … for at least 80 hours a month • Volunteer or do community service for at least 80 hours a month • Go to school at least half-time (<strong>usually two or three classes, or about six to eight credits each semester</strong>) • Do a mix of the activities above so the total is at least 80 hours a month or at least $580 a month.”",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>DHCS Medi-Cal Changes</strong> — the warning",
+            "“<strong>If you are required to meet the rules and do not, you could lose your Medi-Cal.</strong>” and “When you get a letter from Medi-Cal or your county office, <strong>open it right away</strong> and <strong>respond quickly</strong>.”",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>MEDIL I 26-25</strong> — the subsidy trap, in DHCS's words",
+            "“<strong>If you lose Medi-Cal because you did not meet these rules, you cannot get financial help to pay for a health plan through Covered California. That means you would have to pay the full cost of new health insurance.</strong>”",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>MEDIL I 26-25</strong> — automatic verification",
+            "“We may be able to use <strong>information that we already have about you</strong> to determine if you meet one or more of the reasons listed above. If we can do this, you will receive a notice that says you are excused … This notice will also say that you can keep your Medi-Cal and that <strong>you do not need to take any further actions</strong>. If we do not have enough information to automatically determine … you will have the opportunity to <strong>provide information</strong> that could excuse you from this rule.”",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "who",
+      "title": "5. Who the rule reaches in California",
+      "columns": [
+        "Category",
+        "Detail",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "Target group",
+            "<strong>MAGI New Adult Group</strong> (aid code <strong>M1</strong>) — adults aged 19 to 64 enrolled through the ACA expansion, including parents or caregivers of dependent children <strong>aged 14 and above</strong>.",
+            [
+              "DHCS-ACWDL-25-30",
+              "DHCS-MEDIL-I25-18",
+              "DHCS-FACTSHEET"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>State-funded Medi-Cal adults are also covered</strong>",
+            "WIC §14005.69(b)(1)(B) makes an applicable individual of “An individual who <strong>receives state-funded Medi-Cal coverage</strong> and who meets the same criteria described in Section 1396a(a)(10)(A)(i)(VIII)”. <strong>Federal 42 CFR §435.551 reaches only the state-plan adult group and certain §1115 MEC demonstrations.</strong> California's definition is therefore broader.",
+            [
+              "LEGINFO-WIC-14005-69",
+              "ECFR-435-551"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Immigration status is not a carve-out",
+            "“Work and community engagement requirements <strong>only apply to applicants and members enrolled in Medi-Cal under the MAGI New Adult Group, regardless of immigration status</strong>.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Excluded Medi-Cal populations",
+            "“Members who receive Medi-Cal under other coverage groups such as <strong>Non-MAGI</strong> …, <strong>Mandatory Children’s Group</strong>, or <strong>Pregnancy Group</strong> are excluded … Additionally, individuals eligible for <strong>restricted-scope (emergency) Medi-Cal</strong> or <strong>pregnancy services</strong> are also not subject to work and community engagement requirements.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Consumer-page exclusion list",
+            "The rules <strong>do not apply</strong> to: children (0–18); adults 65 and older; pregnant people (during pregnancy and one year after); <strong>parents and caregivers of children ages 0–13</strong>; people with disabilities; people with serious physical or mental health conditions, or substance use problems; people released from jail or prison in the last 90 days; people on Medicare Part A or Part B; American Indians or Alaska Natives; people under age 26 who were in foster care on their 18th birthday.",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Individual-level assessment",
+            "“Medi-Cal eligibility is determined at the <strong>individual level</strong> … All individuals must <strong>independently</strong> meet the participation criteria; <strong>one individual’s compliance cannot be used to satisfy another’s requirement</strong>. If an individual does not meet the required work or community engagement activities, <strong>only that individual’s Medi-Cal eligibility will be impacted</strong>.” <strong>See flagged item F-01 — this sits in tension with the household MAGI income test.</strong>",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Existing members not assessed early",
+            "“Counties <strong>will not assess</strong> work and community engagement requirements for MAGI New Adult Group members with an <strong>application date of December 31, 2026, or prior until their next scheduled renewal in 2027</strong>.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "New applications",
+            "“This new provision will apply to <strong>all applications submitted on or after January 1, 2027</strong>.”",
+            [
+              "DHCS-IMPL-PLAN"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exemptions",
+      "title": "6. California's published exemption table (ACWDL 25-30)",
+      "columns": [
+        "Exemption",
+        "Definition as published by DHCS",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "Living in a county with high unemployment rate",
+            "“Living in a county with an unemployment rate that is <strong>at or above the lesser of 8 percent, or 1.5 times the national unemployment rate</strong>.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Entitled to or enrolled in Medicare Parts A or B",
+            "“Entitled to, or enrolled in, benefits under Medicare Part A of title XVIII or enrolled for benefits under Part B of title XVIII.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "American Indians or Alaska Natives (AI/AN)",
+            "“Indians or Urban Indians as defined in the Indian Health Care Improvement Act (IHCIA); <strong>California Indians</strong> as described in Section 809(a) of the IHCIA; Individuals eligible for Indian Health Service (IHS) under regulations by the Secretary of HHS.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Parents, guardians, caretaker relatives or family caregivers of a dependent child age 13 or younger",
+            "“… (as defined in section 2 of the RAISE Family Caregivers Act (Public Law 115-119)) of a dependent child <strong>13 years of age and under</strong>. Note: <strong>When there are two parents in the household, both parents are eligible for this exemption.</strong>”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Pregnant or entitled to postpartum medical assistance",
+            "“Pregnant or entitled to postpartum medical assistance.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Former foster youth under age 26",
+            "“Former foster care youth under age 26.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "In jail or prison",
+            "“Inmate of a local, state, or federal public institution.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Recently released from jail or prison in the last 90 days",
+            "“At any point during the 3-month period ending on the first day of such month, the individual was an inmate of a local, state, or federal public institution.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Meeting CalFresh work requirements",
+            "“Is a member of a household that receives supplemental nutrition assistance program benefits under the Food and Nutrition Act of 2008 <strong>and is not exempt from a work requirement under such Act</strong>.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Meeting TANF (CalWORKs) work requirements",
+            "“In compliance with any requirements imposed by the State pursuant to section 407 of the Social Security Act.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Caregiver of a disabled individual",
+            "“Parents, guardians, or caretaker relatives (caretaker), or family caregivers … of a <strong>disabled individual of any age</strong>.”",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Disabled veterans",
+            "“Veteran with a disability <strong>rated as total</strong> under section 1155 of” title 38 of the U.S. Code.",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Serious / complex medical conditions, mental health, substance use",
+            "DHCS member letter lists being excused if you “Have a <strong>serious, complex, or ongoing medical condition</strong> that keeps you from meeting this rule”; “Have a <strong>serious mental health condition</strong>”; “Have a <strong>disability</strong> that keeps you from meeting this rule”; or “<strong>Overuse or misuse of drugs or alcohol, are in treatment, or have been asked to attend treatment</strong>.”",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Exemption verification frequency",
+            "“Exemptions must be <strong>verified every 6 months</strong>.”",
+            [
+              "DHCS-ACWDL-25-30",
+              "DHCS-FACTSHEET"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noncompliance-ca",
+      "title": "7. California's noncompliance procedure — WIC §14005.69(j)–(k)",
+      "columns": [
+        "Step",
+        "Verified requirement",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "1",
+            "If a county cannot verify compliance, deemed compliance, or exclusion, it <strong>must</strong> provide the <strong>notice of noncompliance</strong> described in subdivision (k).",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "2",
+            "It must give <strong>30 calendar days beginning on the date the notice is received</strong> to make a satisfactory showing of compliance, of deemed compliance, or that the requirement does not apply because the person is not an “applicable individual”.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "3",
+            "It must <strong>continue to provide Medi-Cal services during the 30-calendar-day period</strong> if the individual is enrolled.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "4",
+            "If no satisfactory showing is made and the person is not a specified excluded individual, the county must <strong>deny the application or disenroll no later than the end of the month following the month in which the 30-calendar-day period ends</strong>.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "5",
+            "<strong>Before</strong> denying or disenrolling the county must (A) “Determine whether there is <strong>any other basis for eligibility</strong> for the Medi-Cal program <strong>or for another insurance affordability program</strong>”, and (B) “Provide <strong>written notice</strong> and grant the individual an <strong>opportunity for a fair hearing</strong>.”",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "6",
+            "The notice must be on a <strong>DHCS-prescribed form</strong> and must include the county worker / call centre name and phone number and the date the form was completed; a copy goes in the case file.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "7",
+            "Required notice contents",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(1)",
+            "How to make a satisfactory showing of compliance, <strong>including which months will be assessed</strong>, how to show compliance, and how to show deemed compliance.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(2)",
+            "How to show the requirement does not apply because the person is not an applicable individual, including because they meet one or more specified-excluded-individual categories.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(3)",
+            "The <strong>deadline</strong> for providing the information.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(4)",
+            "A description of <strong>how the information should be submitted</strong> to the county.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(5)",
+            "A description of the <strong>consequences</strong> of noncompliance and of failing to respond.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(6)",
+            "How the individual may <strong>reapply</strong> if denied or disenrolled.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(7)",
+            "Information about <strong>short-term hardship events</strong>.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(8)",
+            "The right to request a <strong>state hearing</strong>, the procedures, and the <strong>time limits</strong>.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "(k)(9)",
+            "The circumstances under which <strong>aid will be continued</strong> if a state hearing is requested.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timeline-ca",
+      "title": "8. California timeline",
+      "columns": [
+        "Date",
+        "What happens",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "February 2026",
+            "DHCS begins a <strong>text-messaging campaign</strong>, staggered by members’ renewal due month, linking to the Medi-Cal Work Rules page.",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Late August 2026",
+            "DHCS <strong>begins mailing outreach notices</strong> to current members in the New Adult Group.",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "September 14, 2026",
+            "<strong>AB 2161 approved by the Governor</strong>; filed with the Secretary of State; chaptered as <strong>Chapter 209</strong>.",
+            [
+              "LEGINFO-AB2161"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "October 1 – December 31, 2026",
+            "County eligibility staff <strong>must include the outreach letter with application materials</strong> for new and returning members, “to ensure all members have been noticed.”",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "October 1, 2026",
+            "Federal §71109 change to the “qualified non-citizen” definition takes effect — affects who is entitled to federally funded full-scope Medi-Cal.",
+            [
+              "CMCS-CIB-2025-11-18",
+              "DHCS-CHANGES",
+              "DHCS-TRACKING"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "December 31, 2026",
+            "Applications dated on or before this date are <strong>not</strong> assessed for WCER until the member’s next scheduled renewal in 2027.",
+            [
+              "DHCS-ACWDL-25-30"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>January 1, 2027</strong>",
+            "Work and community engagement requirement applies to <strong>all applications submitted on or after this date</strong>. Retroactive coverage drops to <strong>1 month</strong> (MAGI New Adult Group) and <strong>2 months</strong> (all other groups). Fee-for-service transition begins for certain immigrant groups. Six-month redeterminations required federally for renewals initiated on or after this date.",
+            [
+              "DHCS-IMPL-PLAN",
+              "DHCS-ACWDL-26-07",
+              "DHCS-CHANGES",
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>March 1, 2027</strong>",
+            "DHCS consumer page: six-month eligibility checks begin. The MEDIL I 26-25 member letter tells members the rules “will <strong>not go into effect until March 2027</strong>”. <strong>See flagged item F-11 — this date does not match the January 1, 2027 federal and application-date rules.</strong>",
+            [
+              "DHCS-CHANGES",
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "March 2027 or later",
+            "County example: “Current Medi-Cal members will be screened for Medi-Cal WCER at their <strong>next annual renewal due in March 2027 or later</strong>. These individuals will also be subject to the 6-month redetermination starting with their next annual renewal due in March 2027 or later.” (Alameda County Social Services, a California county agency.)",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "June 30, 2027",
+            "End of state-funded full-scope Medi-Cal for the reclassified immigrant groups; from <strong>July 1, 2027</strong> only pregnancy-related and emergency services.",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>July 1, 2027</strong>",
+            "Non-MAGI Medi-Cal <strong>asset limits</strong> drop to $21,000 (one person) / $31,000 (two people) / +$1,550 per extra person. Some members must begin paying a <strong>monthly premium</strong>. Full-scope dental ends for some members.",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "December 31, 2028",
+            "Outer limit for any <strong>good-faith-effort exemption</strong> granted to a state.",
+            [
+              "CMCS-CIB-2025-12-08"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>October 1, 2028</strong>",
+            "Federal §71120 cost-sharing requirement for expansion adults above 100% FPL takes effect. DHCS consumer page describes copayments for adults 19–64 who are not pregnant, not on Medicare, and who “Make more than <strong>$15,560 a year</strong>” — <strong>see flagged item F-10</strong>.",
+            [
+              "DHCS-CHANGES",
+              "CMCS-CIB-2025-11-18"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "July 1, 2029",
+            "DHCS must adopt <strong>regulations</strong> for WIC §14005.69.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "October 1, 2029",
+            "CMS multi-state duplicate-enrollment system; states begin submitting enrollee data.",
+            [
+              "CMCS-CIB-2025-11-18"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "October 1, 2034",
+            "<strong>Sunset</strong> of the CMS implementing regulations and restoration of pre-sunset eligibility/enrollment policy.",
+            [
+              "FR-91-33348"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "income-limits",
+      "title": "9. California Medi-Cal income limits (138% FPL)",
+      "intro": "Below these figures a person is in the MAGI New Adult Group and the work requirement applies. Above them the route is Covered California instead.",
+      "columns": [
+        "Family size",
+        "Annual limit (138% FPL)",
+        "Monthly 138%",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "1",
+            "<strong>$22,025</strong>",
+            "$1,836",
+            [
+              "DHCS-FPL-CHART",
+              "DHCS-FPL-MONTHLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "2",
+            "$29,863",
+            "$2,490",
+            [
+              "DHCS-FPL-CHART",
+              "DHCS-FPL-MONTHLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "3",
+            "$37,702",
+            "$3,143",
+            [
+              "DHCS-FPL-CHART",
+              "DHCS-FPL-MONTHLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "4",
+            "$45,540",
+            "$3,795",
+            [
+              "DHCS-FPL-CHART",
+              "DHCS-FPL-MONTHLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "5",
+            "$53,378",
+            "$4,450",
+            [
+              "DHCS-FPL-CHART",
+              "DHCS-FPL-MONTHLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "6",
+            "$61,217",
+            "$5,102",
+            [
+              "DHCS-FPL-CHART",
+              "DHCS-FPL-MONTHLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "7",
+            "$69,055",
+            "$5,755",
+            [
+              "DHCS-FPL-CHART",
+              "DHCS-FPL-MONTHLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "8",
+            "$76,894",
+            "$6,408",
+            [
+              "DHCS-FPL-CHART",
+              "DHCS-FPL-MONTHLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Each extra person",
+            "Add <strong>$7,839</strong>",
+            "",
+            [
+              "DHCS-FPL-CHART"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fpl-basis",
+      "title": "10. Federal poverty guideline basis (2026)",
+      "columns": [
+        "Persons in family/household",
+        "2026 poverty guideline (48 contiguous states + DC)",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "1",
+            "<strong>$15,960</strong>",
+            [
+              "ASPE-FPL",
+              "FR-91-1797"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "2",
+            "$21,640",
+            [
+              "FR-91-1797"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "3",
+            "$27,320",
+            [
+              "FR-91-1797"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "4",
+            "$33,000",
+            [
+              "FR-91-1797"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "5",
+            "$38,680",
+            [
+              "FR-91-1797"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "More than 8 persons",
+            "Add <strong>$5,680</strong> for each additional person",
+            [
+              "ASPE-FPL",
+              "FR-91-1797"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Effective date",
+            "<strong>January 13, 2026</strong>, unless a program specifies a different effective date. Published <strong>91 FR 1797</strong> (January 15, 2026). Reflects a <strong>2.63%</strong> CPI-U increase between calendar years 2024 and 2025.",
+            [
+              "FR-91-1797"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asset-limits",
+      "title": "11. Medi-Cal asset limits — and why they do NOT apply to the work-requirement population",
+      "intro": "This matters to a property owner. The two regimes must not be confused. See flagged item F-17.",
+      "columns": [
+        "Period",
+        "Limit",
+        "Who it applies to",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "Through June 30, 2027",
+            "<strong>$130,000</strong> for one person; add <strong>$65,000</strong> for every extra person in the house (up to 10 people)",
+            "People who are age 65 or older; have a disability (physical, mental or developmental); live in a nursing home; or are in a family that makes too much money to qualify under federal tax rules — i.e. <strong>Non-MAGI</strong> groups",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "From July 1, 2027",
+            "<strong>$21,000</strong> for one person; <strong>$31,000</strong> for two people; add <strong>$1,550</strong> for every extra person (up to 10)",
+            "Same Non-MAGI groups",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Assets that count",
+            "“Bank accounts; Cash; <strong>More than one house or vehicle</strong>”",
+            "Non-MAGI groups",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "Assets that do not count",
+            "“The home you live in; One vehicle; Household items; Some savings, like retirement accounts”",
+            "Non-MAGI groups",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>MAGI adult group</strong>",
+            "42 CFR §435.603(g): for MAGI-determined individuals the agency “<strong>must not … apply any assets or resources test</strong>”. DHCS: “<strong>Income rules have not changed.</strong>” <strong>Owning rental property does not disqualify a person from MAGI New Adult Group Medi-Cal.</strong>",
+            "MAGI New Adult Group",
+            [
+              "ECFR-435-603",
+              "DHCS-CHANGES"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "state-help",
+      "title": "12. What California is doing to help — enacted, pending and available",
+      "columns": [
+        "Measure",
+        "What it does",
+        "Verified status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "<strong>AB 2161 (Bonta)</strong>",
+            "Conforms state law; reduces administrative burden; adds the <strong>data-conflict confirmation duty</strong>; switches the income test to MAGI methodology.",
+            "<strong>ENACTED</strong> — Chapter 209, Statutes of 2026; approved by the Governor September 14, 2026.",
+            [
+              "LEGINFO-AB2161",
+              "LEGINFO-AB2161-TEXT"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>SB 164</strong> (health budget trailer bill)",
+            "Added WIC §14005.69 in the first place, with the systems-readiness and federal-approval preconditions.",
+            "<strong>ENACTED</strong> — Stats. 2026, Ch. 27, §75; effective June 29, 2026.",
+            [
+              "LEGINFO-WIC-14005-69"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>AB 2208 (Stefani)</strong>",
+            "Would set a <strong>$0.01</strong> copayment for nonemergency services for expansion adults above 100% and up to 138% FPL no sooner than October 1, 2028; providers may collect, retain or waive; exempts emergency services, family planning and other categories; exempts any item where Medi-Cal’s payment is <strong>$10 or less</strong>; caps aggregate family cost-sharing at <strong>5% of family income</strong>; and would preserve <strong>3 months</strong> of retroactive coverage.",
+            "<strong>NOT ENACTED — PENDING.</strong> Official history: <strong>08/13/26 — “In committee: Held under submission.”</strong> Type of measure: “Active Bill – In Committee Process.” Last amended 07/02/26 in Senate; referred to Senate APPR. suspense file 08/03/26.",
+            [
+              "LEGINFO-AB2208"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Covered California State Premium Subsidy</strong> — PY2026",
+            "Reinstated state premium subsidy for enrollees with household income <strong>at or below 165% FPL</strong>; preserves IRA-level subsidies up to 150% FPL. Funding <strong>$190 million</strong>.",
+            "In effect for plan year 2026.",
+            [
+              "CC-2026-EXPLAINER"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Covered California State Premium Subsidy</strong> — PY2027",
+            "Expanded to <strong>200% FPL</strong>; <strong>$300 million</strong> from the Health Care Affordability Reserve Fund under <strong>Budget Act of 2026, item 4800-101-3381</strong>. Official 200% benchmarks: <strong>$31,920</strong> (individual), <strong>$66,000</strong> (family of four). Preserves IRA-level subsidies up to 150% FPL (two Silver-tier plans at <strong>$0 premium</strong>); increases assistance for 150–165% FPL.",
+            "Adopted. Covered California press release July 21, 2026.",
+            [
+              "CC-2027-PR",
+              "CC-2027-DESIGN"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Gender-affirming care backstop</strong>",
+            "Where federal Medicaid/CHIP funds may no longer pay for certain services for members under 18 / CHIP members under 19, “<strong>California will still reimburse providers for these services</strong>, but the State will pay for them instead of the federal government.” Youth already on hormones as of October 13, 2026 keep them through Medi-Cal until <strong>April 12, 2027</strong>, then via a new <strong>HCAI</strong> state-funded program.",
+            "Active from October 13, 2026.",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>State-funded full-scope Medi-Cal bridge</strong>",
+            "Reclassified immigrant groups (refugee/asylee, humanitarian parolee, DV/trafficking survivors with a pending case) “will get <strong>state-funded full-scope Medi-Cal until June 30, 2027</strong>.”",
+            "Active from October 2026.",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>State-funded Medi-Cal regardless of status</strong>",
+            "Full-scope Medi-Cal remains available <strong>no matter immigration status</strong> to: children ages 0–18; pregnant people (during pregnancy and for one year after); people under 26 who were in foster care on their 18th birthday.",
+            "Active.",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Member support infrastructure</strong>",
+            "DHCS: “California lawmakers have <strong>invested in new resources</strong> to help you with these new rules. We will send you additional information and resources … before the end of this year. This will include <strong>websites to help you find paid or volunteer work, learn about job training or schools you can enroll in</strong>, and more.”",
+            "Announced; resources to be distributed before end of 2026.",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Transition support for FFS members</strong>",
+            "“DHCS will offer new help during this change, including a <strong>nurse advice line</strong> and <strong>community navigators</strong> to guide you and answer questions.”",
+            "Announced for the January 1, 2027 FFS transition.",
+            [
+              "DHCS-CHANGES"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ca-estimates",
+      "title": "13. California's own impact estimates (reported as quoted, with dates)",
+      "intro": "These figures differ between official documents. None is presented as <em>the</em> estimate. See flagged item F-15.",
+      "columns": [
+        "Document and date",
+        "Estimate as published",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "CalHHS Connect webinar deck — October 22, 2025",
+            "“An estimated up to <strong>3 million</strong> Medi-Cal members may lose coverage.”",
+            [
+              "CALHHS-CONNECT"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "DHCS H.R.1 Implementation Plan webinar deck — February 5, 2026",
+            "“An estimated up to <strong>233K</strong> Medi-Cal members will lose coverage by June 2027, <strong>1 million</strong> by Jan 2028, and <strong>1.4 million</strong> by June 2028.” DHCS caveat: “All numbers are estimates and subject to change.”",
+            [
+              "DHCS-IMPL-WEBINAR"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "DHCS FY 2026-27 Budget Act Highlights — July 1, 2026",
+            "General Fund savings “by 2029-30, resulting from the new work and community engagement requirements … Projected disenrollments are <strong>43,000 in 2026-27 and 1.1 million</strong>” thereafter.",
+            [
+              "DHCS-BUDGET"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "DHCS operational caution (Legislative Affairs bulletin, February 13, 2026)",
+            "“DHCS acknowledges that a large share of this population is already working or otherwise exempt but cautions that <strong>verifying compliance at scale presents a significant operational challenge</strong>.” (California Department of Insurance / Office of Legislative Affairs bulletin.)",
+            [
+              "CALHHS-CONNECT-2026"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "where-to-go",
+      "title": "14. Where to apply, renew and get help — official channels",
+      "columns": [
+        "Channel",
+        "Detail",
+        "Source"
+      ],
+      "rows": [
+        {
+          "c": [
+            "<strong>BenefitsCal</strong>",
+            "State benefits portal — “Apply for Medi-Cal with your county office; Find programs that can help you qualify; Manage and renew your Medi-Cal online.” DHCS: “We recommend <strong>creating an account at BenefitsCal.com</strong> … You can also ‘opt in’ to get text and email messages.”",
+            [
+              "DHCS-APPLY",
+              "DHCS-MEDIL-I26-25",
+              "BENEFITSCAL"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Covered California</strong>",
+            "State health insurance marketplace — can apply for Medi-Cal; “If you don’t qualify, shop for low-cost health plans.” Phone <strong>800-300-1506</strong>.",
+            [
+              "DHCS-APPLY",
+              "CC-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Mail</strong>",
+            "Single-stream paper application downloadable in English (incl. large print), Spanish (incl. large print), Arabic, Armenian, Simplified Chinese, Farsi, Hmong, Khmer, Korean, Russian, Tagalog and Vietnamese.",
+            [
+              "DHCS-APPLY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Phone or in person</strong>",
+            "Call or visit your county office.",
+            [
+              "DHCS-APPLY",
+              "DHCS-COUNTY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>Medi-Cal Helpline</strong>",
+            "<strong>(800) 541-5555</strong>",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>County office locator</strong>",
+            "<strong>dhcs.ca.gov/COL</strong>",
+            [
+              "DHCS-MEDIL-I26-25",
+              "DHCS-COUNTY"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>DHCS work-rules page</strong>",
+            "Cited by DHCS as <strong>dhcs.ca.gov/workrules</strong>; retrieval on 2026-10-18 redirected to the “Medi-Cal Changes” page. See flagged item F-20.",
+            [
+              "DHCS-WORKRULES",
+              "DHCS-CHANGES"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>DHCS policy contact</strong>",
+            "Medi-Cal Eligibility Division: <strong>MCED-Policy@dhcs.ca.gov</strong>",
+            [
+              "DHCS-MEDIL-I26-25"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>America’s Job Center of California (AJCC)</strong>",
+            "“your one-stop shop for <strong>no-cost job and training services</strong>”; the WIOA network through which qualifying <strong>work program</strong> participation is delivered. Find a centre via the EDD Office Locator.",
+            [
+              "EDD-WIOA",
+              "EDD-LOCATOR"
+            ]
+          ]
+        },
+        {
+          "c": [
+            "<strong>CalJOBS</strong>",
+            "California’s free online job service.",
+            [
+              "CALJOBS"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

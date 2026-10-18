@@ -1,0 +1,69 @@
+name: Build check
+
+# Deterministic, network-free verification of the published site.
+# This check is intentionally offline: it can never fail because an external
+# government endpoint rate-limited a CI runner. External URL verification lives
+# in the separate, non-blocking `link-check.yml` workflow.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Rebuild site and verify integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate data files are well-formed JSON
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, sys
+          bad = 0
+          for f in sorted(pathlib.Path("data").glob("*.json")):
+              try:
+                  json.loads(f.read_text(encoding="utf-8"))
+                  print(f"  ok   {f}")
+              except Exception as e:
+                  print(f"  FAIL {f}: {e}")
+                  bad += 1
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Verify every cited source id resolves to a URL
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, sys
+          reg = {s["id"]: s for s in json.loads(
+              pathlib.Path("data/sources.json").read_text(encoding="utf-8"))["sources"]}
+          missing_url = [i for i, s in reg.items()
+                         if not str(s.get("url", "")).startswith(("http://", "https://"))]
+          if missing_url:
+              print("FAIL: sources without a usable URL:", missing_url)
+              sys.exit(1)
+          print(f"  ok   {len(reg)} registered sources all carry an http(s) URL")
+          PY
+
+      - name: Rebuild the site and diff against the committed output
+        run: python3 build_site.py --check
+
+      - name: Show build report
+        if: always()
+        run: |
+          if [ -f docs/build-report.json ]; then
+            python3 -c "import json,sys;d=json.load(open('docs/build-report.json'));print(json.dumps({k:v for k,v in d.items() if k!='generated'},indent=2))"
+          fi
