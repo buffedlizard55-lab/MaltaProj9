@@ -6,12 +6,13 @@ options for a U.S. citizen resident with no earned wages but possible rental, tr
 scheduled for 2027, California implementation materials, application routes, income treatment,
 and unresolved items.
 
-The repository contains **two complementary publications** built by parallel research sessions,
-both verified against official sources on **October 18, 2026**:
+The repository contains **three complementary publications** built by parallel research sessions,
+verified against official sources on **October 18–19, 2026**:
 
-## 1. Research brief (site root) — session `arena/63a8fb6e`
+## 1. Research brief (site root) — session `arena/63a8fb6e` (expanded by `arena/7c1a5f42` / `arena/b02db1f0`)
 
 - [Executive summary](index.html)
+- [Your situation ($0 earned income, Kalshi, rental, interest)](your-situation.html)
 - [Medi-Cal eligibility](eligibility.html)
 - [2027 community-engagement requirements](work-rules.html)
 - [Income and assets](income.html)
@@ -34,11 +35,11 @@ requests targeting `main`.
 - [Income & MAGI](dashboard/income-treatment.html) — Kalshi/rental/interest treatment
 - [Other options](dashboard/other-options.html) — EMTALA, charity care, STLDI ban, COBRA, Medicare
 - [Flagged for Review](dashboard/flagged-for-review.html) — all unverified values (left blank) + irregularities
-- [Sources & methodology](dashboard/sources.html) — 65 cited sources with type labels
+- [Sources & methodology](dashboard/sources.html) — 66 cited sources with type labels
 
-Generated from `data/*.csv` (9 tables, **207 rows** — 179 rule/data rows, 177 verified and 2 blank-unverified, plus a 28-item flagged registry — each row with a status and source URL; counts after the 2026-10-18 re-verification passes) by `scripts/build.py` (templates in `site_src/*.tmpl`); `scripts/validate.py` enforces the verification standard (official https source link on every verified row; blank values on unverified rows; link and placeholder checks).
+Generated from `data/*.csv` (9 tables, **209 rows** — 179 rule/data rows, 177 verified and 2 blank-unverified, plus a 30-item flagged registry — each row with a status and source URL; counts after the 2026-10-18/19 re-verification passes) by `scripts/build.py` (templates in `site_src/*.tmpl`); `scripts/validate.py` enforces the verification standard (official https source link on every verified row; blank values on unverified rows; link and placeholder checks).
 
-As of that snapshot the dashboard holds **207 data rows** across 9 tables — **177 verified**, **2 rows with intentionally blank unverified values** (IN-08 Kalshi section 1256 character, IN-13 trading hours as work) — plus a **28-entry flagged registry** of official-source inconsistencies and unverifiable claims, and **65 distinct cited sources**. Sessions `arena/da6d01ac` and `arena/cbb12598` both ran independent verification passes; where their new rows collided on ID the conflict was resolved by renumbering one session's rows into the free range so **no row from either session was discarded** (see `COORDINATION.md`).
+As of that snapshot the dashboard holds **209 data rows** across 9 tables — **177 verified**, **2 rows with intentionally blank unverified values** (IN-08 Kalshi section 1256 character, IN-13 trading hours as work) — plus a **30-entry flagged registry** of official-source inconsistencies and unverifiable claims, and **66 distinct cited sources**. Sessions `arena/da6d01ac` and `arena/cbb12598` both ran independent verification passes; where their new rows collided on ID the conflict was resolved by renumbering one session's rows into the free range so **no row from either session was discarded** (see `COORDINATION.md`).
 
 ## 3. Verification dashboard (`docs/`) — session `arena/690e8271` (integrated by `arena/5c4d1423`)
 
@@ -59,7 +60,7 @@ additive content was integrated by session `arena/5c4d1423` without regressing `
 All three sites cross-link to each other, and all follow the same verification standard: every
 factual table row links an official source (or is explicitly flagged); unknown or
 unresolvable values are left blank and published on a Flagged for Review page; no personal
-eligibility is inferred. Research snapshot: **2026-10-18**.
+eligibility is inferred. Research snapshot: **2026-10-18 / 2026-10-19** (see `reports/verification-c79aa57d.md`, `reports/verification-cb0807c0.md`, `reports/verification-a8b857bc.md`, and `reports/verification-b02db1f0.md`).
 
 ## Research and limitations
 

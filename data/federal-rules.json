@@ -66,7 +66,7 @@
         {
           "c": [
             "Correction to the rule",
-            "The Federal Register document record states: “This document <strong>was corrected by a document published on 06/29/2026</strong>” (C1-2026-11094). Content of the correction not retrieved — flagged F-13.",
+            "The Federal Register document record states: “This document <strong>was corrected by a document published on 06/29/2026</strong>” (FR Doc. <strong>C1-2026-11094</strong>, <strong>91 FR 39028</strong>, pages 39028–39031). Live-verified 2026-10-19 (session <code>arena/b02db1f0</code>): republishes corrected regulatory text for 42 CFR §§ 435.557 and 435.558 beginning at 91 FR 33476 (already integrated into the eCFR); does not alter §§ 435.551–435.556 — see F-13.",
             [
               "FR-CORRECTION"
             ]

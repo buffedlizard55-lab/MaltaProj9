@@ -78,9 +78,9 @@
       "id": "FR-91-33348",
       "publisher": "Office of the Federal Register",
       "title": "Medicaid Program; Community Engagement Requirement for Certain Individuals (CMS-2454-IFC), 91 FR 33348",
-      "url": "https://www.federalregister.gov/documents/2026-06-03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
       "type": "Rule (interim final with comment period)",
-      "note": "Pages 33348–33482 (135 pages); RIN 0938-AV98; effective 2026-07-31; comments due 2026-07-31. Corrected by a document published 2026-06-29 (C1-2026-11094). Retrieval of this HTML page was intermittent during the session — see F-12."
+      "note": "Pages 33348–33482 (135 pages); RIN 0938-AV98; effective 2026-07-31; comments due 2026-07-31. Corrected by 91 FR 39028 (2026-06-29, C1-2026-11094). URL path uses slashes (2026/06/03) — see F-12."
     },
     {
       "id": "GOVINFO-2026-11094",
@@ -93,10 +93,10 @@
     {
       "id": "FR-CORRECTION",
       "publisher": "Office of the Federal Register",
-      "title": "Correction — Medicaid Program; Community Engagement Requirement for Certain Individuals (published 2026-06-29)",
-      "url": "https://www.federalregister.gov/documents/2026-06-29/C1-2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "title": "Correction — Medicaid Program; Community Engagement Requirement for Certain Individuals, 91 FR 39028 (C1-2026-11094, June 29, 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/06/29/C1-2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
       "type": "Correction notice",
-      "note": "Content of the correction not retrieved — see F-13."
+      "note": "Pages 39028–39031 (4 pages); republishes corrected regulatory text for 42 CFR §§ 435.557 and 435.558 beginning at 91 FR 33476 (already integrated into the eCFR). Does not alter §§ 435.551–435.556 — see F-13."
     },
     {
       "id": "CMS-FACTSHEET",
@@ -366,7 +366,7 @@
       "id": "DHCS-ACWDL-25-30",
       "publisher": "California Department of Health Care Services",
       "title": "ACWDL 25-30 — Work and Community Engagement Requirements for New Adult Group (December 30, 2025)",
-      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026-04-25-30.pdf",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
       "type": "State agency county guidance",
       "note": "Carries the notice: \"This ACWDL represents preliminary guidance and is subject to change…\""
     },
@@ -390,7 +390,7 @@
       "id": "DHCS-ACWDL-26-07",
       "publisher": "California Department of Health Care Services",
       "title": "ACWDL 26-07 — Retroactive Medi-Cal eligibility policy changes effective January 1, 2027 (March 12, 2026)",
-      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026-04/ACWDL-26-07.pdf",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/ACWDL-26-07.pdf",
       "type": "State agency county guidance",
       "note": ""
     },
@@ -518,9 +518,9 @@
       "id": "CC-2027-PR",
       "publisher": "Covered California",
       "title": "Covered California Rates and Plans for 2027 (press release, July 21, 2026)",
-      "url": "https://www.coveredca.com/press-releases/2026-07-21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access",
+      "url": "https://www.coveredca.com/press-releases/2026/07/21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access",
       "type": "State exchange press release",
-      "note": ""
+      "note": "Also indexed on https://www.coveredca.com/press-releases with downloadable PDF report at https://www.coveredca.com/pdfs/07-21-26-COVEREDCA-PY27-Rates-Final.pdf."
     },
     {
       "id": "CC-2027-DESIGN",
@@ -542,9 +542,9 @@
       "id": "CC-OEP-2026",
       "publisher": "Covered California",
       "title": "As Enhanced Federal Subsidies Expire, Covered California Ends Open Enrollment With State Subsidies Keeping Renewals Steady (February 26, 2026)",
-      "url": "https://www.coveredca.com/newsroom/news-releases/2026-02-26/as-enhanced-federal-subsidies-expire-covered-california-ends-open-enrollment-with-state-subsidies-keeping-renewals-steady-for-now-and-new-signups-down/",
+      "url": "https://www.coveredca.com/press-releases/2026/02/26/as-enhanced-federal-subsidies-expire-covered-california-ends-open-enrollment-with-state-subsidies-keeping-renewals-steady-for-now-and-new-signups-down",
       "type": "State exchange news release",
-      "note": ""
+      "note": "Also indexed on https://www.coveredca.com/press-releases."
     },
     {
       "id": "EDD-WIOA",

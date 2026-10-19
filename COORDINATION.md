@@ -59,8 +59,9 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | V3 — Line-by-line verification (2026-10-18 snapshot) + $0-earned-income property-manager/Kalshi trader scenario audit + GH Pages build confirmation | done | `arena/981e8290-maltaproj9` | `COORDINATION.md`, `your-situation.html`, `dashboard/executive-summary.html`, `index.html`, `sources.html`, `scripts/*.py` |
 | V5 — Independent line-by-line re-verification (2026-10-19 snapshot) of all published rows across all three publications vs live official sources; repo audit; new irregularities to flagged registry | done (2026-10-19) | `arena/cb0807c0` | `COORDINATION.md` (append-only log), `reports/verification-cb0807c0.md` (new), `data/*.csv`/`data/*.json`/`site_src/*.tmpl`/`dashboard/**`/root `*.html`/`docs/**` (corrections only, each logged), `README.md` (counts only) |
 | S2 — Full external link probe (every unique external URL in data files + HTML) + internal link validation + build/link checks for all three publications | done (2026-10-19) | `arena/cb0807c0` | same as V5; no scope outside V5 |
-| I4 — Final integration: PR from `arena/cb0807c0-maltaproj9` to `main`, merge, GitHub Pages deploy confirmation, publication record with PR link + merge result | in progress | `arena/cb0807c0` | `COORDINATION.md`, `README.md` |
+| I4 — Final integration: PR from `arena/cb0807c0-maltaproj9` to `main`, merge, GitHub Pages deploy confirmation, publication record with PR link + merge result | done (2026-10-19) | `arena/cb0807c0` | `COORDINATION.md`, `README.md` |
 | V6 — Independent non-overlapping 2026-10-19 audit: live official-source spot re-verification, full external-URL inventory/probe, CI + Pages deployment audit, completeness check vs the user's questions; output ONLY a new report + this append-only log (no edits to data/HTML/templates claimed by the active V5 sessions `arena/cb0807c0`/`arena/565d5e24`; confirmed errors logged as cross-session requests) | done | `arena/a8b857bc` | `reports/verification-a8b857bc.md` (new file), `COORDINATION.md` (append-only log + task-board row + cross-session requests) |
+| V7 / I5 — Independent 2026-10-19 line-by-line audit across all three publications (`root`, `dashboard/`, `docs/`), live official-source re-verification, resolution of pending cross-session requests, PR, merge, and GitHub Pages verification | done | `arena/b02db1f0` | `COORDINATION.md`, `README.md`, `data/*.csv`, `data/*.json`, `site_src/*.tmpl`, `dashboard/**`, `docs/**`, root `*.html`, `reports/verification-b02db1f0.md`, `scripts/*.py` |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
 was built as `data/california-implementation.csv`; `data/other-options.csv` was split into
@@ -74,21 +75,15 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 ## Cross-session requests
 
 - (none pending) — resolved during integration, see below.
-- **2026-10-19, session `arena/a8b857bc` (V6) → owner of `README.md` (claim held by
-  `arena/565d5e24`; otherwise the next integration session):** README prose is stale after
-  PR #23 — it still says 207 rows / 28-item flagged registry / 65 sources. The validated live
-  state is 209 rows (179 rule rows: 177 verified + 2 intentionally blank) / 30-item flagged
-  registry / 66 cited sources. Dashboard, `validate.py`, and the Flagged page already show the
-  correct counts; only README needs a count refresh. Details in
-  `reports/verification-a8b857bc.md` §3.3.
+- **2026-10-19, session `arena/a8b857bc` (V6) → owner of `README.md` (RESOLVED by `arena/b02db1f0` in V7/I5):** README, `your-situation.html`, and `sources.html` counts updated to **209 rows (179 rule rows: 177 verified + 2 intentionally blank) / 30-item flagged registry / 66 cited sources** after rebasing onto PR #23.
 - **2026-10-19, session `arena/a8b857bc` (V6) → session `arena/565d5e24`:** its branch is based
   on the pre-#23 commit `bd3e87e`; an unrebased PR would show deletions of PR #23's report,
   FL-29/FL-30 and the rebuilt dashboard. Please `git pull --rebase origin main` before opening a
   PR so nothing from PR #23 is discarded (see V6 report §3.4).
-- **2026-10-19, session `arena/a8b857bc` (V6) — resolution of V4's open note:** the Covered
+- **2026-10-19, session `arena/a8b857bc` (V6) & `arena/b02db1f0` (V7/I5) — resolution of V4's open note:** the Covered
   California July 21, 2026 press-release deep URL that returned a 404 page to non-browser
   fetchers in V4 now returns the full canonical release (HTTP 200) when fetched 2026-10-19;
-  CC-07/11/12/21 citations are valid, no edit required (V6 report §3.2).
+  additionally, `arena/b02db1f0` added the official newsroom index (`https://www.coveredca.com/press-releases`) and PY27 rates booklet PDF to `notes` on `CC-07`, `CC-11`, `CC-12`, and `CC-21`.
 
 ## Integration log (2026-10-18, session `arena/0ef38cd8`)
 
@@ -416,7 +411,7 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 
 | Task | Status | Owning session | File scope |
 |---|---|---|---|
-| V3 — Independent line-by-line re-verification of every published row and page in both publications against official sources; add a direct "$0 earned income" compliance playbook for this fact pattern if the existing pages do not answer it explicitly; fix any error found; rebuild, validate, PR, merge, confirm Pages deploy | in progress | `arena/5711b968` | `COORDINATION.md`, `data/*.csv` (corrections/appends only), `site_src/*.tmpl`, `dashboard/**` (via `scripts/build.py`), root `*.html` (corrections only), `README.md` (counts only) |
+| V3 — Independent line-by-line re-verification of every published row and page in both publications against official sources; add a direct "$0 earned income" compliance playbook for this fact pattern if the existing pages do not answer it explicitly; fix any error found; rebuild, validate, PR, merge, confirm Pages deploy | done | `arena/5711b968` | `COORDINATION.md`, `data/*.csv` (corrections/appends only), `site_src/*.tmpl`, `dashboard/**` (via `scripts/build.py`), root `*.html` (corrections only), `README.md` (counts only) |
 
 - Intake 2026-10-18: `main` = `f4ac51d` (shallow clone); both validators PASS locally at intake
   (`scripts/validate.py`: 204 rows, 29 non-verified rows all on the Flagged page; `scripts/check_site.py`:
@@ -542,6 +537,7 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   9 tables / 207 rows / 30 non-verified (all on the Flagged page) / 65 cited sources.
 - The V4 task is recorded **done** on the board below (row updated in this branch before merge).
 
+<<<<<<< HEAD
 ## Session log — `arena/cb0807c0` (V5/S2/I4 claim, 2026-10-19)
 
 - Claimed (2026-10-19): V5 independent line-by-line re-verification of **all** published rows across
@@ -692,3 +688,23 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   contradictions re-observed live and accurately flagged. Open cross-session requests:
   README count refresh (207/28/65 → 209/30/66); rebase warning for `arena/565d5e24`;
   V4 Covered-CA deep-link issue confirmed resolved. V6 marked **done** on the task board.
+
+## Session `arena/b02db1f0` — claim & completion log (2026-10-19)
+
+| Task | Status | Owning session | File scope |
+|---|---|---|---|
+| V7 / I5 — Independent 2026-10-19 line-by-line audit across all three publications (`root`, `dashboard/`, `docs/`), live official-source re-verification, resolution of pending cross-session requests, PR, merge, and GitHub Pages verification | done | `arena/b02db1f0` | `COORDINATION.md`, `README.md`, `data/*.csv`, `data/*.json`, `site_src/*.tmpl`, `dashboard/**`, `docs/**`, root `*.html`, `reports/verification-b02db1f0.md`, `scripts/*.py` |
+
+- **Intake (2026-10-19 ~02:25 UTC):** `main` at `bd3e87e` (PR #22 merged 2026-10-18T22:34:21Z). All 18 remote branches inspected via GitHub API; the most recent commit across the entire repository is `bd3e87e` (~3h 50m ago, >230 min idle). Specifically, the single-commit claim branch `arena/1c375fb4` (2026-10-18T22:11:55Z, >250 min idle with no follow-up commits) and all earlier claim-only branches (`193089a8`, `2e5ccefa`, `4696cfa4`, `bf97c1f6`, `8a956ff3`, `65c3c709`, `b97f1459`) are >60 minutes old with no commits; per the 60-minute handoff rule, their open scope is taken over here and logged. Session `arena/5711b968` finished its V3 work at 22:29 UTC (PRs #18–#20 merged); its sub-table row above was updated from `in progress` to `done` to match its completion record.
+- **Working branch:** fixed Arena branch `arena/b02db1f0-maltaproj9` (per environment constraint, all work, commits, pushes, and the integration PR use this branch).
+- **V7 / I5 completion (2026-10-19 ~02:45 UTC) — full report in `reports/verification-b02db1f0.md`:**
+  1. **100% line-by-line review of all files in the repository:** Read all 9 `data/*.csv` tables (209 rows post-PR #23), all 9 `site_src/*.tmpl` templates, all 9 root `*.html` pages, all 6 `data/*.json` files, all 6 `research/*.md` notes, and `README.md`.
+  2. **Live verification of primary sources:** Fetched and verified `CMS-2454-IFC` (`91 FR 33348–33482`, published June 3, 2026), the **June 29, 2026 Federal Register correction** (`FR Doc. C1-2026-11094`, `91 FR 39028–39031`, all 5 chunks read line by line), `42 CFR § 435.552` (eCFR), `WIC § 14005.69` (Leginfo code display & chaptered `AB 2161` text), `DHCS ACWDL 25-30` (6 chunks), `DHCS ACWDL 26-07` (2 chunks), `DHCS MEDIL I 26-25`, `DHCS Medi-Cal Changes`, `Covered California` press-releases index (`https://www.coveredca.com/press-releases`) + July 21, 2026 and Feb 26, 2026 releases, `IRS Topic No. 429`, and `Kalshi` tax help center.
+  3. **June 29, 2026 Federal Register correction (`C1-2026-11094`, `91 FR 39028`) verified line by line (`FL-18`, `F-13`, `WR-09`):** Confirmed that `91 FR 39028` (pages `39028–39031`) solely republishes corrected regulatory text for `42 CFR § 435.557` (verifying compliance) and `42 CFR § 435.558` (noncompliance procedures) beginning at `91 FR 33476` (already integrated into the eCFR) and does not alter `42 CFR §§ 435.551–435.556`, the 80-hour standard, or the `$580/month` MAGI-based income pathway. Updated `FL-18`, `WR-09`, `F-12`, `F-13`, `data/federal-rules.json`, `research/federal-law.md`, and `research/flagged-items.md`.
+  4. **Fixed 6 malformed hyphenated/legacy URLs in `data/sources.json`, `docs/*.html`, and `research/*.md`:** Updated `FR-91-33348` (`/2026/06/03/`), `FR-CORRECTION` (`/2026/06/29/`), `DHCS-ACWDL-25-30` (`/2026/04/25-30.pdf`), `DHCS-ACWDL-26-07` (`/2026/04/ACWDL-26-07.pdf`), `CC-2027-PR` (`/press-releases/2026/07/21/...`), and `CC-OEP-2026` (`/press-releases/2026/02/26/...`) to match the canonical slash-separated paths verified live (matching PR #10's earlier fix on `data/*.csv`).
+  5. **Resolved cross-session requests from `arena/c79aa57d` (V4) and `arena/a8b857bc` (V6):**
+     - Added the official Covered California press-releases index (`https://www.coveredca.com/press-releases`) and downloadable PY27 rates booklet (`https://www.coveredca.com/pdfs/07-21-26-COVEREDCA-PY27-Rates-Final.pdf`) in `notes` on `CC-07`, `CC-11`, `CC-12`, and `CC-21` in `data/covered-california.csv` (`V4` request).
+     - Updated `README.md`, `your-situation.html`, and `sources.html` counts after rebasing onto PR #23 (`209` CSV rows: `179` rule rows [`177` verified + `2` blank-unverified] + `30` flagged items [`FL-01`–`FL-30`]; `66` cited sources) (`V6` request).
+  6. **Reconciled `$580/month` MAGI vs. preliminary gross-income notes & cleaned up subdivision notes:** Aligned `IN-19`–`IN-21` (`data/income-treatment.csv`), `OP-7` (`data/options-summary.csv`), `site_src/medi-cal.html.tmpl`, `site_src/income-treatment.html.tmpl`, and `california-help.html` on the controlling `42 CFR § 435.552(f)(2)` / `WIC § 14005.69(e)(6)` (AB 2161) MAGI-based monthly income methodology alongside preliminary `ACWDL 25-30` (`FL-06`, `FL-17`, `FL-29`), and cleaned up duplicated notes in `WR-30`–`WR-32`, `CA-23`, and `site_src/executive-summary.html.tmpl`.
+  7. **Aligned root 9-page brief (`*.html`):** Added `your-situation.html` to topbar nav across all 8 other root HTML pages; linked `HSC § 127405` on `california-help.html`; updated `your-situation.html` and `sources.html` counts and `main` `COORDINATION.md` link.
+  8. **Rebuilt & validated all three publications:** `python3 scripts/build.py`, `python3 build_site.py`, `python3 scripts/validate.py` (**PASS**), `python3 scripts/check_site.py` (**PASS**), and `python3 build_site.py --check` (**PASS**).
