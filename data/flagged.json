@@ -170,10 +170,10 @@
         {
           "c": [
             "F-12",
-            "Federal Register HTML page intermittently returns HTTP 404 to automated retrieval",
+            "Federal Register HTML URL path format (slashes vs hyphens)",
             "Access irregularity",
-            "resolved with workaround",
-            "The document URL returned “<strong>404 Not Found</strong>” on some automated retrievals and the full document on others during this session. The document is confirmed to exist — it is cited by CMS, HHS and state agencies, and the Federal Register itself publishes a correction notice for it. <strong>Workaround adopted:</strong> the <strong>official govinfo PDF</strong> and the <strong>eCFR codified text</strong> are cited as primary sources for regulatory language; the Federal Register URL is provided as a convenience link only.",
+            "resolved",
+            "An earlier retrieval attempt returned “<strong>404 Not Found</strong>” when date segments in the Federal Register URL were hyphenated (<code>/documents/2026-06-03/...</code>). Re-verified on 2026-10-19 (session <code>arena/b02db1f0</code>): the canonical slash-separated URL (<code>/documents/2026/06/03/2026-11094/...</code>) returns HTTP 200 with the full 135-page rule, alongside the <strong>official govinfo PDF</strong> and the <strong>eCFR codified text</strong>.",
             [
               "GOVINFO-2026-11094",
               "ECFR-435-SUBPART-F",
@@ -184,10 +184,10 @@
         {
           "c": [
             "F-13",
-            "CMS-2454-IFC was corrected on 06/29/2026",
+            "CMS-2454-IFC was corrected on 06/29/2026 (91 FR 39028, C1-2026-11094)",
             "Currency of authority",
-            "needs review",
-            "The Federal Register document record states: “This document <strong>was corrected by a document published on 06/29/2026</strong>” (C1-2026-11094). The <strong>content of that correction was not retrieved</strong>, so it is unknown whether it touches any provision relied on here. <strong>The eCFR codified text (current through 10/15/2026) is treated as authoritative for regulatory language</strong>, which would already reflect any published correction.",
+            "resolved",
+            "The Federal Register document record states: “This document <strong>was corrected by a document published on 06/29/2026</strong>” (FR Doc. <strong>C1-2026-11094</strong>, <strong>91 FR 39028</strong>, pages 39028–39031). Live-fetched and read line by line on 2026-10-19 (session <code>arena/b02db1f0</code>): the June 29, 2026 correction solely republishes corrected regulatory text for <strong>42 CFR § 435.557</strong> (verifying compliance) and <strong>42 CFR § 435.558</strong> (noncompliance procedures) beginning at 91 FR 33476 (already integrated into the eCFR as of 10/15/2026) and does not alter §§ 435.551–435.556, the 80-hour standard, or the $580/month MAGI-based income pathway.",
             [
               "FR-CORRECTION",
               "ECFR-435-SUBPART-F"
