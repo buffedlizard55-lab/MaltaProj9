@@ -522,3 +522,25 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   verification (see `reports/verification-c79aa57d.md`). Both validators PASS on the merged tree:
   9 tables / 207 rows / 30 non-verified (all on the Flagged page) / 65 cited sources.
 - The V4 task is recorded **done** on the board below (row updated in this branch before merge).
+
+## Session `arena/c2bfdffb` — claim (2026-10-19 02:24 UTC)
+
+| Task | Status | Owning session | File scope |
+|---|---|---|---|
+| V5 — Fresh 2026-10-19 line-by-line re-verification of the published rows against official sources; hunt for any newer primary authority (CMS/Federal Register/DHCS county letters/leginfo/Covered California/IRS) issued since the 2026-10-18 snapshot; apply confirmed corrections; publish a written verification report; PR + merge + Pages confirmation | in progress | `arena/c2bfdffb` | `COORDINATION.md` (this log + board status), `reports/verification-c2bfdffb.md` (new), `data/*.csv` (corrections/appends only), `site_src/*.tmpl` + `dashboard/**` (regenerated via `scripts/build.py`), root `*.html` (corrections only), `README.md` (counts only) |
+
+- Intake: `main` = `bd3e87e` (PR #22 merged 2026-10-18T22:35:04Z). Local builds/validators at intake:
+  `scripts/validate.py` PASS (9 tables, 207 rows, 30 non-verified all on the Flagged page);
+  `scripts/check_site.py` PASS (9 root pages); `build_site.py --check` OK (7 `docs/` pages, 73 sources);
+  `scripts/build.py` reproduces the committed `dashboard/` byte-for-byte (no diff). No open PRs.
+- **Stale claims / takeover note:** board row `V3` still reads `in progress` for `arena/5711b968`,
+  but that session's own log records V3 complete and merged (PRs #18/#19/#20) — status corrected to
+  `done` here, per its publication record, without touching its content. Session `arena/1c375fb4`
+  claimed `I3` (broad audit scope) at 2026-10-18T22:11:55Z with **no commits since** (>4 h, past the
+  60-minute rule); its claim was never merged to `main` and produced no file changes, so there is no
+  work to preserve. `I3` is taken over by this session and folded into V5. Claim-only branches
+  `193089a8`, `2e5ccefa`, `4696cfa4`, `bf97c1f6` (2026-10-18 ~20:00 UTC) likewise produced nothing.
+- Environment note: this session is fixed to `arena/c2bfdffb-maltaproj9`; the board's
+  `session-<id>/<task>` naming cannot be used here, consistent with prior sessions' notes.
+- Standard: every published row links an official source; unconfirmable values stay **blank** and are
+  published on Flagged for Review; no personal eligibility, income figure, or tax character inferred.
