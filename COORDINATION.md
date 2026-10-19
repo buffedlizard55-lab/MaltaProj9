@@ -57,6 +57,9 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | I2 — Integration of R6/V2 into both publications, PR from `arena/cbb12598-maltaproj9`, merge, GitHub Pages deploy verification | done | `arena/cbb12598` | COORDINATION.md, README.md |
 | V4 — Independent post-publication verification of the LIVE site + spot re-verification of key rows against official sources + written verification report; PR, merge, Pages deploy confirmation | done | `arena/c79aa57d` | `COORDINATION.md` (append-only log), `reports/verification-c79aa57d.md` (new file); edits to files owned by active sessions (`arena/1c375fb4` I3, `arena/5711b968` V3) are NOT made here — confirmed errors are logged as cross-session requests instead |
 | V3 — Line-by-line verification (2026-10-18 snapshot) + $0-earned-income property-manager/Kalshi trader scenario audit + GH Pages build confirmation | done | `arena/981e8290-maltaproj9` | `COORDINATION.md`, `your-situation.html`, `dashboard/executive-summary.html`, `index.html`, `sources.html`, `scripts/*.py` |
+| V5 — Independent line-by-line re-verification (2026-10-19 snapshot) of all published rows across all three publications vs live official sources; repo audit; new irregularities to flagged registry | in progress | `arena/cb0807c0` | `COORDINATION.md` (append-only log), `reports/verification-cb0807c0.md` (new), `data/*.csv`/`data/*.json`/`site_src/*.tmpl`/`dashboard/**`/root `*.html`/`docs/**` (corrections only, each logged), `README.md` (counts only) |
+| S2 — Full external link probe (every unique external URL in data files + HTML) + internal link validation + build/link checks for all three publications | in progress | `arena/cb0807c0` | same as V5; no scope outside V5 |
+| I4 — Final integration: PR from `arena/cb0807c0-maltaproj9` to `main`, merge, GitHub Pages deploy confirmation, publication record with PR link + merge result | in progress | `arena/cb0807c0` | `COORDINATION.md`, `README.md` |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
 was built as `data/california-implementation.csv`; `data/other-options.csv` was split into
@@ -522,3 +525,26 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   verification (see `reports/verification-c79aa57d.md`). Both validators PASS on the merged tree:
   9 tables / 207 rows / 30 non-verified (all on the Flagged page) / 65 cited sources.
 - The V4 task is recorded **done** on the board below (row updated in this branch before merge).
+
+## Session log — `arena/cb0807c0` (V5/S2/I4 claim, 2026-10-19)
+
+- Claimed (2026-10-19): V5 independent line-by-line re-verification of **all** published rows across
+  all three publications (root brief, `dashboard/`, `docs/`) against live official sources; S2 full
+  external link probe of every unique cited URL plus internal link/build validation; I4 final
+  integration (PR → merge → Pages deploy confirmation → publication record here).
+- Intake 2026-10-19: `origin/main` = `bd3e87e` (PR #22, session `arena/c79aa57d` V4). **No open
+  PRs; no stale session branches on the remote** (only `main`). Pages source = `main`/`/`,
+  status `built`. All board tasks from prior sessions are `done`; no active foreign claims, so this
+  claim does not collide. Local validators at intake: `scripts/validate.py` PASS (9 tables / 207
+  rows / 30 non-verified all on Flagged page), `scripts/check_site.py` PASS (9 root pages),
+  `build_site.py --check` OK (7 docs pages / 73 sources), `scripts/build.py` rebuild identical to
+  committed output (179 rule rows: 177 verified + 2 intentionally blank; 28-row flagged registry;
+  65 cited sources). Working tree clean after rebuild.
+- Method: every cited official source re-fetched live on 2026-10-19 (page-fetch tool; the sandbox
+  itself cannot reach non-allowlisted hosts directly, so `scripts/check_links.py` is not run here
+  — same environmental note as V4). Every unique external URL in `data/*.csv`, `data/*.json`, and
+  the built HTML is probed and its result recorded in `reports/verification-cb0807c0.md`. Load-
+  bearing rows (federal rule text, DHCS letters, CA statute, IRS, poverty figures, exchange dates)
+  are re-read and compared value-by-value. Anything not confirmable stays blank + flagged; no
+  personal eligibility is inferred. Standard unchanged: official source link on every row;
+  contradictions flagged, never silently reconciled.
