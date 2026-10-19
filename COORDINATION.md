@@ -708,3 +708,14 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   6. **Reconciled `$580/month` MAGI vs. preliminary gross-income notes & cleaned up subdivision notes:** Aligned `IN-19`–`IN-21` (`data/income-treatment.csv`), `OP-7` (`data/options-summary.csv`), `site_src/medi-cal.html.tmpl`, `site_src/income-treatment.html.tmpl`, and `california-help.html` on the controlling `42 CFR § 435.552(f)(2)` / `WIC § 14005.69(e)(6)` (AB 2161) MAGI-based monthly income methodology alongside preliminary `ACWDL 25-30` (`FL-06`, `FL-17`, `FL-29`), and cleaned up duplicated notes in `WR-30`–`WR-32`, `CA-23`, and `site_src/executive-summary.html.tmpl`.
   7. **Aligned root 9-page brief (`*.html`):** Added `your-situation.html` to topbar nav across all 8 other root HTML pages; linked `HSC § 127405` on `california-help.html`; updated `your-situation.html` and `sources.html` counts and `main` `COORDINATION.md` link.
   8. **Rebuilt & validated all three publications:** `python3 scripts/build.py`, `python3 build_site.py`, `python3 scripts/validate.py` (**PASS**), `python3 scripts/check_site.py` (**PASS**), and `python3 build_site.py --check` (**PASS**).
+
+## Publication record — session `arena/b02db1f0` (V7 / I5)
+
+- **PR:** [#26](https://github.com/buffedlizard55-lab/MaltaProj9/pull/26), `arena/b02db1f0-maltaproj9` → `main`, **merged 2026-10-19T02:47:59Z** without waiting for review (`gh pr merge 26 --merge`), merge commit `02c32c1b62bea07f2524c6036fbd2c6ceb785d22`.
+- **Rebase / conflict resolution:** Rebased cleanly onto `origin/main` (`895cd10`, post-PR #23/#24/#25); preserved all additive work from `arena/cb0807c0` (V5/S2/I4, `FL-29`/`FL-30`, `reports/verification-cb0807c0.md`) and `arena/a8b857bc` (V6, `reports/verification-a8b857bc.md`) without discarding any row or session entry.
+- **CI & GitHub Pages deployment:**
+  - `Build check` ([run 39191653927](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39191653927)) — **success**
+  - `Validate healthcare research site` ([run 39191653861](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39191653861)) — **success**
+  - `pages-build-deployment` ([run 39191653020](https://github.com/buffedlizard55-lab/MaltaProj9/actions/runs/39191653020)) — **success** (Pages build `1295866149` for `02c32c1b62bea07f2524c6036fbd2c6ceb785d22`, status `built`, `error: null`).
+- **Live site verification (2026-10-19):** Fetched live `https://buffedlizard55-lab.github.io/MaltaProj9/reports/verification-b02db1f0.md` and `https://buffedlizard55-lab.github.io/MaltaProj9/docs/flagged.html?v=b02db1f0`; confirmed the canonical slash-separated URLs and V7/I5 audit report are live on GitHub Pages.
+
