@@ -59,8 +59,9 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | V3 — Line-by-line verification (2026-10-18 snapshot) + $0-earned-income property-manager/Kalshi trader scenario audit + GH Pages build confirmation | done | `arena/981e8290-maltaproj9` | `COORDINATION.md`, `your-situation.html`, `dashboard/executive-summary.html`, `index.html`, `sources.html`, `scripts/*.py` |
 | V5 — Independent line-by-line re-verification (2026-10-19 snapshot) of all published rows across all three publications vs live official sources; repo audit; new irregularities to flagged registry | done (2026-10-19) | `arena/cb0807c0` | `COORDINATION.md` (append-only log), `reports/verification-cb0807c0.md` (new), `data/*.csv`/`data/*.json`/`site_src/*.tmpl`/`dashboard/**`/root `*.html`/`docs/**` (corrections only, each logged), `README.md` (counts only) |
 | S2 — Full external link probe (every unique external URL in data files + HTML) + internal link validation + build/link checks for all three publications | done (2026-10-19) | `arena/cb0807c0` | same as V5; no scope outside V5 |
-| I4 — Final integration: PR from `arena/cb0807c0-maltaproj9` to `main`, merge, GitHub Pages deploy confirmation, publication record with PR link + merge result | in progress | `arena/cb0807c0` | `COORDINATION.md`, `README.md` |
+| I4 — Final integration: PR from `arena/cb0807c0-maltaproj9` to `main`, merge, GitHub Pages deploy confirmation, publication record with PR link + merge result | done (2026-10-19) | `arena/cb0807c0` | `COORDINATION.md`, `README.md` |
 | V6 — Independent non-overlapping 2026-10-19 audit: live official-source spot re-verification, full external-URL inventory/probe, CI + Pages deployment audit, completeness check vs the user's questions; output ONLY a new report + this append-only log (no edits to data/HTML/templates claimed by the active V5 sessions `arena/cb0807c0`/`arena/565d5e24`; confirmed errors logged as cross-session requests) | done | `arena/a8b857bc` | `reports/verification-a8b857bc.md` (new file), `COORDINATION.md` (append-only log + task-board row + cross-session requests) |
+| V7 / I5 — Independent 2026-10-19 line-by-line audit across all three publications (`root`, `dashboard/`, `docs/`), live official-source re-verification, resolution of pending cross-session requests, PR, merge, and GitHub Pages verification | in progress | `arena/b02db1f0` | `COORDINATION.md`, `README.md`, `data/*.csv`, `data/*.json`, `site_src/*.tmpl`, `dashboard/**`, `docs/**`, root `*.html`, `reports/verification-b02db1f0.md`, `scripts/*.py` |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
 was built as `data/california-implementation.csv`; `data/other-options.csv` was split into
@@ -416,7 +417,7 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 
 | Task | Status | Owning session | File scope |
 |---|---|---|---|
-| V3 — Independent line-by-line re-verification of every published row and page in both publications against official sources; add a direct "$0 earned income" compliance playbook for this fact pattern if the existing pages do not answer it explicitly; fix any error found; rebuild, validate, PR, merge, confirm Pages deploy | in progress | `arena/5711b968` | `COORDINATION.md`, `data/*.csv` (corrections/appends only), `site_src/*.tmpl`, `dashboard/**` (via `scripts/build.py`), root `*.html` (corrections only), `README.md` (counts only) |
+| V3 — Independent line-by-line re-verification of every published row and page in both publications against official sources; add a direct "$0 earned income" compliance playbook for this fact pattern if the existing pages do not answer it explicitly; fix any error found; rebuild, validate, PR, merge, confirm Pages deploy | done | `arena/5711b968` | `COORDINATION.md`, `data/*.csv` (corrections/appends only), `site_src/*.tmpl`, `dashboard/**` (via `scripts/build.py`), root `*.html` (corrections only), `README.md` (counts only) |
 
 - Intake 2026-10-18: `main` = `f4ac51d` (shallow clone); both validators PASS locally at intake
   (`scripts/validate.py`: 204 rows, 29 non-verified rows all on the Flagged page; `scripts/check_site.py`:
@@ -692,3 +693,17 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   contradictions re-observed live and accurately flagged. Open cross-session requests:
   README count refresh (207/28/65 → 209/30/66); rebase warning for `arena/565d5e24`;
   V4 Covered-CA deep-link issue confirmed resolved. V6 marked **done** on the task board.
+
+## Session `arena/b02db1f0` — claim (2026-10-19)
+
+| Task | Status | Owning session | File scope |
+|---|---|---|---|
+| V7 / I5 — Independent 2026-10-19 line-by-line audit across all three publications (`root`, `dashboard/`, `docs/`), live official-source re-verification, resolution of pending cross-session requests, PR, merge, and GitHub Pages verification | in progress | `arena/b02db1f0` | `COORDINATION.md`, `README.md`, `data/*.csv`, `data/*.json`, `site_src/*.tmpl`, `dashboard/**`, `docs/**`, root `*.html`, `reports/verification-b02db1f0.md`, `scripts/*.py` |
+
+- **Intake (2026-10-19 ~02:25 UTC):** `main` at `bd3e87e` (PR #22 merged 2026-10-18T22:34:21Z). All 18 remote branches inspected via GitHub API; the most recent commit across the entire repository is `bd3e87e` (~3h 50m ago, >230 min idle). Specifically, the single-commit claim branch `arena/1c375fb4` (2026-10-18T22:11:55Z, >250 min idle with no follow-up commits) and all earlier claim-only branches (`193089a8`, `2e5ccefa`, `4696cfa4`, `bf97c1f6`, `8a956ff3`, `65c3c709`, `b97f1459`) are >60 minutes old with no commits; per the 60-minute handoff rule, their open scope is taken over here and logged. Session `arena/5711b968` finished its V3 work at 22:29 UTC (PRs #18–#20 merged); its sub-table row above was updated from `in progress` to `done` to match its completion record.
+- **Working branch:** fixed Arena branch `arena/b02db1f0-maltaproj9` (per environment constraint, all work, commits, pushes, and the integration PR use this branch).
+- **Planned work:**
+  1. Line-by-line review of all three publications (`root` 9 HTML pages, `dashboard/` 9 pages + 9 `data/*.csv` tables, `docs/` 7 pages + 6 `data/*.json` files + `research/*.md`) to check consistency, counts, cross-links, and citations.
+  2. Live re-verification of official sources (Congress.gov, eCFR 42 CFR Part 435 Subpart F, CMS, Federal Register, DHCS, California Legislative Information AB 2161 / SB 164 / WIC §14005.69, Covered California, HealthCare.gov, IRS, FTB, Kalshi).
+  3. Resolve the pending cross-session request from `arena/c79aa57d` (Covered California newsroom fallback/corroboration note on CC-07/11/12/21) and reconcile any cross-publication discrepancies between `root`, `dashboard/`, and `docs/`.
+  4. Write `reports/verification-b02db1f0.md`, run all three validators (`scripts/validate.py`, `scripts/check_site.py`, `build_site.py --check`), open PR to `main`, merge, and verify GitHub Pages deployment.
