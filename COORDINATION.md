@@ -60,6 +60,7 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | V5 — Independent line-by-line re-verification (2026-10-19 snapshot) of all published rows across all three publications vs live official sources; repo audit; new irregularities to flagged registry | done (2026-10-19) | `arena/cb0807c0` | `COORDINATION.md` (append-only log), `reports/verification-cb0807c0.md` (new), `data/*.csv`/`data/*.json`/`site_src/*.tmpl`/`dashboard/**`/root `*.html`/`docs/**` (corrections only, each logged), `README.md` (counts only) |
 | S2 — Full external link probe (every unique external URL in data files + HTML) + internal link validation + build/link checks for all three publications | done (2026-10-19) | `arena/cb0807c0` | same as V5; no scope outside V5 |
 | I4 — Final integration: PR from `arena/cb0807c0-maltaproj9` to `main`, merge, GitHub Pages deploy confirmation, publication record with PR link + merge result | in progress | `arena/cb0807c0` | `COORDINATION.md`, `README.md` |
+| V6 — Independent non-overlapping 2026-10-19 audit: live official-source spot re-verification, full external-URL inventory/probe, CI + Pages deployment audit, completeness check vs the user's questions; output ONLY a new report + this append-only log (no edits to data/HTML/templates claimed by the active V5 sessions `arena/cb0807c0`/`arena/565d5e24`; confirmed errors logged as cross-session requests) | done | `arena/a8b857bc` | `reports/verification-a8b857bc.md` (new file), `COORDINATION.md` (append-only log + task-board row + cross-session requests) |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
 was built as `data/california-implementation.csv`; `data/other-options.csv` was split into
@@ -73,6 +74,21 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 ## Cross-session requests
 
 - (none pending) — resolved during integration, see below.
+- **2026-10-19, session `arena/a8b857bc` (V6) → owner of `README.md` (claim held by
+  `arena/565d5e24`; otherwise the next integration session):** README prose is stale after
+  PR #23 — it still says 207 rows / 28-item flagged registry / 65 sources. The validated live
+  state is 209 rows (179 rule rows: 177 verified + 2 intentionally blank) / 30-item flagged
+  registry / 66 cited sources. Dashboard, `validate.py`, and the Flagged page already show the
+  correct counts; only README needs a count refresh. Details in
+  `reports/verification-a8b857bc.md` §3.3.
+- **2026-10-19, session `arena/a8b857bc` (V6) → session `arena/565d5e24`:** its branch is based
+  on the pre-#23 commit `bd3e87e`; an unrebased PR would show deletions of PR #23's report,
+  FL-29/FL-30 and the rebuilt dashboard. Please `git pull --rebase origin main` before opening a
+  PR so nothing from PR #23 is discarded (see V6 report §3.4).
+- **2026-10-19, session `arena/a8b857bc` (V6) — resolution of V4's open note:** the Covered
+  California July 21, 2026 press-release deep URL that returned a 404 page to non-browser
+  fetchers in V4 now returns the full canonical release (HTTP 200) when fetched 2026-10-19;
+  CC-07/11/12/21 citations are valid, no edit required (V6 report §3.2).
 
 ## Integration log (2026-10-18, session `arena/0ef38cd8`)
 
@@ -597,3 +613,63 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   (`validate.py`, `check_site.py`, `build_site.py --check`, deterministic `build.py`).
 - **Flagged items published (non-blocking):** FL-29 (IN-21 citation completeness) and FL-30
   (ACWDL 25-30 → 26-30 successor-letter question), alongside the 28 prior flags.
+## Session log — `arena/a8b857bc` (V6 independent audit, claim 2026-10-19 02:26 UTC)
+
+- **Why a separate task:** at intake, two other sessions already hold active V5 claims with broad
+  scopes over `data/*.csv`, `data/*.json`, `site_src/*.tmpl`, `dashboard/**`, root `*.html`,
+  `docs/**` and their own reports — `arena/565d5e24` (claim commit `e7452635`, 02:23:47Z) and
+  `arena/cb0807c0` (claim commit `e0957eb3`, 02:24:09Z, V5/S2/I4). Per the board rule "never start
+  a task another session has claimed", this session claims V6, a strictly non-overlapping audit:
+  its only outputs are `reports/verification-a8b857bc.md` (new) and this append-only log. Any
+  confirmed error in files owned by the V5 sessions is logged in **Cross-session requests**, never
+  edited here.
+- **Intake 2026-10-19:** `origin/main` = `bd3e87e` (PR #22). No open PRs. Pages = `main`/`/`,
+  status `built`, https enforced. Local validators all PASS: `scripts/validate.py` (9 tables /
+  207 rows / 30 non-verified all on Flagged page), `scripts/check_site.py` (9 root pages),
+  `build_site.py --check` (7 docs pages, 73/73 sources). Sandbox direct outbound network is
+  allowlisted (github.com / package registries only), so live source checks use the page-fetch
+  tool, as in V4; `scripts/check_links.py` urllib probes are environmental, not citation, failures.
+- Method: independently re-fetch the load-bearing official sources live on 2026-10-19 and compare
+  value-by-value against published rows; inventory every unique external URL cited across
+  `data/*.csv`, `data/*.json` and built HTML and record probe results; audit CI/workflows and the
+  live Pages deployment; check the publications answer every question in the user's brief
+  (executive summary, work requirements with $0 earned income, California help, new-law details,
+  every table row sourced). No personal eligibility inferred; unconfirmable values stay blank.
+
+## Session log — `arena/a8b857bc` (V6 results, 2026-10-19)
+
+- **Intake/coordination:** found two active V5 claims (`arena/565d5e24` at 02:23:47Z,
+  `arena/cb0807c0` at 02:24:09Z) with broad data/HTML scopes, so V6 was claimed strictly
+  non-overlapping (new report + this append-only log; no data/template/HTML edits). Claim commit
+  pushed immediately. `arena/cb0807c0` then merged PR #23 (V5/S2/I4: FL-29/FL-30,
+  `reports/verification-cb0807c0.md`, rebuilt dashboard) while V6 was in flight; this branch was
+  rebased onto the new `main` (`bd3e87e` → `8d06324`). The only conflict was this file, resolved
+  by keeping both sessions' entries; nothing discarded. All three validators re-ran PASS after
+  the rebase (209 rows; 32 non-verified rows all on the Flagged page; 73/73 docs sources).
+- **Live verification (full-page fetches, 2026-10-19):** 32 official documents/pages re-read and
+  compared value-by-value against the published rows — eCFR §435.552 (all subdivisions incl.
+  (f)(2) MAGI test and (g) seasonal averaging), the CMS-2454-IFC fact sheet, the Federal Register
+  IFC (91 FR 33348) and its 06/29/2026 correction (91 FR 39028, replacing §§435.557–558), the
+  2026 HHS poverty guidelines (FR + ASPE, $15,960/1), DHCS Changes/FPL/tracker/immigration pages,
+  ACWDL 25-30, ACWDL 25-31, MEDIL I26-25, the Jan 2026 DHCS impact deck, AB 2161 chaptered text,
+  IRS Topics 429/414, Form 6781, the APTC repayment-cap page, HealthCare.gov MAGI/PTC glossaries,
+  Covered California OE/newsroom/July 21 release/HBEX guide, the CMS City of Columbus statement,
+  both Medicaid.gov CIBs (11/18/25 $35 cap; 12/08/25 §1902(xx)), Congress.gov H.R.1 and H.R.1834,
+  the Cantwell release, FTB mandate, Kalshi tax/regulation articles, DOL COBRA, CDI SB 910 notice,
+  Medicare.gov, CMS EMTALA, BenefitsCal, CalJOBS/EDD WIOA, and the LAO handout.
+- **Result: zero factual errors found in the 177 verified rows.** The two intentionally blank
+  values (IN-08, IN-13) remain unconfirmable from official sources and correctly stay blank.
+  Flagged contradictions re-observed still live on official pages: FL-03 (MEDIL "March 2027" vs
+  Jan 1 2027 elsewhere), FL-04 (CMS "under 14" prose vs "13 and under" chart), FL-05 ($580 wording
+  hierarchy), FL-07 ($15,560 copay figure vs $15,960 FPL). FL-18 and FL-30 verified against their
+  underlying documents and found accurate. Every data row carries an official `source_url` (scan:
+  zero missing); non-`.gov` analysis links appear only as clearly labeled secondary narrative
+  references, never as data-row sources.
+- **New findings (all non-blocking):** (1) README counts stale post-#23 (207/28/65 → actual
+  209/30/66) — cross-session request logged, not edited (outside V6 scope); (2) V4's Covered CA
+  deep-link 404 issue is resolved — the URL now returns full content; (3) stale-branch warning for
+  `arena/565d5e24` (must rebase before any PR or it would regress PR #23). Full record in
+  `reports/verification-a8b857bc.md`.
+- **CI/deployment:** all workflows green on `main` after PR #23; Pages status `built`; root,
+  `/dashboard/` (incl. the 30-item Flagged page), `/docs/`, `/your-situation.html`, and
+  `/flagged.html` all fetched live and serve the verified content.
