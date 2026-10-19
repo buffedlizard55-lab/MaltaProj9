@@ -579,3 +579,21 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   review per protocol; Pages deploy confirmed against the merge commit; final publication record
   (PR link, merge SHA, Pages build status) appended below by a post-merge commit to `main`
   (contents API — no direct push), consistent with prior sessions' I3/I4 precedent.
+
+### I4 publication record (post-merge, 2026-10-19)
+
+- **PR:** [#23](https://github.com/buffedlizard55-lab/MaltaProj9/pull/23)
+  (`arena/cb0807c0-maltaproj9` → `main`), CI: `validate` pass, `Rebuild site and verify
+  integrity` pass.
+- **Merged:** 2026-10-19 without waiting for review, per the standing protocol
+  (`gh pr merge --merge`). Merge commit on `main`: **`ec48f5f`**
+  ("Merge pull request #23 from buffedlizard55-lab/arena/cb0807c0-maltaproj9").
+- **GitHub Pages:** build for `main`/`/` at `ec48f5f` status **built** (checked via the GitHub
+  Pages API immediately after the merge); live site
+  <https://buffedlizard55-lab.github.io/MaltaProj9/> serves the verified tree, including the
+  expanded Flagged for Review page (FL-01…FL-30).
+- **Final verified state on `main`:** 9 tables / 209 rows (179 rule rows: 177 verified + 2
+  intentionally blank; 30-row flagged registry) / 66 cited sources; all validators PASS
+  (`validate.py`, `check_site.py`, `build_site.py --check`, deterministic `build.py`).
+- **Flagged items published (non-blocking):** FL-29 (IN-21 citation completeness) and FL-30
+  (ACWDL 25-30 → 26-30 successor-letter question), alongside the 28 prior flags.
