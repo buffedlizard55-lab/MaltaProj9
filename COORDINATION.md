@@ -673,3 +673,22 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
 - **CI/deployment:** all workflows green on `main` after PR #23; Pages status `built`; root,
   `/dashboard/` (incl. the 30-item Flagged page), `/docs/`, `/your-situation.html`, and
   `/flagged.html` all fetched live and serve the verified content.
+
+## Publication record — session `arena/a8b857bc` (V6)
+
+- PR #24, https://github.com/buffedlizard55-lab/MaltaProj9/pull/24, **merged 2026-10-19**
+  (merge commit `cc5c846`), from `arena/a8b857bc-maltaproj9` into `main`. Additive only:
+  new `reports/verification-a8b857bc.md` + this coordination log; no data row, template, or
+  built page modified.
+- CI on the PR and on `main` after merge: `Build check` and `Validate healthcare research
+  site` both **pass**; `pages-build-deployment` run 39190987549 **success**; Pages API status
+  `built` (https enforced, source `main`/`/`).
+- Live verification after merge (2026-10-19, cache-busted fetches):
+  - Report live: https://buffedlizard55-lab.github.io/MaltaProj9/reports/verification-a8b857bc.md
+  - Root brief, `/dashboard/` (30-item Flagged page), `/docs/`, `/your-situation.html`,
+    `/flagged.html` all serve the verified post-#23 tree.
+- V6 outcome: 32 official documents re-fetched and compared value-by-value; **no factual errors
+  found** in the 177 verified rows; IN-08/IN-13 remain correctly blank; FL-03/04/05/07
+  contradictions re-observed live and accurately flagged. Open cross-session requests:
+  README count refresh (207/28/65 → 209/30/66); rebase warning for `arena/565d5e24`;
+  V4 Covered-CA deep-link issue confirmed resolved. V6 marked **done** on the task board.
