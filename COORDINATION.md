@@ -60,6 +60,7 @@ Research snapshot date: **2026-10-18 (UTC)**.
 | V5 — Independent line-by-line re-verification (2026-10-19 snapshot) of all published rows across all three publications vs live official sources; repo audit; new irregularities to flagged registry | done (2026-10-19) | `arena/cb0807c0` | `COORDINATION.md` (append-only log), `reports/verification-cb0807c0.md` (new), `data/*.csv`/`data/*.json`/`site_src/*.tmpl`/`dashboard/**`/root `*.html`/`docs/**` (corrections only, each logged), `README.md` (counts only) |
 | S2 — Full external link probe (every unique external URL in data files + HTML) + internal link validation + build/link checks for all three publications | done (2026-10-19) | `arena/cb0807c0` | same as V5; no scope outside V5 |
 | I4 — Final integration: PR from `arena/cb0807c0-maltaproj9` to `main`, merge, GitHub Pages deploy confirmation, publication record with PR link + merge result | in progress | `arena/cb0807c0` | `COORDINATION.md`, `README.md` |
+| V6 — Independent non-overlapping 2026-10-19 audit: live official-source spot re-verification, full external-URL inventory/probe, CI + Pages deployment audit, completeness check vs the user's questions; output ONLY a new report + this append-only log (no edits to data/HTML/templates claimed by the active V5 sessions `arena/cb0807c0`/`arena/565d5e24`; confirmed errors logged as cross-session requests) | in progress | `arena/a8b857bc` | `reports/verification-a8b857bc.md` (new file), `COORDINATION.md` (append-only log + task-board row + cross-session requests) |
 
 Filename deviations from the original plan (session `arena/0ef38cd8`): `data/california-status.csv`
 was built as `data/california-implementation.csv`; `data/other-options.csv` was split into
@@ -597,3 +598,25 @@ placeholders, and `.nojekyll` keeps Pages serving both sites as static files.
   (`validate.py`, `check_site.py`, `build_site.py --check`, deterministic `build.py`).
 - **Flagged items published (non-blocking):** FL-29 (IN-21 citation completeness) and FL-30
   (ACWDL 25-30 → 26-30 successor-letter question), alongside the 28 prior flags.
+## Session log — `arena/a8b857bc` (V6 independent audit, claim 2026-10-19 02:26 UTC)
+
+- **Why a separate task:** at intake, two other sessions already hold active V5 claims with broad
+  scopes over `data/*.csv`, `data/*.json`, `site_src/*.tmpl`, `dashboard/**`, root `*.html`,
+  `docs/**` and their own reports — `arena/565d5e24` (claim commit `e7452635`, 02:23:47Z) and
+  `arena/cb0807c0` (claim commit `e0957eb3`, 02:24:09Z, V5/S2/I4). Per the board rule "never start
+  a task another session has claimed", this session claims V6, a strictly non-overlapping audit:
+  its only outputs are `reports/verification-a8b857bc.md` (new) and this append-only log. Any
+  confirmed error in files owned by the V5 sessions is logged in **Cross-session requests**, never
+  edited here.
+- **Intake 2026-10-19:** `origin/main` = `bd3e87e` (PR #22). No open PRs. Pages = `main`/`/`,
+  status `built`, https enforced. Local validators all PASS: `scripts/validate.py` (9 tables /
+  207 rows / 30 non-verified all on Flagged page), `scripts/check_site.py` (9 root pages),
+  `build_site.py --check` (7 docs pages, 73/73 sources). Sandbox direct outbound network is
+  allowlisted (github.com / package registries only), so live source checks use the page-fetch
+  tool, as in V4; `scripts/check_links.py` urllib probes are environmental, not citation, failures.
+- Method: independently re-fetch the load-bearing official sources live on 2026-10-19 and compare
+  value-by-value against published rows; inventory every unique external URL cited across
+  `data/*.csv`, `data/*.json` and built HTML and record probe results; audit CI/workflows and the
+  live Pages deployment; check the publications answer every question in the user's brief
+  (executive summary, work requirements with $0 earned income, California help, new-law details,
+  every table row sourced). No personal eligibility inferred; unconfirmable values stay blank.
